@@ -1,13 +1,46 @@
 import { spawnSync } from 'child_process';
+import * as fs from 'fs';
+import * as path from 'path';
+
+const IGNORED_ROOT_DIRS = new Set(['.git', '.github', 'scripts', 'node_modules']);
+const IGNORED_FILES = new Set(['.gitignore', 'serve.ps1', 'package.json', 'package-lock.json']);
+
+function getAllFiles(dir, base = '') {
+  let results = [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!base && IGNORED_ROOT_DIRS.has(entry.name)) continue;
+    if (!base && IGNORED_FILES.has(entry.name)) continue;
+    if (entry.name.startsWith('.git')) continue;
+
+    const fullPath = path.join(dir, entry.name);
+    const relPath = base ? `${base}/${entry.name}` : entry.name;
+    if (entry.isDirectory()) {
+      results = results.concat(getAllFiles(fullPath, relPath));
+    } else if (entry.isFile()) {
+      results.push(relPath);
+    }
+  }
+  return results;
+}
 
 function deploy() {
   const host = (process.env.FTP || process.env.FTP_SERVER || 'web15f18.uni5.net').replace(/^ftp:\/\//, '').replace(/\/$/, '').trim();
   const user = (process.env.USER || process.env.FTP_USERNAME || '').trim();
   const pass = (process.env.SENHA || process.env.FTP_PASSWORD || '').trim();
 
-  console.log(`🔐 Inspecionando permissões do servidor Locaweb (${host}) para ${user}...`);
+  const rootDir = process.cwd();
+  const files = getAllFiles(rootDir);
 
-  const res = spawnSync('curl', [
+  console.log(`📦 Encontrados ${files.length} arquivos para publicação.`);
+  console.log(`🔐 Autenticando com usuário ${user} em ${host}...`);
+
+  // Testar envio de index.html
+  const testFile = 'index.html';
+  const testLocal = path.join(rootDir, testFile);
+
+  console.log(`🚀 Tentando publicar ${testFile} no servidor Locaweb...`);
+  const probe = spawnSync('curl', [
     '-v',
     '-sS',
     '--show-error',
@@ -16,14 +49,58 @@ function deploy() {
     '--ftp-pasv',
     '--ftp-skip-pasv-ip',
     '--connect-timeout', '20',
-    `ftp://${host}/`,
+    '-T', testLocal,
+    `ftp://${host}/${testFile}`,
     '-u', `${user}:${pass}`
   ], { encoding: 'utf-8' });
 
-  console.log('--- Resposta stdout: ---');
-  console.log(res.stdout);
-  console.log('--- Resposta stderr / logs: ---');
-  console.log(res.stderr);
+  if (probe.status !== 0) {
+    console.error(`\n❌ Falha na escrita: o servidor Locaweb retornou restrição de permissão.`);
+    console.error(probe.stderr || probe.stdout);
+    process.exit(1);
+  }
+
+  console.log(`\n🎉 PERMISSÃO DE ESCRITA VALIDADA! Enviando os ${files.length} arquivos...`);
+
+  let success = 0;
+  let fail = 0;
+
+  for (let i = 0; i < files.length; i++) {
+    const f = files[i];
+    const localPath = path.join(rootDir, f);
+    const remoteUrl = `ftp://${host}/${f}`;
+    const kb = (fs.statSync(localPath).size / 1024).toFixed(1);
+
+    console.log(`[${i + 1}/${files.length}] 📤 ${f} (${kb} KB)...`);
+    const res = spawnSync('curl', [
+      '-sS',
+      '--show-error',
+      '-k',
+      '--disable-epsv',
+      '--ftp-pasv',
+      '--ftp-skip-pasv-ip',
+      '--ftp-create-dirs',
+      '--retry', '3',
+      '--connect-timeout', '30',
+      '-T', localPath,
+      remoteUrl,
+      '-u', `${user}:${pass}`
+    ]);
+
+    if (res.status === 0) {
+      success++;
+    } else {
+      console.error(`  ❌ Falha: ${f}`);
+      fail++;
+    }
+  }
+
+  if (fail > 0) {
+    console.error(`\n❌ Finalizado com ${fail} erros.`);
+    process.exit(1);
+  }
+
+  console.log(`\n🎉 SUCESSO TOTAL! Todos os ${success} arquivos publicados com sucesso na Locaweb.`);
 }
 
 deploy();
