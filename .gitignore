@@ -1,0 +1,15 @@
+# Dependências e caches
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários e backups
+*.tmp
+*.bak
+*.swp
+*.ps1
+!serve.ps1

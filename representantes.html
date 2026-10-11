@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontre um Representante Baytaka | Atendimento Comercial Regional</title>
+  
+  <meta name="description" content="Localize o representante oficial da Baytaka Interiores na sua região para consultoria técnica de acervo, orçamentos e catálogo comercial.">
+  <link rel="icon" type="image/jpeg" href="assets/images/baytaka-logo-raw.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    .by-rep-page-box {
+      background: #FFFFFF;
+      border: 1px solid var(--by-border);
+      border-radius: var(--by-radius-md);
+      box-shadow: var(--by-shadow-card);
+      padding: 40px;
+      max-width: 800px;
+      margin: -50px auto 60px;
+      position: relative;
+      z-index: 20;
+    }
+    .by-rep-card-display {
+      background: var(--by-bg-soft);
+      border: 2px solid var(--by-orange);
+      border-radius: var(--by-radius-md);
+      padding: 30px;
+      margin-top: 30px;
+      animation: bySlideUp 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="by-header">
+    <div class="container by-header-inner">
+      <a href="index.html" class="by-logo-wrap">
+        <img src="assets/images/baytaka-logo-raw.jpg" alt="Baytaka Interiores" class="by-logo-img">
+      </a>
+      <nav aria-label="Navegação Principal">
+        <ul class="by-nav-menu">
+          <li><a href="index.html" class="by-nav-link">Início</a></li>
+          <li><a href="a-baytaka.html" class="by-nav-link">A Baytaka</a></li>
+          <li><a href="produtos.html" class="by-nav-link">Produtos</a></li>
+          <li><a href="inspiracoes.html" class="by-nav-link">Inspirações</a></li>
+          <li><a href="baytaka-pelo-brasil.html" class="by-nav-link">Baytaka pelo Brasil</a></li>
+          <li><a href="representantes.html" class="by-nav-link active">Representantes</a></li>
+          <li><a href="contato.html" class="by-nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="by-header-actions">
+        <button type="button" class="by-btn by-btn-primary by-header-btn-catalog" data-catalog-trigger>
+          Solicitar Catálogo
+        </button>
+        <button type="button" id="by-mobile-toggle" class="by-mobile-menu-btn" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="by-drawer-overlay" class="by-drawer-overlay"></div>
+  <aside id="by-mobile-drawer" class="by-mobile-drawer">
+    <div>
+      <div class="by-drawer-head">
+        <img src="assets/images/baytaka-logo-raw.jpg" alt="Baytaka" style="height:36px; mix-blend-mode:multiply;">
+        <button type="button" id="by-drawer-close" class="by-drawer-close">&times;</button>
+      </div>
+      <ul class="by-drawer-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="a-baytaka.html">A Baytaka</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="inspiracoes.html">Inspirações</a></li>
+        <li><a href="baytaka-pelo-brasil.html">Baytaka pelo Brasil</a></li>
+        <li><a href="representantes.html">Representantes</a></li>
+        <li><a href="novidades.html">Novidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <button type="button" class="by-btn by-btn-primary w-full" data-catalog-trigger>Solicitar Catálogo</button>
+    </div>
+  </aside>
+
+  <!-- CABEÇALHO -->
+  <section style="padding: 160px 0 100px; background: linear-gradient(135deg, #0F1115 0%, #1A1D24 100%); color:#FFFFFF;">
+    <div class="container text-center">
+      <span class="by-section-eyebrow" style="color:#FFA56B;">Atendimento Regional</span>
+      <h1 class="by-hero-title">Baytaka Mais Perto de Você.</h1>
+      <p class="by-hero-desc" style="margin: 0 auto;">
+        Nossa equipe de representantes atende diferentes regiões do Brasil. Informe sua localização para encontrar o atendimento responsável pela sua região.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE LOCALIZAÇÃO DO REPRESENTANTE -->
+  <section style="padding-bottom: 80px;">
+    <div class="container">
+      <div class="by-rep-page-box">
+        <h3 style="font-size:1.4rem; font-weight:800; text-transform:uppercase; margin-bottom:16px; color:var(--by-black);">Consulte seu Atendimento Comercial</h3>
+        <p style="color:var(--by-gray-text); font-size:0.925rem; margin-bottom:24px;">Selecione o estado e informe a sua cidade para conectar-se diretamente com o representante oficial via WhatsApp:</p>
+
+        <form id="by-rep-search-form" class="by-form-flow">
+          <div class="by-form-grid">
+            <div class="by-field">
+              <label for="by-rep-select-uf">Estado (UF) *</label>
+              <select id="by-rep-select-uf" required>
+                <option value="">Selecione o Estado</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="TO">Tocantins (TO)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="RR">Roraima (RR)</option>
+              </select>
+            </div>
+
+            <div class="by-field">
+              <label for="by-rep-input-city">Sua Cidade</label>
+              <input type="text" id="by-rep-input-city" placeholder="Ex: Campinas ou deixe vazio">
+            </div>
+          </div>
+
+          <div class="by-field">
+            <label for="by-rep-input-product">Produto ou Categoria de Interesse</label>
+            <input type="text" id="by-rep-input-product" placeholder="Ex: Arcos, Trios de Mesas, Gazebos...">
+          </div>
+
+          <button type="submit" class="by-btn by-btn-primary w-full">Localizar Representante Responsável</button>
+        </form>
+
+        <!-- CONTAINER DO RESULTADO -->
+        <div id="by-rep-display-area" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="by-footer">
+    <div class="container">
+      <div class="by-footer-bottom">
+        <div>© 2026 Baytaka Interiores. Todos os direitos reservados.</div>
+        <div class="by-footer-legal-links">
+          <a href="index.html">Início</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="contato.html">Contato Matriz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/initial-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/catalog-modal.js"></script>
+  <script src="js/floating-whatsapp.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('by-rep-search-form');
+      const ufSelect = document.getElementById('by-rep-select-uf');
+      const cityInput = document.getElementById('by-rep-input-city');
+      const prodInput = document.getElementById('by-rep-input-product');
+      const resultArea = document.getElementById('by-rep-display-area');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const uf = ufSelect.value;
+        const city = cityInput.value.trim();
+        const productInterest = prodInput.value.trim() || 'Catálogo Geral de Estruturas';
+
+        if (!uf) return;
+
+        const rep = window.baytakaStore.findRepresentative(uf, city);
+        resultArea.style.display = 'block';
+
+        if (rep) {
+          window.baytakaTracker.trackRepresentativeSearch(uf, city, true);
+          const msg = `Olá, conheci a Baytaka pelo site e gostaria de informações sobre os produtos e catálogo.\n\n` +
+                      `Cidade: ${city || 'Capital/Região'}\n` +
+                      `Estado: ${uf}\n` +
+                      `Produto de interesse: ${productInterest}`;
+
+          resultArea.innerHTML = `
+            <div class="by-rep-card-display">
+              <span class="by-badge-pill orange-badge">Representante Oficial Baytaka</span>
+              <h3 style="font-size:1.4rem; font-weight:800; color:var(--by-black); margin:10px 0 6px;">${rep.name}</h3>
+              <p style="font-size:0.95rem; color:var(--by-dark-text); margin-bottom:6px;"><strong>Região Atendida:</strong> ${rep.regionName}</p>
+              <p style="font-size:0.9rem; color:var(--by-gray-text); margin-bottom:6px;"><strong>Experiência:</strong> ${rep.experience || 'Especialista em Acervos'}</p>
+              <p style="font-size:0.95rem; color:var(--by-dark-text); margin-bottom:18px;"><strong>Contato Telefônico / WhatsApp:</strong> ${rep.phone}</p>
+              
+              <a href="https://api.whatsapp.com/send?phone=${rep.whatsapp}&text=${encodeURIComponent(msg)}" target="_blank" class="by-btn by-btn-whatsapp-action w-full">
+                Falar pelo WhatsApp com ${rep.name.split(' ')[0]}
+              </a>
+            </div>
+          `;
+        } else {
+          window.baytakaTracker.trackRepresentativeSearch(uf, city, false);
+          const settings = window.baytakaStore.getSettings();
+          const matrixPhone = settings.whatsappRetail || "5519998418000";
+          const msg = `Olá, procurei representante para ${city ? city + ' - ' : ''}${uf} no site da Baytaka e gostaria de falar diretamente com a fábrica sobre o catálogo.\nProduto de interesse: ${productInterest}`;
+
+          resultArea.innerHTML = `
+            <div class="by-rep-card-display" style="border-color:#F59E0B; background:#FFFBEB;">
+              <span class="by-badge-pill" style="background:#FEF3C7; color:#92400E;">Atendimento Fábrica Matriz</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:#92400E; margin:10px 0 8px;">Ainda não encontrou um representante exclusivo para ${uf}?</h3>
+              <p style="font-size:0.95rem; color:#78350F; margin-bottom:16px;">
+                Não se preocupe! Nossa equipe comercial da matriz atende sua região diretamente de Porto Ferreira - SP, com despacho imediato via transportadora para todo o Brasil.
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=${matrixPhone}&text=${encodeURIComponent(msg)}" target="_blank" class="by-btn by-btn-primary w-full">
+                Falar Diretamente com a Matriz Baytaka
+              </a>
+            </div>
+          `;
+        }
+
+        resultArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    });
+  </script>
+</body>
+</html>
