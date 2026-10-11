@@ -1,0 +1,29 @@
+name: Deploy Baytaka via FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: 🚀 Deploy to Production FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📡 Deploy via FTP (Script Inteligente)
+        run: node scripts/ftp-deploy.mjs
+        env:
+          FTP: ${{ secrets.FTP }}
+          USER: ${{ secrets.USER }}
+          SENHA: ${{ secrets.SENHA }}
+  
