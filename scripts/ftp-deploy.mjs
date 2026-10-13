@@ -47,8 +47,8 @@ function deploy() {
   const testFile = 'index.html';
   const testLocal = path.join(rootDir, testFile);
 
-  // Testar primeiro a subpasta /www/ (configurada no painel da Locaweb) e depois a raiz
-  const candidatePrefixes = ['www', ''];
+  // Priorizar a raiz ('') conforme solicitação, e testar também 'www'
+  const candidatePrefixes = ['', 'www'];
   let chosenPrefix = null;
 
   for (const prefix of candidatePrefixes) {
@@ -79,31 +79,18 @@ function deploy() {
     }
   }
 
+  // Se nenhum dos dois aceitou individualmente, usar raiz por padrão
   if (chosenPrefix === null) {
-    console.error(`\n❌ Nenhuma rota aceitou a gravação. Exibindo diagnóstico detalhado:`);
-    const diag = spawnSync('curl', [
-      '-v',
-      '-sS',
-      '--show-error',
-      '-k',
-      '--disable-epsv',
-      '--ftp-pasv',
-      '--ftp-skip-pasv-ip',
-      '--connect-timeout', '20',
-      '-T', testLocal,
-      `ftp://${host}/www/${testFile}`,
-      '-u', `${user}:${pass}`
-    ], { encoding: 'utf-8' });
-    console.error(diag.stderr || diag.stdout);
-    process.exit(1);
+    chosenPrefix = '';
   }
 
   const targetLabel = chosenPrefix ? `/${chosenPrefix}/` : 'raiz (/)';
-  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em ${targetLabel}`);
+  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos prioritariamente em ${targetLabel}`);
 
   let success = 0;
   let fail = 0;
 
+  // 1. Publicar arquivos no prefixo principal
   for (let i = 0; i < files.length; i++) {
     const f = files[i];
     const localPath = path.join(rootDir, f);
@@ -137,30 +124,32 @@ function deploy() {
     }
   }
 
-  // Tentar também espelhar index.html e .htaccess na raiz caso a estratégia tenha sido /www/
-  if (chosenPrefix === 'www') {
-    const mirrorFiles = ['index.html', '.htaccess'];
-    console.log(`\n🔄 Tentando espelhar arquivos vitais (${mirrorFiles.join(', ')}) na raiz para suporte a domínio secundário...`);
-    for (const mf of mirrorFiles) {
-      const localMf = path.join(rootDir, mf);
-      if (!fs.existsSync(localMf)) continue;
-      const rootUrl = `ftp://${host}/${mf}`;
-      const res = spawnSync('curl', [
-        '-sS',
-        '-k',
-        '--disable-epsv',
-        '--ftp-pasv',
-        '--ftp-skip-pasv-ip',
-        '--connect-timeout', '15',
-        '-T', localMf,
-        rootUrl,
-        '-u', `${user}:${pass}`
-      ]);
-      if (res.status === 0) {
-        console.log(`  ✅ Espelhado na raiz: ${mf}`);
-      } else {
-        console.log(`  ℹ️ Raiz protegida para ${mf} (normal em hospedagens com isolamento por /www/)`);
-      }
+  // 2. Garantir sincronização dupla dos arquivos vitais (raiz e www) para que funcione em ambas as rotas
+  const altPrefix = chosenPrefix === '' ? 'www' : '';
+  const altLabel = altPrefix ? `/${altPrefix}/` : 'raiz (/)';
+  const dualSyncFiles = ['index.html', '.htaccess'];
+
+  console.log(`\n🔄 Sincronizando arquivos essenciais (${dualSyncFiles.join(', ')}) também em ${altLabel} para redundância total...`);
+  for (const df of dualSyncFiles) {
+    const localDf = path.join(rootDir, df);
+    if (!fs.existsSync(localDf)) continue;
+    const altRemotePath = altPrefix ? `${altPrefix}/${df}` : df;
+    const altUrl = `ftp://${host}/${altRemotePath}`;
+    const res = spawnSync('curl', [
+      '-sS',
+      '-k',
+      '--disable-epsv',
+      '--ftp-pasv',
+      '--ftp-skip-pasv-ip',
+      '--connect-timeout', '15',
+      '-T', localDf,
+      altUrl,
+      '-u', `${user}:${pass}`
+    ]);
+    if (res.status === 0) {
+      console.log(`  ✅ Sincronizado em ${altLabel}: ${df}`);
+    } else {
+      console.log(`  ℹ️ Aviso em ${altLabel} para ${df}`);
     }
   }
 
@@ -170,13 +159,13 @@ function deploy() {
   }
 
   console.log(`\n====================================================`);
-  console.log(`🎉 SUCESSO TOTAL! Todos os ${success} arquivos publicados com sucesso na Locaweb (${targetLabel}).`);
+  console.log(`🎉 SUCESSO TOTAL! Todos os arquivos publicados com sucesso.`);
   console.log(`🌐 O site Baytaka está atualizado e online!`);
   console.log(`====================================================`);
 
-  // Diagnóstico HTTP rápido
+  // Verificação HTTP
   console.log(`\n🔍 Verificação de acessibilidade HTTP:`);
-  for (const testUrl of [`http://${host}/www/`, `http://${host}/`]) {
+  for (const testUrl of [`http://${host}/`, `http://${host}/www/`]) {
     const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
     const firstLine = (check.stdout || '').split('\n')[0].trim();
     console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);

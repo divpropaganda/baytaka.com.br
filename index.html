@@ -3,23 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baytaka Interiores | Novo Portal em Breve • +40 Anos de Tradição</title>
+  <title>Baytaka Interiores | Em Construção</title>
 
-  <meta name="description" content="Estamos preparando uma nova experiência digital da Baytaka Interiores. Fabricação própria há mais de 40 anos de mobiliários e estruturas para eventos e locadoras. Fale conosco pelo WhatsApp.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://baytaka.com.br/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://baytaka.com.br/">
-  <meta property="og:title" content="Baytaka Interiores | Novo Portal em Breve">
-  <meta property="og:description" content="Mobiliários e estruturas exclusivas para locadoras, decoradores e grandes eventos. Novo portal em construção.">
-  <meta property="og:image" content="assets/images/hero_event.jpg">
+  <meta name="description" content="Baytaka Interiores - Mobiliário e estruturas para eventos. Em construção. Volte em breve.">
+  <meta name="robots" content="noindex, follow">
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="assets/images/baytaka-logo-raw.jpg">
 
-  <!-- Tipografia: Plus Jakarta Sans -->
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,9 +19,7 @@
   <style>
     :root {
       --bg-dark: #0a0d14;
-      --bg-card: rgba(18, 22, 34, 0.75);
-      --bg-card-hover: rgba(26, 32, 50, 0.9);
-      --border-gold: rgba(212, 175, 55, 0.28);
+      --border-gold: rgba(212, 175, 55, 0.3);
       --border-subtle: rgba(255, 255, 255, 0.08);
       --gold-primary: #d4af37;
       --gold-light: #f3e198;
@@ -38,7 +28,7 @@
       --text-muted: #94a3b8;
       --text-dim: #64748b;
       --accent-green: #22c55e;
-      --shadow-glow: 0 0 50px -10px rgba(212, 175, 55, 0.25);
+      --shadow-glow: 0 0 60px -10px rgba(212, 175, 55, 0.3);
     }
 
     * {
@@ -94,53 +84,33 @@
       opacity: 0.15;
     }
 
-    .light-orb-3 {
-      width: 380px;
-      height: 380px;
-      background: radial-gradient(circle, #d4af37 0%, transparent 70%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.08;
-    }
-
     @keyframes floatPulse {
       0% { transform: scale(1) translate(0, 0); }
       100% { transform: scale(1.15) translate(30px, -20px); }
     }
 
-    /* Container Principal */
-    .container {
+    /* Container Central */
+    .main-wrapper {
       position: relative;
       z-index: 1;
       width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem 2rem;
+      max-width: 800px;
+      margin: auto;
+      padding: 4rem 1.5rem 3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      flex: 1;
-    }
-
-    /* Cabeçalho da Marca */
-    .brand-header {
-      margin-bottom: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
     }
 
     .brand-logo-frame {
-      width: 88px;
-      height: 88px;
-      border-radius: 24px;
+      width: 96px;
+      height: 96px;
+      border-radius: 26px;
       padding: 4px;
       background: var(--gold-gradient);
       box-shadow: 0 10px 30px rgba(212, 175, 55, 0.35);
-      position: relative;
+      margin-bottom: 2rem;
       animation: logoFloat 4s ease-in-out infinite;
     }
 
@@ -153,12 +123,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 20px;
+      border-radius: 22px;
       display: block;
       background: #000;
     }
 
-    /* Badge de Status Ativo */
+    /* Badge de Status */
     .status-badge {
       display: inline-flex;
       align-items: center;
@@ -167,12 +137,12 @@
       background: rgba(212, 175, 55, 0.1);
       border: 1px solid var(--border-gold);
       border-radius: 9999px;
-      font-size: 0.825rem;
+      font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--gold-light);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
       backdrop-filter: blur(12px);
     }
 
@@ -199,14 +169,13 @@
       100% { transform: scale(2.2); opacity: 0; }
     }
 
-    /* Tipografia de Destaque */
-    .hero-title {
-      font-size: clamp(2rem, 5vw, 3.5rem);
+    /* Título e Subtítulo Simples */
+    .title-construction {
+      font-size: clamp(2.4rem, 6vw, 4rem);
       font-weight: 800;
-      line-height: 1.18;
+      line-height: 1.15;
       letter-spacing: -0.02em;
-      margin-bottom: 1.25rem;
-      max-width: 850px;
+      margin-bottom: 0.75rem;
     }
 
     .text-gradient {
@@ -216,305 +185,110 @@
       display: inline;
     }
 
-    .hero-desc {
-      font-size: clamp(1rem, 2vw, 1.2rem);
+    .subtitle-soon {
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
       color: var(--text-muted);
-      max-width: 680px;
-      margin: 0 auto 2.5rem;
-      font-weight: 400;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
     }
 
-    /* Destaques de Credibilidade */
-    .features-pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 3rem;
-    }
-
-    .pill-item {
-      display: flex;
+    /* Botão WhatsApp Direto */
+    .btn-wa-direct {
+      display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border-subtle);
-      padding: 0.6rem 1.2rem;
-      border-radius: 12px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: #cbd5e1;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-    }
-
-    .pill-item:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: var(--border-gold);
-      transform: translateY(-2px);
-    }
-
-    .pill-icon {
-      color: var(--gold-primary);
-    }
-
-    /* Grid de Contato & Ações Diretas */
-    .action-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.25rem;
-      width: 100%;
-      max-width: 950px;
-      margin-bottom: 3rem;
-    }
-
-    .action-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 20px;
-      padding: 1.75rem 1.5rem;
-      text-align: left;
+      gap: 0.75rem;
+      padding: 0.9rem 2rem;
+      background: var(--gold-gradient);
+      color: #0b0d14;
+      font-size: 1rem;
+      font-weight: 700;
       text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      backdrop-filter: blur(16px);
-      position: relative;
-      overflow: hidden;
+      border-radius: 9999px;
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .action-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: transparent;
-      transition: background 0.3s ease;
-    }
-
-    .action-card:hover {
-      background: var(--bg-card-hover);
-      border-color: rgba(212, 175, 55, 0.4);
-      transform: translateY(-4px);
-      box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.5), var(--shadow-glow);
-    }
-
-    .action-card.featured {
-      background: linear-gradient(145deg, rgba(28, 35, 55, 0.95), rgba(16, 20, 32, 0.85));
-      border: 1px solid var(--border-gold);
-    }
-
-    .action-card.featured::before {
-      background: var(--gold-gradient);
-    }
-
-    .card-top {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .card-icon-box {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-subtle);
-      color: var(--gold-light);
-      flex-shrink: 0;
-    }
-
-    .featured .card-icon-box {
-      background: rgba(212, 175, 55, 0.15);
-      border-color: var(--border-gold);
-      color: #fff;
-    }
-
-    .card-title {
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.15rem;
-    }
-
-    .card-label {
-      font-size: 0.775rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--gold-primary);
-      font-weight: 700;
-    }
-
-    .card-text {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 1.25rem;
-    }
-
-    .card-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1rem;
-      border-radius: 10px;
-      font-size: 0.875rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      width: 100%;
-    }
-
-    .btn-gold {
-      background: var(--gold-gradient);
-      color: #0d1117;
-      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
-    }
-
-    .btn-gold:hover {
+    .btn-wa-direct:hover {
+      transform: translateY(-2px) scale(1.02);
       filter: brightness(1.08);
-      transform: scale(1.02);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
     }
 
-    .btn-outline {
-      background: rgba(255, 255, 255, 0.05);
-      color: #fff;
-      border: 1px solid var(--border-subtle);
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: var(--border-gold);
-    }
-
-    /* Caixa Interativa de Solicitação Direta */
-    .interactive-box {
-      background: rgba(14, 18, 28, 0.6);
-      border: 1px solid var(--border-subtle);
-      border-radius: 20px;
-      padding: 2rem;
-      max-width: 650px;
-      width: 100%;
-      margin: 0 auto 3rem;
-      backdrop-filter: blur(12px);
-    }
-
-    .interactive-box h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-      color: #fff;
-    }
-
-    .interactive-box p {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      margin-bottom: 1.25rem;
-    }
-
-    .input-row {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    .input-field {
-      flex: 1;
-      min-width: 200px;
-      background: rgba(0, 0, 0, 0.4);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 0.85rem 1rem;
-      color: #fff;
-      font-family: inherit;
-      font-size: 0.9rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .input-field:focus {
-      border-color: var(--gold-primary);
-    }
-
-    .input-field::placeholder {
-      color: var(--text-dim);
-    }
-
-    /* Rodapé */
+    /* Rodapé com todos os contatos */
     footer {
       position: relative;
       z-index: 1;
       border-top: 1px solid var(--border-subtle);
-      padding: 2rem 1.5rem;
+      padding: 2.5rem 1.5rem 2rem;
+      background: rgba(10, 13, 20, 0.85);
+      backdrop-filter: blur(12px);
       text-align: center;
-      background: rgba(10, 13, 20, 0.8);
-      backdrop-filter: blur(10px);
     }
 
-    .footer-content {
-      max-width: 1100px;
+    .footer-container {
+      max-width: 900px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 1.25rem;
       align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      color: var(--text-dim);
     }
 
-    .footer-links {
+    .footer-brand {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .footer-contacts-list {
       display: flex;
-      gap: 1.5rem;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
     }
 
-    .footer-links a {
+    .footer-contacts-list a {
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
     }
 
-    .footer-links a:hover {
+    .footer-contacts-list a:hover {
       color: var(--gold-light);
     }
 
+    .contact-sep {
+      color: var(--border-subtle);
+    }
+
+    .admin-bar {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.85rem;
+      align-items: center;
+      font-size: 0.775rem;
+    }
+
     .admin-link {
-      font-size: 0.75rem;
-      color: #475569;
+      color: #64748b;
       text-decoration: none;
-      padding: 0.3rem 0.6rem;
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.02);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
       transition: all 0.2s;
     }
 
     .admin-link:hover {
       color: var(--gold-light);
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--border-gold);
     }
 
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .container {
-        padding: 2rem 1rem 1.5rem;
-      }
-      .input-row {
-        flex-direction: column;
-      }
-      .input-field, .btn-gold {
-        width: 100%;
-      }
+    .admin-bar-sep {
+      color: #334155;
     }
   </style>
 </head>
@@ -524,181 +298,73 @@
   <div class="bg-lights">
     <div class="light-orb light-orb-1"></div>
     <div class="light-orb light-orb-2"></div>
-    <div class="light-orb light-orb-3"></div>
   </div>
 
-  <main class="container">
+  <!-- Conteúdo Principal Simples -->
+  <main class="main-wrapper">
     
-    <!-- Topo / Identidade -->
-    <header class="brand-header">
-      <div class="brand-logo-frame">
-        <img src="data:image/jpeg;base64,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" alt="Baytaka Interiores" class="brand-logo-img">
-      </div>
-      
-      <div class="status-badge">
-        <span class="status-pulse"></span>
-        Novo Portal em Construção
-      </div>
-    </header>
+    <div class="brand-logo-frame">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCABWALsDASIAAhEBAxEB/8QAHAABAAMBAQEBAQAAAAAAAAAAAAcICQYFAwQB/8QARxAAAQMDAwMBBAUIBggHAAAAAQIDBAUGBwAIERITIQkUIjFBFSMyM1EWFyQ4QmF2sxg5UnF1xBk2YneBkbK1JTdUcpLB1f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDVPTTVIan6ve0+kVOXSZsK+hIhPuR3QmjNEdaFFJ4+v/EaC72mqQU/1gtn8yUhiU/ecBtZ4U/IogLaP3kNuKX/AMgdWnxTmfFmcbc/KzE98Uu5aWClt1cN36yOsjkIeaUA40rjz0rSk8fLQdxpppoGmmmgaaaaBpppoGmmmgaaaizcTuJsDbHYCMkZHZqztIcqDVNApkdLz3ecS4pPuqUkccNnzz+GglPTX5KdOZqlPi1ON1dmWyh9HUOD0qAI5/4HX69A0000DTTTQNNNNA1nL6QbDL359w8y2vi7meOpIP8A6jWjWs6PR9+OeP4uZ/zGgv5X7PtG7KW/Q7otWkVimyUFt+HUITUhh1J8EKbcBSR+4jWYG5vHX+ja3F2XuPwa7IplgXhUDT7ltttSlRkAELeZQOfsONFxxpJ57TjR49zhA1a1mr6m1Yc3G5Yxfswxi4iqXEusfS9eMf6wUhBb7aFvEeE9LLj7ywTyEhvx76eQ0lZfbkstyGFBbbqQtCh8CkjkHX11FO4HL8PbXg6r5IatibcH0AzEhwaXEV0uy5DzzcZhvq4PSC443yQFHjnhKjwDVS28PeopudbN45ezy/g2gzwFQrZteMUz2mTz964hxLjSiOk++84ryeUN8dOg0B01nNlbAm+Lahbc3MWGN1N05Pp9vI+kKvbl2BctTsVscvKR3XV9wBKeSlBacCQooUVcA8lsz3xXvO3GQaBk28alPsPMEXu2sKpKL4olUS4oGnh5SQVDu91gc8rUDEWeOvyGo2mmmg53IDz0axLjkx3nGnWaTMcbcbUUqQoMrIUCPII/HVVfSiu26r12qit3jc9Wr1RNyVBoy6nNdlPdADPSnuOEngcnxz89Q7lrJuet3W47JWOsAZgn2PjrE9vSI1aqcJrvtVGcOsLaKOpJJcWl5pB54CIzixz1AGNPT+25blMoYATdGKt3dWxxQ/pqZH+hItJ9pR3UBvrd6u8jyrkeOPloNedNUEudvctsZoz+WMg57uXPL1b6LVt60E0hUcO1iSoOMvEpecWQlDDyelCCpRWAOOeR/bf23+oLn5g3ZnrdHUMUszlB1m17LQWnYjfAIQp5p1HQrn5Fx4/ir5AL9aot6x/6o0X+Lqd/Jk64DMNhb4NjNHTmmwtxley9ZFGeS5cNDukLkPtxiQCvqcU4ot8ny40ttTfg8KT18fb1HsuW7nX08bRy1aiXG6dclxU2UhlxQUuO4GpSXWVEeCptxLiCR806DQmzf9UKH/hsb+UnXs68azf9UKH/AIbG/lJ1xue9wGNNt1gS8jZOrRiQmSWokRlIVLqMgjlLEdskdbh/vCQAVKIAJASXprNej5h3T3VbNx74MzzrnsvFtGYju2tjigyvZpNd7j7bUYvulPcDTjjrfLnAW6CS2gN9AX0ltYu9RXdQk3plLNT+BrYqADkC2rdjKRU0MHn71QUlxpRBH3jpVzz9U38NBoJprOfKu3HfHtitqVlrB27G8MkNUFHt9Vty6S5MXIjNgqdLQdcdDnujy2ntr46uhRXwDbLaXuKpW6PCNFyvT4CafMfW5Bq0BLnWIk5ogOoB/sEFLiOfPQ4jnzoJm0000DWNGxyzN411VTLa9ruXLTs2FGubirtVuCl9ch0qe7SmyYz3AACgfI+Pz1svrOX0fPvc8/xZH/zOg9O6tvfq2XLTHqc7u2sJhDyC2oQWlQVkH48PM04OJP7wRqOcRXvf/prP9jcPtmgu0m5ZXaqWTrZmu1CTMeWrq/SlSFKUeTyrt8sgkKUltauedTdc9fNk21kiz6xYd50hmp0SuxHIU6K4PDjaxx4P7JHghQ8hQBHBA0HytG7LKypaNKvS06nT7goFUQ3Pp0xoBxpfSrlKhyPdWhSfgeFIWkg8Ea6bWSWx7cjF2eWzuKsDIlQkVSgYwq/NHhpcAdkVAynoa2GueenuraZUeBwjpdXx8dTTjLAu5LetS2Mt7qcsXDaFkV1PttEx7a75gIVCWAWlS3B5UFJ8gL63CF89TX2AFxMhZXxFbVHqFMvDJloUlyRFfZ7FSrUWOV8oI6elxY5/DjWRe3fblNzv6d1412z2VpvjHWQJ1wUB6OSiSsIp0AyY7akjqBWhtK0hPBLrLXka0do3p/7O7Dt6Y3RsD2/LcRFdV36ulyouFXSfPMlS+P8AhwPw1CHopfqzXf8Ax3K/7fB0FitlO4yLudwDQL/kPtG4Iqfou42GwE9qosgBxfSPspdBS6kfIOAfI68bf5uOc247farVaFIIvC5yaDbTbaep0S3UkKkJHB+5b6nByCCvtpP29VqoqzsB9QJ623nBT8Q57PchJHuxoFSLgAH+z2nnCjxwhLUxsn7vx6dpt/06t/8AOvqQEz8U7fl+yUkEcsT6x1/eA8cLBeaU5yDx0RmORw55Ca9rG3Ibatnc21qpFSm6a1RptauRz4uGc7HJ7JPz7SAhr8OUrP7R1xfo8/qfo/iipf8ASzq3uRv/AC9uf/Bpv8leqhejz+p+j+KKl/0s6C6z8OJKdYekxGnlxXu8wtxsKLLnQpPWgn7J6VqHI+SiPmdfoJSkEk8AeSTqEt2+522NqOIpmSK5E+kqg88KfRaUlzoVOmrBKUk/stpShS1r48JTwOVEA16sHZ/nTc9TY+RN8OXrlRGq7QkR8dW/INMgQWVjkNygj7a+CAU/eJ44U6s8gBPG6zK2JoGBMn2zWsk2nHqNQs6tRGKfJrMZD77q4LoS2hor6lKJKQABz5Gs07wWtXo3WOlRJCL+dSkfgO/OP/2dXtyjse2nYy2/ZDlWlgu22pdOtGsSIs2cyufJZeTEdUh1L0lTi0rCgCCDyOBxxwNURu3+pusn/eA7/Pm6DSLOe7DG21XDtBuC8nnKjW6lTo7NCt2CoGbU3+2ge6P2GklQ63D4APACllCFQngralkzcLkONuq3xQ23qin37SsBxHMKix+eptUhokjq+B7SuTzwXeVfVoiLIONMq7Ts+0nebftryc7WKumR0uTpCEip2m3209C22EdLCQ0CehwNhvyvnsrUHDoriDNWNM82ZHvzFV1w67SXldtwsr4ejO8All9pXvtOAEEpUAeCCOQQSHYyYcSa2lmXEafbQ426lDrYUA42sLQoA/NKkhQPyIBHw1+rUdZ8zZaO3jFNdyzey3VQKKyFNxmSA9MkLISywj/aWsgc/ADlR8A6pzi/Dm5bfXSo+Xtx+Wq/YmN68fa6DYdqPexqkQVcdpyQ9xyptaeT74WtYV1J7Q6U6C6935YxPabLsS8MmWlRFOJU326nWo0YnkEccOLGqVejAtP5hr+aYWCwm+X1NhJ9wAw4vkfL4Af8hqeLS9PTZvYlPUil4KoU9wIKlPVku1Najx8f0lS0j+4AD92oG9F5CG8EX+hCQlKL4fAH4D2ONoNCtNNNA1nN6Pw+tzyfl+VrH+Z1ozrPGk+lPfdp1Ot1DH+9W9bRbrs5ydLj0SnvQ0OLKlEdfamp6ykKIBOg0O1FG4ncjjHbNj+bfeRK2y0tDa/o2locBmVORx7rLLfxPJ45V9lI8qIGquD02M+8/wBY1lv/AOc3/wDQ10+OvSzwhQ7savvL91XZluuNdJBuiV3YpKSSOtryp0efsuOLR+KdBmjkvDGRHtsbu7a9qNLaOS8imovx0sqCEw1tynG5RSfstuvPPpQT4I7ZB+sHO8Fg3JbV42XQ7qs2dGmUOqQGZMB6MQW1MLSCnp4+HA8cfLjj5a+N747srI1kVLGt527EqVtVaIYMqnrT0tlrgcBPTwWyngFCk8FJSCkggHVMqT6dGa8O1CTG2wbyrns22ZLinG6FVIAnsxyokkp+sDZPn49oKPHknQXQv+5bftCy61cV01qFSqXDhOrkzJkhDLLQ6SOVLUQB54H951R30Uv1Zrv/AI7lf9vg6ka2PT4iXFVY1x7qM33hmybEcLrFMqjqodEYc4PCxCQ4oFQB/tBJ+aPlrjMDem7e+ALvYmQd2NyM48pVwt3KbahxFQ25y2ikpEx0P9Ck9DaEufV8LCQeE8DgPp6vsiwZu3yhWhWKc7Ub2rdyRkWfFin9I9oT7r6+PitrtOdspHxcdZ+YBE+7Ntu8LbJgSgY4KGDW1pNSuCS2E/X1J0Au+QB1JQAlpB/sNJ1VPACX99W+C4Ny1TT7VjLELgo1mNupPalTUklD4Qrxz5VJJ4Ch1RR+z40e0HPX+w9IsS440dtTjj1JmNoQkclSlMqAA1Tb0dalAl7TH4EaW05IhXTPTIaSoFTRW2ypPUPlyDyNXoUelJPBPA54Gs86dsHql0VeXnranl/I+3+VdkqQ9UbZqtMcY4Wl1xJBZQ8goaKutxttzugBwFHSOEgPP9WN123sg7dMhXI067Y1v3S4qs8IUtpKu/De4Ukc9ZUyw/wOCeEL/HWiVNqMGrU+NVqXNZlwpjKJEeQw4FtvNLHKVpUPBSQQQR8edU5sjYbkW4ZNaibtNxtWy/blTo7tLjUKRGdjsRX1utOJnNq7xCJDfbUlKgjq4WR1cEpPEW3stzPiO6XMSbf/AFB6nQoqIH0qxadWgMz5kGAXe330tF3gNlzx1paaSVcj486C1u6+5LdtPbXkypXNWoVLjPWrVYbTst9LSXJD0R1tppBUfecWtQSlI8qJAGssrt/qbrJ/3gO/z5urz0r057XudqVU9yWYb2zDcEiHIix36zLU3T6Y460povxIQUpDbgC+R1FYCkhQAUOdQlH9IrIcuwhiqv7wauqz4M9c+mUVigLVDbfUTy8poywOvyfA+BUvg+8eQ0RtRlmXZVGjyGkutOUyOhaFDlKgWgCCD8RqlGZNlGSME3pL3E7Bag1b9ZKVOVuwlD/wusNAlRQy0SEJ+J4Z8Ac/VKaIANwZlzJsep2TYX5N3FVjXA5T01Kn08uwoHs0br7kxzn9HQ509CD55WQNdpoMaN+G8q2d0+2igUQQJNpXval3NKue0alymQy4IspoPMlYSXG0rKkKHAcbLgC0gcKOs2IrptS9sX2rdNjyo79BqNIjO08scdCWu2AEcD4FPBSU/IpI+WoJ3den7h7dYG6/LdNo3myUj8oafES4uS2PHblNcpD4A+yrkLTwPe6eUmGbC9NPcPg6MYmC98laoUN5RU9AdoBMQrPxWGTJW31fv6Of36C+t13HQLRtyo3HdNYhUmkwI7j0ubNfSyww2B5UtaiABqhvouuIewRfzjZ6kLvd9QP4gw4upHtj0+FXLWI1wbrM9Xnmh2G7349Hnuqg0NDgPKVKhoWoKUP/AHBB5IKSNcbhj00r5wxfvtNt7qbmgY+auRi4fyXpsRcYz+y6FNMSnQ90LT0pS2v6vhwJHup8cBfXTTTQNNNNA0000DTTTQNUl9UDP9asPGFLwJjhbki/cuSBRYseOvh5uAtaW3Sn5BTylIYTzx4W6QeUau1quTWzeiT92R3YXpfVRuGqwoqolCoz8RDcSlJ6O230HklfSlbx8j7x0ueCBoOz2vYIpO2/B9sYnpvZekU2KHapLaTwJlQc96Q758kFZITz8EJQPlqWtNNB83lFDK1p+ISSNZ+0jP2eZ/p5WVlWmX6t7IFUvNmlfSk1hsofSqvuxUtPJQkDtlsJQegA8DwQfOtA3EdxtSOeOoEc6rxRtmlq0bbzbW3hi8qw5TLbuBi4Wqitpr2h51uoqndtSQOgJK1dPj5aDjrsjZg2+5wxHOfz7dV8UfI9wO21cFJr0eEmMh1cVx1p+EiOy37MEraPucr5BAJPz5eBi25HPUjq7H5778SWscxa53Eqp/WuMa0s/RZ/RePZBweOAHfeP1p1Z3KOHKZlG4sf3FUazLhO4+uJNxRW2EJKZToZca7bnV8E8Ok+PPjXNX1t2l3BnKj5/snKFZs64otHRbdUaYhRpkaq0pEr2jsKRIQe0vr5+tR7wHw+fIV3GdKzmDIOTF1/J2Z7Pp9nXVMtW3afj+y5lQjIMPhLkyY+1AkB51x0k9guBKWwnlPKgrX2uLNu5+v4p29hmpvWRfN63xItauvz6E5GD8ZCZbQmGHISlaSptpEpDZCU9zpB9zkanKqbZ7ho+QbjyBhLNlbx45eMhM24KU3SolTp8ucEhBloakJ5ZeUAOtSVcL4BI179xYFN4pxdLu2/6vVarjStIrwqL0ZhDlVkhl1o95LaUttg90nhCRxwBoI1uydkLDmX9uGKo2V7muOBc1YuRuvTK0qOuTU0twFyGUOltpACW3D7gQBwAAedeNjWRk7dlfGVa+/nC8bCtaw7zmWRQ6NaoiR3VPQEo70yW88y8p0uLdHDXupAT5B51PF/YZpV/ZPxvk6bWZUWVjaXUZUSK02hTcszIpjqDhPkBIPI4+euCrm1q4KXf1z5AwfnS4cavXs6mZcFNi0uFUoMqaE9JltNSUHsPKHHWpJ4UQCRoIPuLcbmym7NM7z6ldrf5wMN3Q/ajVzQozbJqKWZUTolKZ4LaHFtvFK0Acfhxzrqs53rl3bNh6l1iqZar9x3nle7aNbhqAo7cuNbi5YcL66ZT2WytYQ2hYaaV3lrWG+eskgyJM2ZY9O265tuNNrlZjxrwkLqFcuB5SH6lUag4+289LeUQELcWWkD4AAAAfDUjZdw3auacfOY/up+fHaQ7HmQajT3uxNp02OoLYlsOcHodbWAR4I+IIIJGgrvjLIN80LOVj2zZVz5svi0boE+LdBv+zJ0MUp1uOp6NMYluQI6GwpxstLaJKPrE9IBGvHxDft703Nca0d0WWMmWjkSbX5go9L7cRuzbhh91fs0aC4mOrr+q7fhxxEjq4BJJ6NWHx5i/MFsVtidfW46sXlTosVxhunu2/T4AdWrgB551lHWtaQPHT0jk8kHXG/0Ta7c912rWcx7hLxyFSLJrLFwUOizqfTITKagwlQYefdix23JBb6yoAkAn48jkELF6aaaBpppoGmmmgaaaaBpppoGmmmgaaaaBpppoGmmmgaaaaBpppoGmmmgaaaaD//Z" alt="Baytaka Interiores" class="brand-logo-img">
+    </div>
 
-    <!-- Título Principal -->
-    <h1 class="hero-title">
-      Peças que dão forma a <span class="text-gradient">grandes celebrações</span>.
+    <div class="status-badge">
+      <span class="status-pulse"></span>
+      Em Construção
+    </div>
+
+    <h1 class="title-construction">
+      <span class="text-gradient">Em Construção</span>
     </h1>
 
-    <p class="hero-desc">
-      Estamos preparando uma nova experiência digital da <strong>Baytaka Interiores</strong>. Um acervo completo de mobiliários, estruturas cenográficas, arcos e gazebos para locadoras de festas, buffets e decoradores de todo o Brasil.
+    <p class="subtitle-soon">
+      Volte em breve.
     </p>
 
-    <!-- Destaques da Indústria -->
-    <div class="features-pill-row">
-      <div class="pill-item">
-        <span class="pill-icon">✨</span>
-        <span>+40 Anos de Fabricação Própria</span>
-      </div>
-      <div class="pill-item">
-        <span class="pill-icon">🏛️</span>
-        <span>Fábrica e Showroom em Porto Ferreira - SP</span>
-      </div>
-      <div class="pill-item">
-        <span class="pill-icon">🚚</span>
-        <span>Entrega Garantida em Todo o Brasil</span>
-      </div>
-      <div class="pill-item">
-        <span class="pill-icon">📐</span>
-        <span>Padrão de Acabamento Premium</span>
-      </div>
+    <div>
+      <a href="https://api.whatsapp.com/send?phone=5519998418000&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20atendimento%20da%20Baytaka%20Interiores." target="_blank" rel="noopener noreferrer" class="btn-wa-direct">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.889 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.712 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span>Fale Conosco no WhatsApp</span>
+      </a>
     </div>
-
-    <!-- Cards de Contato & Acesso Rápido -->
-    <div class="action-grid">
-      
-      <!-- Card WhatsApp Comercial (Destaque Principal) -->
-      <div class="action-card featured">
-        <div>
-          <div class="card-top">
-            <div class="card-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.889 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.712 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-            </div>
-            <div>
-              <span class="card-label">Atendimento Imediato</span>
-              <h2 class="card-title">WhatsApp Comercial</h2>
-            </div>
-          </div>
-          <p class="card-text">
-            Nossa equipe de vendas continua atendendo normalmente. Solicite catálogos em PDF, orçamentos e prazos de fabricação direto pelo WhatsApp.
-          </p>
-        </div>
-        <a href="https://api.whatsapp.com/send?phone=5519998418000&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20o%20cat%C3%A1logo%20e%20falar%20com%20um%20consultor%20da%20Baytaka%20Interiores." target="_blank" rel="noopener noreferrer" class="card-cta-btn btn-gold">
-          <span>Falar no WhatsApp (19) 99841-8000</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- Card Instagram Oficial -->
-      <div class="action-card">
-        <div>
-          <div class="card-top">
-            <div class="card-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-            </div>
-            <div>
-              <span class="card-label">Inspirações Reais</span>
-              <h2 class="card-title">Instagram Oficial</h2>
-            </div>
-          </div>
-          <p class="card-text">
-            Acompanhe projetos montados, vídeos dos bastidores da produção e peças em uso em casamentos, celebrações e grandes feiras.
-          </p>
-        </div>
-        <a href="https://www.instagram.com/baytaka.interiores/" target="_blank" rel="noopener noreferrer" class="card-cta-btn btn-outline">
-          <span>@baytaka.interiores</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- Card Fábrica & Showroom -->
-      <div class="action-card">
-        <div>
-          <div class="card-top">
-            <div class="card-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <div>
-              <span class="card-label">Visite Nossa Indústria</span>
-              <h2 class="card-title">Fábrica e Showroom</h2>
-            </div>
-          </div>
-          <p class="card-text">
-            Localizada no maior Polo Cerâmico e de Decoração da América Latina: Porto Ferreira, SP. Agende sua visita técnica e conheça a produção.
-          </p>
-        </div>
-        <a href="mailto:comercial@baytaka.com.br" class="card-cta-btn btn-outline">
-          <span>comercial@baytaka.com.br</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Caixa Interativa: Solicitar Catálogo Rápido -->
-    <section class="interactive-box">
-      <h3>Deseja receber o Catálogo Completo em PDF?</h3>
-      <p>Digite seu nome e WhatsApp abaixo para receber o acervo técnico atualizado com modelos e especificações:</p>
-      
-      <form id="quickLeadForm" onsubmit="handleQuickLead(event)">
-        <div class="input-row">
-          <input type="text" id="leadName" class="input-field" placeholder="Seu Nome / Empresa" required>
-          <input type="tel" id="leadCity" class="input-field" placeholder="Cidade / Estado" required>
-          <button type="submit" class="card-cta-btn btn-gold" style="width: auto; padding: 0 1.5rem; cursor: pointer;">
-            <span>Receber Catálogo</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-      </form>
-    </section>
 
   </main>
 
-  <!-- Rodapé Institucional -->
+  <!-- Rodapé com todos os contatos da Baytaka -->
   <footer>
-    <div class="footer-content">
-      <p>
-        &copy; 2026 <strong>Baytaka Interiores</strong> • CNPJ e Fabricação Própria em Porto Ferreira - SP. Todos os direitos reservados.
-      </p>
-      <div class="footer-links">
-        <span>Telefone: (19) 3581-2200</span>
-        <span>•</span>
-        <span>WhatsApp: (19) 99841-8000</span>
-        <span>•</span>
-        <span>Polo de Decoração & Eventos</span>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <strong>Baytaka Interiores</strong> • Mobiliários e Estruturas para Grandes Eventos
       </div>
-      <div style="margin-top: 0.5rem; display: flex; gap: 0.75rem; align-items: center;">
-        <a href="admin.html" class="admin-link" title="Acesso restrito ao Painel de Controle">Painel da Equipe</a>
-        <span style="color: #334155;">|</span>
-        <a href="home-preview.html" class="admin-link" title="Visualizar versão completa em produção">Prévia em Desenvolvimento</a>
+
+      <div class="footer-contacts-list">
+        <span>📍 Porto Ferreira - SP</span>
+        <span class="contact-sep">•</span>
+        <a href="https://api.whatsapp.com/send?phone=5519998418000" target="_blank" rel="noopener noreferrer">
+          📱 WhatsApp: <strong>(19) 99841-8000</strong>
+        </a>
+        <span class="contact-sep">•</span>
+        <a href="tel:551935812200">
+          📞 Fone: (19) 3581-2200
+        </a>
+        <span class="contact-sep">•</span>
+        <a href="mailto:comercial@baytaka.com.br">
+          ✉️ comercial@baytaka.com.br
+        </a>
+        <span class="contact-sep">•</span>
+        <a href="https://www.instagram.com/baytaka.interiores/" target="_blank" rel="noopener noreferrer">
+          📸 @baytaka.interiores
+        </a>
+      </div>
+
+      <div class="admin-bar">
+        <a href="admin.html" class="admin-link">Painel da Equipe</a>
+        <span class="admin-bar-sep">|</span>
+        <a href="home-preview.html" class="admin-link">Prévia em Desenvolvimento</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    function handleQuickLead(event) {
-      event.preventDefault();
-      var name = document.getElementById('leadName').value.trim();
-      var city = document.getElementById('leadCity').value.trim();
-      
-      var text = "Olá, meu nome é " + name + (city ? " (" + city + ")" : "") + ". Gostaria de receber o catálogo em PDF da Baytaka Interiores enquanto o novo site é finalizado.";
-      var url = "https://api.whatsapp.com/send?phone=5519998418000&text=" + encodeURIComponent(text);
-      window.open(url, '_blank');
-    }
-  </script>
 
 </body>
 </html>
