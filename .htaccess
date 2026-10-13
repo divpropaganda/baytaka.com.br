@@ -1,0 +1,18 @@
+DirectoryIndex index.html index.htm
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirecionamento amigável para o domínio secundário/temporário da Locaweb (uni5.net)
+RewriteCond %{HTTP_HOST} uni5\.net$ [NC]
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^$ /www/ [R=302,L]
+
+# Garantir que requisições no domínio temporário alcancem os arquivos caso venham sem /www/
+RewriteCond %{HTTP_HOST} uni5\.net$ [NC]
+RewriteCond %{REQUEST_URI} !^/www/
+RewriteCond %{DOCUMENT_ROOT}/www/%{REQUEST_URI} -f
+RewriteRule ^(.*)$ /www/$1 [L]
+</IfModule>
+
+Options -Indexes

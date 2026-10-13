@@ -137,6 +137,33 @@ function deploy() {
     }
   }
 
+  // Tentar também espelhar index.html e .htaccess na raiz caso a estratégia tenha sido /www/
+  if (chosenPrefix === 'www') {
+    const mirrorFiles = ['index.html', '.htaccess'];
+    console.log(`\n🔄 Tentando espelhar arquivos vitais (${mirrorFiles.join(', ')}) na raiz para suporte a domínio secundário...`);
+    for (const mf of mirrorFiles) {
+      const localMf = path.join(rootDir, mf);
+      if (!fs.existsSync(localMf)) continue;
+      const rootUrl = `ftp://${host}/${mf}`;
+      const res = spawnSync('curl', [
+        '-sS',
+        '-k',
+        '--disable-epsv',
+        '--ftp-pasv',
+        '--ftp-skip-pasv-ip',
+        '--connect-timeout', '15',
+        '-T', localMf,
+        rootUrl,
+        '-u', `${user}:${pass}`
+      ]);
+      if (res.status === 0) {
+        console.log(`  ✅ Espelhado na raiz: ${mf}`);
+      } else {
+        console.log(`  ℹ️ Raiz protegida para ${mf} (normal em hospedagens com isolamento por /www/)`);
+      }
+    }
+  }
+
   if (fail > 0) {
     console.error(`\n❌ Finalizado com ${fail} erros.`);
     process.exit(1);
@@ -146,6 +173,14 @@ function deploy() {
   console.log(`🎉 SUCESSO TOTAL! Todos os ${success} arquivos publicados com sucesso na Locaweb (${targetLabel}).`);
   console.log(`🌐 O site Baytaka está atualizado e online!`);
   console.log(`====================================================`);
+
+  // Diagnóstico HTTP rápido
+  console.log(`\n🔍 Verificação de acessibilidade HTTP:`);
+  for (const testUrl of [`http://${host}/www/`, `http://${host}/`]) {
+    const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
+    const firstLine = (check.stdout || '').split('\n')[0].trim();
+    console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
+  }
 }
 
 deploy();
