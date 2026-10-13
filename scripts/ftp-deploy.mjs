@@ -32,35 +32,74 @@ function deploy() {
   const rootDir = process.cwd();
   const files = getAllFiles(rootDir);
 
+  console.log(`====================================================`);
+  console.log(`🚀 DEPLOY INTELIGENTE VIA FTP - BAYTAKA`);
+  console.log(`====================================================`);
   console.log(`📦 Encontrados ${files.length} arquivos para publicação.`);
-  console.log(`🔐 Autenticando com usuário ${user} em ${host}...`);
+  console.log(`👤 Usuário: ${user}`);
+  console.log(`🌐 Servidor: ${host}`);
 
-  // Testar envio de index.html
-  const testFile = 'index.html';
-  const testLocal = path.join(rootDir, testFile);
-
-  console.log(`🚀 Tentando publicar ${testFile} no servidor Locaweb...`);
-  const probe = spawnSync('curl', [
-    '-v',
-    '-sS',
-    '--show-error',
-    '-k',
-    '--disable-epsv',
-    '--ftp-pasv',
-    '--ftp-skip-pasv-ip',
-    '--connect-timeout', '20',
-    '-T', testLocal,
-    `ftp://${host}/${testFile}`,
-    '-u', `${user}:${pass}`
-  ], { encoding: 'utf-8' });
-
-  if (probe.status !== 0) {
-    console.error(`\n❌ Falha na escrita: o servidor Locaweb retornou restrição de permissão.`);
-    console.error(probe.stderr || probe.stdout);
+  if (!user || !pass) {
+    console.error('❌ ERRO: Credenciais FTP não configuradas.');
     process.exit(1);
   }
 
-  console.log(`\n🎉 PERMISSÃO DE ESCRITA VALIDADA! Enviando os ${files.length} arquivos...`);
+  const testFile = 'index.html';
+  const testLocal = path.join(rootDir, testFile);
+
+  // Testar primeiro a subpasta /www/ (configurada no painel da Locaweb) e depois a raiz
+  const candidatePrefixes = ['www', ''];
+  let chosenPrefix = null;
+
+  for (const prefix of candidatePrefixes) {
+    const label = prefix ? `/${prefix}/` : 'raiz (/)';
+    console.log(`🔍 Testando permissão de escrita em ${label}...`);
+
+    const remotePath = prefix ? `${prefix}/${testFile}` : testFile;
+    const probe = spawnSync('curl', [
+      '-sS',
+      '--show-error',
+      '-k',
+      '--disable-epsv',
+      '--ftp-pasv',
+      '--ftp-skip-pasv-ip',
+      '--ftp-create-dirs',
+      '--connect-timeout', '20',
+      '-T', testLocal,
+      `ftp://${host}/${remotePath}`,
+      '-u', `${user}:${pass}`
+    ], { encoding: 'utf-8' });
+
+    if (probe.status === 0) {
+      console.log(`✅ Permissão confirmada em ${label}!`);
+      chosenPrefix = prefix;
+      break;
+    } else {
+      console.log(`⚠️ Falha em ${label}: ${(probe.stderr || probe.stdout || '').trim().slice(0, 80)}`);
+    }
+  }
+
+  if (chosenPrefix === null) {
+    console.error(`\n❌ Nenhuma rota aceitou a gravação. Exibindo diagnóstico detalhado:`);
+    const diag = spawnSync('curl', [
+      '-v',
+      '-sS',
+      '--show-error',
+      '-k',
+      '--disable-epsv',
+      '--ftp-pasv',
+      '--ftp-skip-pasv-ip',
+      '--connect-timeout', '20',
+      '-T', testLocal,
+      `ftp://${host}/www/${testFile}`,
+      '-u', `${user}:${pass}`
+    ], { encoding: 'utf-8' });
+    console.error(diag.stderr || diag.stdout);
+    process.exit(1);
+  }
+
+  const targetLabel = chosenPrefix ? `/${chosenPrefix}/` : 'raiz (/)';
+  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em ${targetLabel}`);
 
   let success = 0;
   let fail = 0;
@@ -68,10 +107,11 @@ function deploy() {
   for (let i = 0; i < files.length; i++) {
     const f = files[i];
     const localPath = path.join(rootDir, f);
-    const remoteUrl = `ftp://${host}/${f}`;
+    const remotePath = chosenPrefix ? `${chosenPrefix}/${f}` : f;
+    const remoteUrl = `ftp://${host}/${remotePath}`;
     const kb = (fs.statSync(localPath).size / 1024).toFixed(1);
 
-    console.log(`[${i + 1}/${files.length}] 📤 ${f} (${kb} KB)...`);
+    process.stdout.write(`[${i + 1}/${files.length}] 📤 ${f} (${kb} KB)... `);
     const res = spawnSync('curl', [
       '-sS',
       '--show-error',
@@ -88,9 +128,11 @@ function deploy() {
     ]);
 
     if (res.status === 0) {
+      console.log('✅ OK');
       success++;
     } else {
-      console.error(`  ❌ Falha: ${f}`);
+      console.log('❌ FALHOU');
+      console.error(`   Detalhe: ${(res.stderr || '').toString().trim()}`);
       fail++;
     }
   }
@@ -100,7 +142,10 @@ function deploy() {
     process.exit(1);
   }
 
-  console.log(`\n🎉 SUCESSO TOTAL! Todos os ${success} arquivos publicados com sucesso na Locaweb.`);
+  console.log(`\n====================================================`);
+  console.log(`🎉 SUCESSO TOTAL! Todos os ${success} arquivos publicados com sucesso na Locaweb (${targetLabel}).`);
+  console.log(`🌐 O site Baytaka está atualizado e online!`);
+  console.log(`====================================================`);
 }
 
 deploy();
