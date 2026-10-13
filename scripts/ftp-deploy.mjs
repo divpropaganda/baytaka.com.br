@@ -25,7 +25,7 @@ function getAllFiles(dir, base = '') {
 }
 
 function deploy() {
-  const host = (process.env.FTP || process.env.FTP_SERVER || 'web15f18.uni5.net').replace(/^ftp:\/\//, '').replace(/\/$/, '').trim();
+  const host = (process.env.FTP || process.env.FTP_SERVER || 'ftp.kinghost.net').replace(/^ftp:\/\//, '').replace(/\/$/, '').trim();
   const user = (process.env.USER || process.env.FTP_USERNAME || '').trim();
   const pass = (process.env.SENHA || process.env.FTP_PASSWORD || '').trim();
 
@@ -33,7 +33,7 @@ function deploy() {
   const files = getAllFiles(rootDir);
 
   console.log(`====================================================`);
-  console.log(`🚀 DEPLOY INTELIGENTE VIA FTP - BAYTAKA`);
+  console.log(`🚀 DEPLOY INTELIGENTE VIA FTP - KINGHOST / PRODUÇÃO`);
   console.log(`====================================================`);
   console.log(`📦 Encontrados ${files.length} arquivos para publicação.`);
   console.log(`👤 Usuário: ${user}`);
@@ -47,8 +47,9 @@ function deploy() {
   const testFile = 'index.html';
   const testLocal = path.join(rootDir, testFile);
 
-  // Priorizar a raiz ('') conforme solicitação, e testar também 'www'
-  const candidatePrefixes = ['', 'www'];
+  // Na KingHost, os arquivos públicos devem ficar na pasta 'www' para abrirem na raiz do domínio sem o /www/ na URL.
+  // Também testamos a raiz caso o usuário FTP já tenha o diretório inicial configurado dentro da pasta pública.
+  const candidatePrefixes = ['www', ''];
   let chosenPrefix = null;
 
   for (const prefix of candidatePrefixes) {
@@ -75,22 +76,20 @@ function deploy() {
       chosenPrefix = prefix;
       break;
     } else {
-      console.log(`⚠️ Falha em ${label}: ${(probe.stderr || probe.stdout || '').trim().slice(0, 80)}`);
+      console.log(`⚠️ Tentativa em ${label}: ${(probe.stderr || probe.stdout || '').trim().slice(0, 80)}`);
     }
   }
 
-  // Se nenhum dos dois aceitou individualmente, usar raiz por padrão
   if (chosenPrefix === null) {
-    chosenPrefix = '';
+    chosenPrefix = 'www';
   }
 
   const targetLabel = chosenPrefix ? `/${chosenPrefix}/` : 'raiz (/)';
-  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos prioritariamente em ${targetLabel}`);
+  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em ${targetLabel}`);
 
   let success = 0;
   let fail = 0;
 
-  // 1. Publicar arquivos no prefixo principal
   for (let i = 0; i < files.length; i++) {
     const f = files[i];
     const localPath = path.join(rootDir, f);
@@ -124,32 +123,42 @@ function deploy() {
     }
   }
 
-  // 2. Garantir sincronização dupla dos arquivos vitais (raiz e www) para que funcione em ambas as rotas
-  const altPrefix = chosenPrefix === '' ? 'www' : '';
-  const altLabel = altPrefix ? `/${altPrefix}/` : 'raiz (/)';
-  const dualSyncFiles = ['index.html', '.htaccess'];
+  // Na KingHost, substituir também qualquer index.htm padrão de boas-vindas da hospedagem
+  console.log(`\n🔄 Sobrescrevendo index.htm padrão da KingHost com a nossa tela de espera...`);
+  const indexHtmRemote = chosenPrefix ? `${chosenPrefix}/index.htm` : 'index.htm';
+  const htmRes = spawnSync('curl', [
+    '-sS',
+    '-k',
+    '--disable-epsv',
+    '--ftp-pasv',
+    '--ftp-skip-pasv-ip',
+    '--connect-timeout', '15',
+    '-T', testLocal,
+    `ftp://${host}/${indexHtmRemote}`,
+    '-u', `${user}:${pass}`
+  ]);
+  if (htmRes.status === 0) {
+    console.log(`  ✅ index.htm atualizado com sucesso!`);
+  } else {
+    console.log(`  ℹ️ index.htm mantido como index.html`);
+  }
 
-  console.log(`\n🔄 Sincronizando arquivos essenciais (${dualSyncFiles.join(', ')}) também em ${altLabel} para redundância total...`);
-  for (const df of dualSyncFiles) {
-    const localDf = path.join(rootDir, df);
-    if (!fs.existsSync(localDf)) continue;
-    const altRemotePath = altPrefix ? `${altPrefix}/${df}` : df;
-    const altUrl = `ftp://${host}/${altRemotePath}`;
-    const res = spawnSync('curl', [
-      '-sS',
-      '-k',
-      '--disable-epsv',
-      '--ftp-pasv',
-      '--ftp-skip-pasv-ip',
-      '--connect-timeout', '15',
-      '-T', localDf,
-      altUrl,
-      '-u', `${user}:${pass}`
-    ]);
-    if (res.status === 0) {
-      console.log(`  ✅ Sincronizado em ${altLabel}: ${df}`);
-    } else {
-      console.log(`  ℹ️ Aviso em ${altLabel} para ${df}`);
+  // Se a publicação foi em www, também enviar uma cópia de index.html e index.htm na raiz por redundância
+  if (chosenPrefix === 'www') {
+    for (const f of ['index.html', 'index.htm', '.htaccess']) {
+      const src = f === 'index.htm' ? testLocal : path.join(rootDir, f);
+      if (!fs.existsSync(src)) continue;
+      spawnSync('curl', [
+        '-sS',
+        '-k',
+        '--disable-epsv',
+        '--ftp-pasv',
+        '--ftp-skip-pasv-ip',
+        '--connect-timeout', '10',
+        '-T', src,
+        `ftp://${host}/${f}`,
+        '-u', `${user}:${pass}`
+      ]);
     }
   }
 
@@ -159,17 +168,9 @@ function deploy() {
   }
 
   console.log(`\n====================================================`);
-  console.log(`🎉 SUCESSO TOTAL! Todos os arquivos publicados com sucesso.`);
-  console.log(`🌐 O site Baytaka está atualizado e online!`);
+  console.log(`🎉 SUCESSO TOTAL! Todos os arquivos publicados no servidor KingHost.`);
+  console.log(`🌐 O site Baytaka está online diretamente na raiz do domínio (sem /www/)!`);
   console.log(`====================================================`);
-
-  // Verificação HTTP
-  console.log(`\n🔍 Verificação de acessibilidade HTTP:`);
-  for (const testUrl of [`http://${host}/`, `http://${host}/www/`]) {
-    const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
-    const firstLine = (check.stdout || '').split('\n')[0].trim();
-    console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
-  }
 }
 
 deploy();
