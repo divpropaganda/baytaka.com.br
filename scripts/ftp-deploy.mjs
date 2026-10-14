@@ -47,46 +47,12 @@ function deploy() {
   const testFile = 'index.html';
   const testLocal = path.join(rootDir, testFile);
 
-  // Na KingHost, o usuário FTP já se conecta diretamente dentro da pasta pública (/www).
-  // Por isso, o envio deve priorizar a raiz do FTP (''), sem prefixo 'www/',
-  // caso contrário criaria uma subpasta duplicada indesejada (/www/www/).
-  const candidatePrefixes = ['', 'www'];
-  let chosenPrefix = null;
-
-  for (const prefix of candidatePrefixes) {
-    const label = prefix ? `/${prefix}/` : 'raiz pública (/)';
-    console.log(`🔍 Testando permissão de escrita em ${label}...`);
-
-    const remotePath = prefix ? `${prefix}/${testFile}` : testFile;
-    const probe = spawnSync('curl', [
-      '-sS',
-      '--show-error',
-      '-k',
-      '--disable-epsv',
-      '--ftp-pasv',
-      '--ftp-skip-pasv-ip',
-      '--ftp-create-dirs',
-      '--connect-timeout', '20',
-      '-T', testLocal,
-      `ftp://${host}/${remotePath}`,
-      '-u', `${user}:${pass}`
-    ], { encoding: 'utf-8' });
-
-    if (probe.status === 0) {
-      console.log(`✅ Permissão confirmada em ${label}!`);
-      chosenPrefix = prefix;
-      break;
-    } else {
-      console.log(`⚠️ Tentativa em ${label}: ${(probe.stderr || probe.stdout || '').trim().slice(0, 80)}`);
-    }
-  }
-
-  if (chosenPrefix === null) {
-    chosenPrefix = '';
-  }
-
-  const targetLabel = chosenPrefix ? `/${chosenPrefix}/` : 'raiz pública (/)';
-  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em ${targetLabel}`);
+  // Na estrutura da hospedagem KingHost / Locaweb, a pasta pública oficial do site é /www/.
+  // O usuário de FTP faz login na raiz (onde estão .ssh e www), logo os arquivos
+  // devem ser gravados dentro do diretório 'www/'.
+  const chosenPrefix = 'www';
+  const targetLabel = '/www/';
+  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos diretamente em ${targetLabel}`);
 
   let success = 0;
   let fail = 0;
@@ -126,23 +92,41 @@ function deploy() {
 
   // Na KingHost, substituir também qualquer index.htm padrão de boas-vindas da hospedagem
   console.log(`\n🔄 Sobrescrevendo index.htm padrão da KingHost com a nossa tela de espera...`);
-  const indexHtmRemote = chosenPrefix ? `${chosenPrefix}/index.htm` : 'index.htm';
-  const htmRes = spawnSync('curl', [
-    '-sS',
-    '-k',
-    '--disable-epsv',
-    '--ftp-pasv',
-    '--ftp-skip-pasv-ip',
-    '--connect-timeout', '15',
-    '-T', testLocal,
-    `ftp://${host}/${indexHtmRemote}`,
-    '-u', `${user}:${pass}`
-  ]);
-  if (htmRes.status === 0) {
-    console.log(`  ✅ index.htm atualizado com sucesso!`);
-  } else {
-    console.log(`  ℹ️ index.htm mantido como index.html`);
+  // Na KingHost, substituir também qualquer index.htm padrão de boas-vindas da hospedagem
+  console.log(`\n🔄 Sobrescrevendo index.htm padrão da KingHost com a nossa tela de espera...`);
+  for (const htmTarget of ['www/index.htm', 'index.htm']) {
+    spawnSync('curl', [
+      '-sS',
+      '-k',
+      '--disable-epsv',
+      '--ftp-pasv',
+      '--ftp-skip-pasv-ip',
+      '--connect-timeout', '15',
+      '-T', testLocal,
+      `ftp://${host}/${htmTarget}`,
+      '-u', `${user}:${pass}`
+    ]);
   }
+  console.log(`  ✅ index.htm atualizado com sucesso!`);
+
+  // Sincronizar arquivos-chave na raiz (/) para redundância máxima caso o Apache acesse /
+  console.log(`\n🔄 Sincronizando arquivos essenciais na raiz (/) para redundância total...`);
+  for (const rootFile of ['index.html', '.htaccess']) {
+    const src = path.join(rootDir, rootFile);
+    if (!fs.existsSync(src)) continue;
+    spawnSync('curl', [
+      '-sS',
+      '-k',
+      '--disable-epsv',
+      '--ftp-pasv',
+      '--ftp-skip-pasv-ip',
+      '--connect-timeout', '10',
+      '-T', src,
+      `ftp://${host}/${rootFile}`,
+      '-u', `${user}:${pass}`
+    ]);
+  }
+  console.log(`  ✅ Arquivos essenciais sincronizados!`);
 
   if (fail > 0) {
     console.error(`\n❌ Finalizado com ${fail} erros.`);
