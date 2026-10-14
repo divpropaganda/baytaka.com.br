@@ -19,16 +19,16 @@
   <style>
     :root {
       --bg-dark: #0a0d14;
-      --border-gold: rgba(212, 175, 55, 0.3);
+      --border-accent: rgba(255, 106, 0, 0.35);
       --border-subtle: rgba(255, 255, 255, 0.08);
-      --gold-primary: #d4af37;
-      --gold-light: #f3e198;
-      --gold-gradient: linear-gradient(135deg, #f3e198 0%, #d4af37 50%, #aa820a 100%);
+      --orange-primary: #ff6a00;
+      --orange-light: #ffa14a;
+      --orange-gradient: linear-gradient(135deg, #ffa14a 0%, #ff6a00 50%, #d44a00 100%);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
-      --accent-green: #22c55e;
-      --shadow-glow: 0 0 60px -10px rgba(212, 175, 55, 0.3);
+      --accent-pulse: #ff6a00;
+      --shadow-glow: 0 0 60px -10px rgba(255, 106, 0, 0.35);
     }
 
     * {
@@ -70,7 +70,7 @@
     .light-orb-1 {
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+      background: radial-gradient(circle, #ff6a00 0%, transparent 70%);
       top: -150px;
       right: -100px;
     }
@@ -81,7 +81,7 @@
       background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
       bottom: -100px;
       left: -100px;
-      opacity: 0.15;
+      opacity: 0.12;
     }
 
     @keyframes floatPulse {
@@ -109,8 +109,8 @@
       height: 110px;
       border-radius: 24px;
       padding: 3px;
-      background: var(--gold-gradient);
-      box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+      background: var(--orange-gradient);
+      box-shadow: 0 12px 35px rgba(255, 106, 0, 0.35);
       margin-bottom: 2rem;
       animation: logoFloat 4s ease-in-out infinite;
       display: flex;
@@ -143,14 +143,14 @@
       align-items: center;
       gap: 0.6rem;
       padding: 0.45rem 1.25rem;
-      background: rgba(212, 175, 55, 0.1);
-      border: 1px solid var(--border-gold);
+      background: rgba(255, 106, 0, 0.1);
+      border: 1px solid var(--border-accent);
       border-radius: 9999px;
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--gold-light);
+      color: var(--orange-light);
       margin-bottom: 1.5rem;
       backdrop-filter: blur(12px);
     }
@@ -158,7 +158,7 @@
     .status-pulse {
       width: 9px;
       height: 9px;
-      background-color: var(--accent-green);
+      background-color: var(--accent-pulse);
       border-radius: 50%;
       position: relative;
     }
@@ -167,7 +167,7 @@
       content: '';
       position: absolute;
       inset: -4px;
-      background-color: var(--accent-green);
+      background-color: var(--accent-pulse);
       border-radius: 50%;
       opacity: 0.75;
       animation: pulsePing 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
@@ -178,7 +178,7 @@
       100% { transform: scale(2.2); opacity: 0; }
     }
 
-    /* Título e Subtítulo Simples */
+    /* Título e Subtítulo Neutro */
     .title-construction {
       font-size: clamp(2.4rem, 6vw, 4rem);
       font-weight: 800;
@@ -188,7 +188,7 @@
     }
 
     .text-gradient {
-      background: var(--gold-gradient);
+      background: var(--orange-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: inline;
@@ -198,32 +198,10 @@
       font-size: clamp(1.25rem, 3vw, 1.75rem);
       color: var(--text-muted);
       font-weight: 500;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    /* Botão WhatsApp Direto */
-    .btn-wa-direct {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.9rem 2rem;
-      background: var(--gold-gradient);
-      color: #0b0d14;
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: 9999px;
-      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .btn-wa-direct:hover {
-      transform: translateY(-2px) scale(1.02);
-      filter: brightness(1.08);
-      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
-    }
-
-    /* Rodapé com todos os contatos */
+    /* Rodapé com contatos neutros */
     footer {
       position: relative;
       z-index: 1;
@@ -265,39 +243,11 @@
     }
 
     .footer-contacts-list a:hover {
-      color: var(--gold-light);
+      color: var(--orange-light);
     }
 
     .contact-sep {
       color: var(--border-subtle);
-    }
-
-    .admin-bar {
-      margin-top: 0.5rem;
-      display: flex;
-      gap: 0.85rem;
-      align-items: center;
-      font-size: 0.775rem;
-    }
-
-    .admin-link {
-      color: #64748b;
-      text-decoration: none;
-      padding: 0.35rem 0.75rem;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: all 0.2s;
-    }
-
-    .admin-link:hover {
-      color: var(--gold-light);
-      background: rgba(255, 255, 255, 0.08);
-      border-color: var(--border-gold);
-    }
-
-    .admin-bar-sep {
-      color: #334155;
     }
   </style>
 </head>
@@ -309,7 +259,7 @@
     <div class="light-orb light-orb-2"></div>
   </div>
 
-  <!-- Conteúdo Principal Simples -->
+  <!-- Conteúdo Principal Neutro -->
   <main class="main-wrapper">
     
     <div class="brand-logo-frame">
@@ -331,18 +281,9 @@
       Volte em breve.
     </p>
 
-    <div>
-      <a href="https://api.whatsapp.com/send?phone=5519998418000&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20atendimento%20da%20Baytaka%20Interiores." target="_blank" rel="noopener noreferrer" class="btn-wa-direct">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.889 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.712 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        <span>Fale Conosco no WhatsApp</span>
-      </a>
-    </div>
-
   </main>
 
-  <!-- Rodapé com todos os contatos da Baytaka -->
+  <!-- Rodapé com contatos institucionais neutros -->
   <footer>
     <div class="footer-container">
       <div class="footer-brand">
@@ -367,12 +308,6 @@
         <a href="https://www.instagram.com/baytaka.interiores/" target="_blank" rel="noopener noreferrer">
           📸 @baytaka.interiores
         </a>
-      </div>
-
-      <div class="admin-bar">
-        <a href="admin.html" class="admin-link">Painel da Equipe</a>
-        <span class="admin-bar-sep">|</span>
-        <a href="home-preview.html" class="admin-link">Prévia em Desenvolvimento</a>
       </div>
     </div>
   </footer>
