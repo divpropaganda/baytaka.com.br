@@ -2,9 +2,9 @@ DirectoryIndex index.html index.htm index.php
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteBase /
 
-# Se a raiz da hospedagem for o nível pai de /www/, reescreve automaticamente para /www/
-RewriteCond %{DOCUMENT_ROOT}/www -d
-RewriteCond %{REQUEST_URI} !^/www/
-RewriteRule ^(.*)$ /www/$1 [L,QSA]
+# Remove /www/ da URL e redireciona de forma limpa para a raiz principal
+RewriteCond %{THE_REQUEST} \s/www/([^\s?]*) [NC]
+RewriteRule ^ /%1 [R=301,L]
 </IfModule>

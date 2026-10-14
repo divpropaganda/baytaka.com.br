@@ -47,54 +47,56 @@ function deploy() {
   const testFile = 'index.html';
   const testLocal = path.join(rootDir, testFile);
 
-  // Na estrutura da hospedagem KingHost / Locaweb, a pasta pública oficial do site é /www/.
-  // O usuário de FTP faz login na raiz (onde estão .ssh e www), logo os arquivos
-  // devem ser gravados dentro do diretório 'www/'.
-  const chosenPrefix = 'www';
-  const targetLabel = '/www/';
-  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos diretamente em ${targetLabel}`);
+  // Estratégia de publicação dupla para sincronização total:
+  // Publica tanto na raiz / quanto na pasta /www/ para garantir que o site funcione
+  // perfeitamente em baytaka.com.br diretamente (sem /www/ na URL).
+  const targetPrefixes = ['', 'www'];
+  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em rota direta (/) e (/www/)`);
 
   let success = 0;
   let fail = 0;
 
-  for (let i = 0; i < files.length; i++) {
-    const f = files[i];
-    const localPath = path.join(rootDir, f);
-    const remotePath = chosenPrefix ? `${chosenPrefix}/${f}` : f;
-    const remoteUrl = `ftp://${host}/${remotePath}`;
-    const kb = (fs.statSync(localPath).size / 1024).toFixed(1);
+  for (const prefix of targetPrefixes) {
+    const label = prefix ? `/${prefix}/` : 'raiz principal (/)';
+    console.log(`\n📦 Sincronizando arquivos em ${label}...`);
 
-    process.stdout.write(`[${i + 1}/${files.length}] 📤 ${f} (${kb} KB)... `);
-    const res = spawnSync('curl', [
-      '-sS',
-      '--show-error',
-      '-k',
-      '--disable-epsv',
-      '--ftp-pasv',
-      '--ftp-skip-pasv-ip',
-      '--ftp-create-dirs',
-      '--retry', '3',
-      '--connect-timeout', '30',
-      '-T', localPath,
-      remoteUrl,
-      '-u', `${user}:${pass}`
-    ]);
+    for (let i = 0; i < files.length; i++) {
+      const f = files[i];
+      const localPath = path.join(rootDir, f);
+      const remotePath = prefix ? `${prefix}/${f}` : f;
+      const remoteUrl = `ftp://${host}/${remotePath}`;
+      const kb = (fs.statSync(localPath).size / 1024).toFixed(1);
 
-    if (res.status === 0) {
-      console.log('✅ OK');
-      success++;
-    } else {
-      console.log('❌ FALHOU');
-      console.error(`   Detalhe: ${(res.stderr || '').toString().trim()}`);
-      fail++;
+      process.stdout.write(`  [${i + 1}/${files.length}] 📤 ${remotePath} (${kb} KB)... `);
+      const res = spawnSync('curl', [
+        '-sS',
+        '--show-error',
+        '-k',
+        '--disable-epsv',
+        '--ftp-pasv',
+        '--ftp-skip-pasv-ip',
+        '--ftp-create-dirs',
+        '--retry', '2',
+        '--connect-timeout', '30',
+        '-T', localPath,
+        remoteUrl,
+        '-u', `${user}:${pass}`
+      ]);
+
+      if (res.status === 0) {
+        console.log('✅ OK');
+        success++;
+      } else {
+        console.log('❌ FALHOU');
+        console.error(`     Detalhe: ${(res.stderr || '').toString().trim()}`);
+        fail++;
+      }
     }
   }
 
-  // Na KingHost, substituir também qualquer index.htm padrão de boas-vindas da hospedagem
+  // Sobrescrever qualquer index.htm padrão de boas-vindas da hospedagem
   console.log(`\n🔄 Sobrescrevendo index.htm padrão da KingHost com a nossa tela de espera...`);
-  // Na KingHost, substituir também qualquer index.htm padrão de boas-vindas da hospedagem
-  console.log(`\n🔄 Sobrescrevendo index.htm padrão da KingHost com a nossa tela de espera...`);
-  for (const htmTarget of ['www/index.htm', 'index.htm']) {
+  for (const htmTarget of ['index.htm', 'www/index.htm']) {
     spawnSync('curl', [
       '-sS',
       '-k',
@@ -108,25 +110,6 @@ function deploy() {
     ]);
   }
   console.log(`  ✅ index.htm atualizado com sucesso!`);
-
-  // Sincronizar arquivos-chave na raiz (/) para redundância máxima caso o Apache acesse /
-  console.log(`\n🔄 Sincronizando arquivos essenciais na raiz (/) para redundância total...`);
-  for (const rootFile of ['index.php', 'index.html', '.htaccess']) {
-    const src = path.join(rootDir, rootFile);
-    if (!fs.existsSync(src)) continue;
-    spawnSync('curl', [
-      '-sS',
-      '-k',
-      '--disable-epsv',
-      '--ftp-pasv',
-      '--ftp-skip-pasv-ip',
-      '--connect-timeout', '10',
-      '-T', src,
-      `ftp://${host}/${rootFile}`,
-      '-u', `${user}:${pass}`
-    ]);
-  }
-  console.log(`  ✅ Arquivos essenciais sincronizados!`);
 
   if (fail > 0) {
     console.error(`\n❌ Finalizado com ${fail} erros.`);
