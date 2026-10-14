@@ -158,13 +158,6 @@ function deploy() {
     const firstLine = (check.stdout || '').split('\n')[0].trim();
     console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
   }
-
-  console.log(`\n🔍 Diagnóstico PHP de DocumentRoot:`);
-  for (const infoUrl of ['http://baytaka.com.br/info.php', 'http://baytaka.com.br/www/info.php']) {
-    const checkInfo = spawnSync('curl', ['-s', '--connect-timeout', '10', infoUrl], { encoding: 'utf-8' });
-    console.log(`--- Resposta de ${infoUrl} ---`);
-    console.log((checkInfo.stdout || '').trim() || 'Sem resposta');
-  }
 }
 
 deploy();
