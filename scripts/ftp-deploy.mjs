@@ -56,7 +56,16 @@ function deploy() {
     '-u', `${user}:${pass}`
   ], { encoding: 'utf-8' });
   console.log(`--- Arquivos na raiz do FTP (/) ---`);
-  console.log((listRoot.stdout || '').trim().split('\n').slice(0, 15).join('\n'));
+  console.log((listRoot.stdout || '').trim().split('\n').join('\n'));
+
+  const listParent = spawnSync('curl', [
+    '-sS', '-k', '--disable-epsv', '--ftp-pasv', '--ftp-skip-pasv-ip',
+    '--connect-timeout', '10',
+    `ftp://${host}/../`,
+    '-u', `${user}:${pass}`
+  ], { encoding: 'utf-8' });
+  console.log(`--- Arquivos no nível superior (/../) ---`);
+  console.log((listParent.stdout || '').trim().split('\n').join('\n'));
 
   const targetPrefixes = ['', 'www'];
   console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em rota direta (/) e (/www/)`);
@@ -142,6 +151,13 @@ function deploy() {
     const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
     const firstLine = (check.stdout || '').split('\n')[0].trim();
     console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
+  }
+
+  console.log(`\n🔍 Diagnóstico PHP de DocumentRoot:`);
+  for (const infoUrl of ['http://baytaka.com.br/info.php', 'http://baytaka.com.br/www/info.php']) {
+    const checkInfo = spawnSync('curl', ['-s', '--connect-timeout', '10', infoUrl], { encoding: 'utf-8' });
+    console.log(`--- Resposta de ${infoUrl} ---`);
+    console.log((checkInfo.stdout || '').trim() || 'Sem resposta');
   }
 }
 
