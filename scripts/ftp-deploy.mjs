@@ -111,7 +111,7 @@ function deploy() {
 
   // Sincronizar arquivos-chave na raiz (/) para redundância máxima caso o Apache acesse /
   console.log(`\n🔄 Sincronizando arquivos essenciais na raiz (/) para redundância total...`);
-  for (const rootFile of ['index.html', '.htaccess']) {
+  for (const rootFile of ['index.php', 'index.html', '.htaccess']) {
     const src = path.join(rootDir, rootFile);
     if (!fs.existsSync(src)) continue;
     spawnSync('curl', [
