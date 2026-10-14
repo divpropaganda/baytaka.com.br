@@ -47,13 +47,14 @@ function deploy() {
   const testFile = 'index.html';
   const testLocal = path.join(rootDir, testFile);
 
-  // Na KingHost, os arquivos públicos devem ficar na pasta 'www' para abrirem na raiz do domínio sem o /www/ na URL.
-  // Também testamos a raiz caso o usuário FTP já tenha o diretório inicial configurado dentro da pasta pública.
-  const candidatePrefixes = ['www', ''];
+  // Na KingHost, o usuário FTP já se conecta diretamente dentro da pasta pública (/www).
+  // Por isso, o envio deve priorizar a raiz do FTP (''), sem prefixo 'www/',
+  // caso contrário criaria uma subpasta duplicada indesejada (/www/www/).
+  const candidatePrefixes = ['', 'www'];
   let chosenPrefix = null;
 
   for (const prefix of candidatePrefixes) {
-    const label = prefix ? `/${prefix}/` : 'raiz (/)';
+    const label = prefix ? `/${prefix}/` : 'raiz pública (/)';
     console.log(`🔍 Testando permissão de escrita em ${label}...`);
 
     const remotePath = prefix ? `${prefix}/${testFile}` : testFile;
@@ -81,10 +82,10 @@ function deploy() {
   }
 
   if (chosenPrefix === null) {
-    chosenPrefix = 'www';
+    chosenPrefix = '';
   }
 
-  const targetLabel = chosenPrefix ? `/${chosenPrefix}/` : 'raiz (/)';
+  const targetLabel = chosenPrefix ? `/${chosenPrefix}/` : 'raiz pública (/)';
   console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em ${targetLabel}`);
 
   let success = 0;
@@ -143,25 +144,6 @@ function deploy() {
     console.log(`  ℹ️ index.htm mantido como index.html`);
   }
 
-  // Se a publicação foi em www, também enviar uma cópia de index.html e index.htm na raiz por redundância
-  if (chosenPrefix === 'www') {
-    for (const f of ['index.html', 'index.htm', '.htaccess']) {
-      const src = f === 'index.htm' ? testLocal : path.join(rootDir, f);
-      if (!fs.existsSync(src)) continue;
-      spawnSync('curl', [
-        '-sS',
-        '-k',
-        '--disable-epsv',
-        '--ftp-pasv',
-        '--ftp-skip-pasv-ip',
-        '--connect-timeout', '10',
-        '-T', src,
-        `ftp://${host}/${f}`,
-        '-u', `${user}:${pass}`
-      ]);
-    }
-  }
-
   if (fail > 0) {
     console.error(`\n❌ Finalizado com ${fail} erros.`);
     process.exit(1);
@@ -169,8 +151,17 @@ function deploy() {
 
   console.log(`\n====================================================`);
   console.log(`🎉 SUCESSO TOTAL! Todos os arquivos publicados no servidor KingHost.`);
-  console.log(`🌐 O site Baytaka está online diretamente na raiz do domínio (sem /www/)!`);
+  console.log(`🌐 O site Baytaka está online diretamente na raiz do domínio!`);
   console.log(`====================================================`);
+
+  // Verificação HTTP do domínio
+  console.log(`\n🔍 Verificação de acessibilidade HTTP:`);
+  for (const testUrl of ['http://baytaka.com.br/', 'http://www.baytaka.com.br/']) {
+    const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
+    const firstLine = (check.stdout || '').split('\n')[0].trim();
+    console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
+  }
 }
 
 deploy();
+
