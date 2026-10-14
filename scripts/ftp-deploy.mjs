@@ -128,6 +128,12 @@ function deploy() {
   }
   console.log(`  ✅ index.htm atualizado com sucesso!`);
 
+  // Executar sincronização direta no servidor para garantir raiz populada
+  console.log(`\n🔄 Disparando sincronizador nativo do servidor (sync.php)...`);
+  const syncRes = spawnSync('curl', ['-s', '--connect-timeout', '30', 'http://baytaka.com.br/www/sync.php'], { encoding: 'utf-8' });
+  console.log(`--- Saída do sync.php ---`);
+  console.log((syncRes.stdout || '').trim());
+
   if (fail > 0) {
     console.error(`\n❌ Finalizado com ${fail} erros.`);
     process.exit(1);
