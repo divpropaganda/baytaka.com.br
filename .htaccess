@@ -1,10 +1,2 @@
 DirectoryIndex index.html index.htm index.php
 
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-
-# Remove /www/ da URL e redireciona de forma limpa para a raiz principal
-RewriteCond %{THE_REQUEST} \s/www/([^\s?]*) [NC]
-RewriteRule ^ /%1 [R=301,L]
-</IfModule>

@@ -47,9 +47,17 @@ function deploy() {
   const testFile = 'index.html';
   const testLocal = path.join(rootDir, testFile);
 
-  // Estratégia de publicação dupla para sincronização total:
-  // Publica tanto na raiz / quanto na pasta /www/ para garantir que o site funcione
-  // perfeitamente em baytaka.com.br diretamente (sem /www/ na URL).
+  // Inspecionar diretórios no FTP
+  console.log(`\n🔍 Inspecionando estrutura de diretórios no FTP...`);
+  const listRoot = spawnSync('curl', [
+    '-sS', '-k', '--disable-epsv', '--ftp-pasv', '--ftp-skip-pasv-ip',
+    '--connect-timeout', '10',
+    `ftp://${host}/`,
+    '-u', `${user}:${pass}`
+  ], { encoding: 'utf-8' });
+  console.log(`--- Arquivos na raiz do FTP (/) ---`);
+  console.log((listRoot.stdout || '').trim().split('\n').slice(0, 15).join('\n'));
+
   const targetPrefixes = ['', 'www'];
   console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em rota direta (/) e (/www/)`);
 
@@ -123,7 +131,14 @@ function deploy() {
 
   // Verificação HTTP do domínio
   console.log(`\n🔍 Verificação de acessibilidade HTTP:`);
-  for (const testUrl of ['http://baytaka.com.br/', 'http://www.baytaka.com.br/']) {
+  const testEndpoints = [
+    'http://baytaka.com.br/',
+    'http://baytaka.com.br/index.html',
+    'http://baytaka.com.br/assets/images/baytaka-logo-raw.jpg',
+    'http://www.baytaka.com.br/',
+    'http://baytaka.com.br/www/index.html'
+  ];
+  for (const testUrl of testEndpoints) {
     const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
     const firstLine = (check.stdout || '').split('\n')[0].trim();
     console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
