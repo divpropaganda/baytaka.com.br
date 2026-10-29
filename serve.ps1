@@ -1,4 +1,4 @@
-$port = 8099
+﻿$port = 5174
 $prefix = "http://localhost:$port/"
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add($prefix)
@@ -50,3 +50,4 @@ try {
 } finally {
     $listener.Stop()
 }
+
