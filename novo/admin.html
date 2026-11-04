@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo | Baytaka Interiores</title>
+  
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/jpeg" href="assets/images/baytaka-logo-raw.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- SIDEBAR -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-brand">
+      <img src="assets/images/baytaka-logo-raw.jpg" alt="Baytaka">
+      <span>Admin</span>
+    </div>
+
+    <ul class="admin-nav">
+      <li class="admin-nav-item">
+        <button type="button" class="active" data-tab="tab-dashboard">
+          <span>📊</span> <span>Dashboard</span>
+        </button>
+      </li>
+      <li class="admin-nav-item">
+        <button type="button" data-tab="tab-leads">
+          <span>👥</span> <span>CRM de Leads</span>
+        </button>
+      </li>
+      <li class="admin-nav-item">
+        <button type="button" data-tab="tab-products">
+          <span>🛋️</span> <span>Produtos</span>
+        </button>
+      </li>
+      <li class="admin-nav-item">
+        <button type="button" data-tab="tab-categories">
+          <span>📁</span> <span>Categorias</span>
+        </button>
+      </li>
+      <li class="admin-nav-item">
+        <button type="button" data-tab="tab-inspirations">
+          <span>✨</span> <span>Inspirações</span>
+        </button>
+      </li>
+      <li class="admin-nav-item">
+        <button type="button" data-tab="tab-cases">
+          <span>🇧🇷</span> <span>Baytaka pelo Brasil</span>
+        </button>
+      </li>
+      <li class="admin-nav-item">
+        <button type="button" data-tab="tab-settings">
+          <span>⚙️</span> <span>Configurações</span>
+        </button>
+      </li>
+      <li class="admin-nav-item" style="margin-top:20px;">
+        <a href="index.html" target="_blank" style="display:flex; align-items:center; gap:12px; padding:12px 14px; color:#94A3B8; font-size:0.9rem; font-weight:600;">
+          <span>🌐</span> <span>Ver Site Oficial</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="admin-sidebar-footer">
+      Baytaka Showroom v1.0<br>Porto Ferreira - SP
+    </div>
+  </aside>
+
+  <!-- ÁREA PRINCIPAL -->
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div>
+        <h1 id="admin-page-title">Visão Geral</h1>
+        <p id="admin-page-sub">Painel de controle do acervo e oportunidades comerciais</p>
+      </div>
+      <div>
+        <a href="index.html" class="by-btn by-btn-secondary" style="padding:10px 18px; font-size:0.85rem;">Ir para o Site</a>
+      </div>
+    </div>
+
+    <!-- TAB 1: DASHBOARD -->
+    <div id="tab-dashboard" class="admin-tab-pane active">
+      <div class="admin-stats-grid">
+        <div class="admin-stat-card">
+          <span>Leads Recebidos</span>
+          <strong id="stat-leads-count">0</strong>
+        </div>
+        <div class="admin-stat-card">
+          <span>Produtos no Acervo</span>
+          <strong id="stat-products-count">0</strong>
+        </div>
+        <div class="admin-stat-card">
+          <span>Categorias Ativas</span>
+          <strong id="stat-categories-count">0</strong>
+        </div>
+        <div class="admin-stat-card">
+          <span>Representantes</span>
+          <strong id="stat-reps-count">0</strong>
+        </div>
+      </div>
+
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Últimos Leads de Catálogo Recebidos</h2>
+          <button type="button" class="by-btn by-btn-primary" style="padding:8px 16px; font-size:0.8rem;" onclick="switchTab('tab-leads')">
+            Ver Todos no CRM
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Nome</th>
+                <th>WhatsApp</th>
+                <th>Cidade / UF</th>
+                <th>Perfil</th>
+                <th>Interesse</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="dash-recent-leads">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: CRM DE LEADS -->
+    <div id="tab-leads" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Oportunidades Comerciais (Solicitações de Catálogo)</h2>
+          <button type="button" class="by-btn by-btn-outline" id="btn-export-leads" style="padding:8px 16px; font-size:0.85rem;">
+            Exportar CSV
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Nome</th>
+                <th>WhatsApp</th>
+                <th>Cidade / UF</th>
+                <th>Segmento</th>
+                <th>Interesse</th>
+                <th>Canal</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="crm-leads-table-body">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: PRODUTOS -->
+    <div id="tab-products" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Gerenciar Peças do Acervo</h2>
+          <button type="button" class="by-btn by-btn-primary" id="btn-add-product" style="padding:8px 16px; font-size:0.85rem;">
+            + Cadastrar Novo Produto
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Nome do Produto</th>
+                <th>Categoria</th>
+                <th>Dimensões</th>
+                <th>Destaque</th>
+                <th>Lançamento</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="products-table-body">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: CATEGORIAS -->
+    <div id="tab-categories" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Categorias de Produtos</h2>
+          <button type="button" class="by-btn by-btn-primary" id="btn-add-category" style="padding:8px 16px; font-size:0.85rem;">
+            + Nova Categoria
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Slug</th>
+                <th>Descrição Curta</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="categories-table-body">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: REPRESENTANTES -->
+    <div id="tab-reps" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Representantes Comerciais</h2>
+          <button type="button" class="by-btn by-btn-primary" id="btn-add-rep" style="padding:8px 16px; font-size:0.85rem;">
+            + Novo Representante
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Estados (UFs)</th>
+                <th>Região Atendida</th>
+                <th>WhatsApp</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="reps-table-body">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: INSPIRAÇÕES -->
+    <div id="tab-inspirations" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Inspirações & Projetos Reais</h2>
+          <button type="button" class="by-btn by-btn-primary" id="btn-add-insp" style="padding:8px 16px; font-size:0.85rem;">
+            + Novo Projeto Editorial
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Título</th>
+                <th>Categoria</th>
+                <th>Decorador / Local</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="insp-table-body">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 7: BAYTAKA PELO BRASIL -->
+    <div id="tab-cases" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Cases por Estado (Baytaka pelo Brasil)</h2>
+          <button type="button" class="by-btn by-btn-primary" id="btn-add-case" style="padding:8px 16px; font-size:0.85rem;">
+            + Novo Case Regional
+          </button>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>UF</th>
+                <th>Cidade</th>
+                <th>Cliente / Locadora</th>
+                <th>Produtos Utilizados</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="cases-table-body">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 8: CONFIGURAÇÕES -->
+    <div id="tab-settings" class="admin-tab-pane">
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h2>Configurações da Empresa & Canais de WhatsApp</h2>
+        </div>
+        <form id="settings-form" class="by-form-flow" style="max-width:700px;">
+          <div class="by-form-grid">
+            <div class="by-field">
+              <label>WhatsApp Varejo & Locadoras (com DDI 55)</label>
+              <input type="text" id="cfg-wa-retail" required placeholder="5519998418000">
+            </div>
+            <div class="by-field">
+              <label>WhatsApp Atacado & Revenda (com DDI 55)</label>
+              <input type="text" id="cfg-wa-wholesale" required placeholder="5519998418002">
+            </div>
+          </div>
+
+          <div class="by-form-grid">
+            <div class="by-field">
+              <label>WhatsApp Pós-Venda / Geral</label>
+              <input type="text" id="cfg-wa-general" required placeholder="5519998418000">
+            </div>
+            <div class="by-field">
+              <label>Telefone Fixo</label>
+              <input type="text" id="cfg-phone" placeholder="(19) 3581-2200">
+            </div>
+          </div>
+
+          <div class="by-form-grid">
+            <div class="by-field">
+              <label>Telefone Fixo</label>
+              <input type="text" id="cfg-phone" placeholder="(19) 3581-2200">
+            </div>
+            <div class="by-field">
+              <label>E-mail Comercial</label>
+              <input type="email" id="cfg-email" placeholder="comercial@baytaka.com.br">
+            </div>
+          </div>
+
+          <div class="by-field">
+            <label>Endereço Fabril</label>
+            <input type="text" id="cfg-address" placeholder="Polo de Decoração e Eventos - Porto Ferreira, SP">
+          </div>
+
+          <div class="by-field">
+            <label>Link do Instagram</label>
+            <input type="url" id="cfg-instagram" placeholder="https://www.instagram.com/baytaka.interiores/">
+          </div>
+
+          <div style="display:flex; gap:16px; margin-top:20px;">
+            <button type="submit" class="by-btn by-btn-primary">Salvar Alterações</button>
+            <button type="button" class="by-btn by-btn-secondary" id="btn-reset-database">Restaurar Dados Padrão</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL GENÉRICO DE CADASTRO/EDIÇÃO -->
+  <div id="admin-modal" class="admin-modal-overlay" style="display:none;">
+    <div class="admin-modal-box">
+      <button type="button" class="by-modal-close" id="admin-modal-close">&times;</button>
+      <h2 id="admin-modal-title" style="font-size:1.4rem; font-weight:800; margin-bottom:20px;">Editar Item</h2>
+      <div id="admin-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data/initial-data.js"></script>
+  <script src="js/store.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Navegação por abas
+      const navButtons = document.querySelectorAll('.admin-nav-item button');
+      const panes = document.querySelectorAll('.admin-tab-pane');
+      const pageTitle = document.getElementById('admin-page-title');
+      const pageSub = document.getElementById('admin-page-sub');
+
+      const tabTitles = {
+        'tab-dashboard': ['Visão Geral', 'Métricas e oportunidades de catálogo'],
+        'tab-leads': ['CRM de Leads', 'Contatos qualificados que solicitaram catálogo'],
+        'tab-products': ['Gestão de Produtos', 'Cadastre e edite peças do acervo'],
+        'tab-categories': ['Categorias', 'Organização das famílias de produtos'],
+        'tab-reps': ['Representantes', 'Mapeamento por estados e cidades do Brasil'],
+        'tab-inspirations': ['Inspirações', 'Projetos reais de decoradores'],
+        'tab-cases': ['Baytaka pelo Brasil', 'Casos de sucesso por estado'],
+        'tab-settings': ['Configurações', 'WhatsApps, telefones e canais oficiais']
+      };
+
+      window.switchTab = (tabId) => {
+        navButtons.forEach(b => {
+          if (b.getAttribute('data-tab') === tabId) b.classList.add('active');
+          else b.classList.remove('active');
+        });
+
+        panes.forEach(p => {
+          if (p.id === tabId) p.classList.add('active');
+          else p.classList.remove('active');
+        });
+
+        if (tabTitles[tabId]) {
+          pageTitle.textContent = tabTitles[tabId][0];
+          pageSub.textContent = tabTitles[tabId][1];
+        }
+
+        renderCurrentTab(tabId);
+      };
+
+      navButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tabId = btn.getAttribute('data-tab');
+          if (tabId) switchTab(tabId);
+        });
+      });
+
+      function renderCurrentTab(tabId) {
+        if (tabId === 'tab-dashboard') renderDashboard();
+        if (tabId === 'tab-leads') renderLeads();
+        if (tabId === 'tab-products') renderProducts();
+        if (tabId === 'tab-categories') renderCategories();
+        if (tabId === 'tab-reps') renderReps();
+        if (tabId === 'tab-inspirations') renderInspirations();
+        if (tabId === 'tab-cases') renderCases();
+        if (tabId === 'tab-settings') renderSettings();
+      }
+
+      // --- DASHBOARD ---
+      function renderDashboard() {
+        const leads = window.baytakaStore.getLeads();
+        const prods = window.baytakaStore.getProducts();
+        const cats = window.baytakaStore.getCategories();
+        const reps = window.baytakaStore.getRepresentatives();
+
+        document.getElementById('stat-leads-count').textContent = leads.length;
+        document.getElementById('stat-products-count').textContent = prods.length;
+        document.getElementById('stat-categories-count').textContent = cats.length;
+        document.getElementById('stat-reps-count').textContent = reps.length;
+
+        const dashTbody = document.getElementById('dash-recent-leads');
+        dashTbody.innerHTML = leads.slice(0, 5).map(l => `
+          <tr>
+            <td>${new Date(l.date).toLocaleDateString('pt-BR')}</td>
+            <td><strong>${l.name}</strong></td>
+            <td>${l.whatsapp}</td>
+            <td>${l.city} / ${l.state}</td>
+            <td>${l.segment}</td>
+            <td>${l.categoryInterest}</td>
+            <td><span class="admin-status-badge badge-novo">${l.status}</span></td>
+          </tr>
+        `).join('') || '<tr><td colspan="7" style="text-align:center;">Nenhum lead recebido ainda.</td></tr>';
+      }
+
+      // --- LEADS CRM ---
+      function renderLeads() {
+        const tbody = document.getElementById('crm-leads-table-body');
+        const leads = window.baytakaStore.getLeads();
+
+        tbody.innerHTML = leads.map(l => `
+          <tr>
+            <td>${new Date(l.date).toLocaleDateString('pt-BR')} ${new Date(l.date).toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'})}</td>
+            <td><strong>${l.name}</strong></td>
+            <td>
+              <a href="https://api.whatsapp.com/send?phone=55${l.whatsapp.replace(/\D/g,'')}" target="_blank" style="color:var(--by-orange); font-weight:700;">
+                ${l.whatsapp} 💬
+              </a>
+            </td>
+            <td>${l.city} / ${l.state}</td>
+            <td>${l.segment}</td>
+            <td>${l.categoryInterest}</td>
+            <td>${l.channel}</td>
+            <td>
+              <select onchange="updateLeadStatus('${l.id}', this.value)" style="padding:4px; font-size:0.75rem;">
+                <option value="Novo" ${l.status === 'Novo' ? 'selected' : ''}>Novo</option>
+                <option value="Em Atendimento" ${l.status === 'Em Atendimento' ? 'selected' : ''}>Em Atendimento</option>
+                <option value="Orçamento Enviado" ${l.status === 'Orçamento Enviado' ? 'selected' : ''}>Orçamento Enviado</option>
+                <option value="Concluído" ${l.status === 'Concluído' ? 'selected' : ''}>Concluído</option>
+              </select>
+            </td>
+            <td>
+              <button class="admin-btn-action admin-btn-delete" onclick="deleteLead('${l.id}')">Excluir</button>
+            </td>
+          </tr>
+        `).join('') || '<tr><td colspan="9" style="text-align:center;">Nenhum lead registrado.</td></tr>';
+      }
+
+      window.updateLeadStatus = (id, st) => {
+        window.baytakaStore.updateLeadStatus(id, st);
+      };
+
+      window.deleteLead = (id) => {
+        if (confirm("Deseja realmente remover este lead?")) {
+          window.baytakaStore.deleteLead(id);
+          renderLeads();
+        }
+      };
+
+      document.getElementById('btn-export-leads')?.addEventListener('click', () => {
+        const csv = window.baytakaStore.exportLeadsCSV();
+        if (!csv) { alert("Nenhum lead para exportar."); return; }
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `baytaka_leads_${new Date().toISOString().slice(0,10)}.csv`;
+        a.click();
+      });
+
+      // --- PRODUTOS ---
+      function renderProducts() {
+        const tbody = document.getElementById('products-table-body');
+        const prods = window.baytakaStore.getProducts();
+
+        tbody.innerHTML = prods.map(p => `
+          <tr>
+            <td><img src="${p.image}" class="admin-prod-thumb" alt="${p.name}"></td>
+            <td><strong>${p.name}</strong></td>
+            <td>${p.category}</td>
+            <td>${p.dimensions.split('|')[0] || p.dimensions}</td>
+            <td>${p.featured ? '⭐ Sim' : 'Não'}</td>
+            <td>${p.isNew ? '🔥 Novo' : 'Regular'}</td>
+            <td>
+              <button class="admin-btn-action" onclick="editProduct('${p.id}')">Editar</button>
+              <button class="admin-btn-action admin-btn-delete" onclick="deleteProduct('${p.id}')">Excluir</button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      window.deleteProduct = (id) => {
+        if (confirm("Remover este produto do acervo?")) {
+          window.baytakaStore.deleteProduct(id);
+          renderProducts();
+        }
+      };
+
+      window.editProduct = (id) => {
+        const p = window.baytakaStore.getProductById(id);
+        const categories = window.baytakaStore.getCategories();
+        openAdminModal(`Editar Produto: ${p.name}`, `
+          <form id="form-edit-prod" class="by-form-flow">
+            <div class="by-field">
+              <label>Nome do Produto *</label>
+              <input type="text" id="ep-name" value="${p.name}" required>
+            </div>
+            <div class="by-field">
+              <label>Categoria *</label>
+              <select id="ep-cat" required>
+                ${categories.map(c => `<option value="${c.slug}" ${p.category === c.slug ? 'selected' : ''}>${c.name}</option>`).join('')}
+              </select>
+            </div>
+            <div class="by-field">
+              <label>URL da Imagem *</label>
+              <input type="text" id="ep-image" value="${p.image}" required>
+            </div>
+            <div class="by-field">
+              <label>Dimensões</label>
+              <input type="text" id="ep-dim" value="${p.dimensions}">
+            </div>
+            <div class="by-field">
+              <label>Descrição Curta</label>
+              <textarea id="ep-desc" rows="2">${p.shortDesc}</textarea>
+            </div>
+            <div style="display:flex; gap:20px;">
+              <label><input type="checkbox" id="ep-feat" ${p.featured ? 'checked' : ''}> Destacar na Home</label>
+              <label><input type="checkbox" id="ep-new" ${p.isNew ? 'checked' : ''}> Marcar como Lançamento</label>
+            </div>
+            <button type="submit" class="by-btn by-btn-primary w-full" style="margin-top:14px;">Salvar Peça</button>
+          </form>
+        `);
+
+        document.getElementById('form-edit-prod').onsubmit = (e) => {
+          e.preventDefault();
+          p.name = document.getElementById('ep-name').value;
+          p.category = document.getElementById('ep-cat').value;
+          p.image = document.getElementById('ep-image').value;
+          p.dimensions = document.getElementById('ep-dim').value;
+          p.shortDesc = document.getElementById('ep-desc').value;
+          p.featured = document.getElementById('ep-feat').checked;
+          p.isNew = document.getElementById('ep-new').checked;
+          window.baytakaStore.saveProduct(p);
+          closeAdminModal();
+          renderProducts();
+        };
+      };
+
+      document.getElementById('btn-add-product')?.addEventListener('click', () => {
+        const categories = window.baytakaStore.getCategories();
+        openAdminModal(`Cadastrar Nova Peça no Acervo`, `
+          <form id="form-new-prod" class="by-form-flow">
+            <div class="by-field">
+              <label>Nome do Produto *</label>
+              <input type="text" id="np-name" required placeholder="Ex: Arco Duplo Imperial">
+            </div>
+            <div class="by-field">
+              <label>Categoria *</label>
+              <select id="np-cat" required>
+                ${categories.map(c => `<option value="${c.slug}">${c.name}</option>`).join('')}
+              </select>
+            </div>
+            <div class="by-field">
+              <label>URL ou Caminho da Imagem *</label>
+              <input type="text" id="np-image" required value="assets/images/cat_arcos.jpg">
+            </div>
+            <div class="by-field">
+              <label>Dimensões Técnicas</label>
+              <input type="text" id="np-dim" placeholder="Ex: Altura: 2,40m | Largura: 2,80m">
+            </div>
+            <div class="by-field">
+              <label>Descrição Curta</label>
+              <textarea id="np-desc" rows="2" placeholder="Descreva os pontos fortes para o acervo..."></textarea>
+            </div>
+            <div style="display:flex; gap:20px;">
+              <label><input type="checkbox" id="np-feat" checked> Destacar na Home</label>
+              <label><input type="checkbox" id="np-new" checked> Marcar como Lançamento</label>
+            </div>
+            <button type="submit" class="by-btn by-btn-primary w-full" style="margin-top:14px;">Cadastrar Peça</button>
+          </form>
+        `);
+
+        document.getElementById('form-new-prod').onsubmit = (e) => {
+          e.preventDefault();
+          const newProd = {
+            name: document.getElementById('np-name').value,
+            category: document.getElementById('np-cat').value,
+            image: document.getElementById('np-image').value,
+            dimensions: document.getElementById('np-dim').value,
+            shortDesc: document.getElementById('np-desc').value,
+            fullDesc: document.getElementById('np-desc').value,
+            featured: document.getElementById('np-feat').checked,
+            isNew: document.getElementById('np-new').checked,
+            materials: "Aço carbono estrutural com pintura eletrostática",
+            weightCapacity: "Suporta arranjos florais densos",
+            finishes: ["Dourado Acetinado", "Preto Fosco"]
+          };
+          window.baytakaStore.saveProduct(newProd);
+          closeAdminModal();
+          renderProducts();
+        };
+      });
+
+      // --- CATEGORIAS ---
+      function renderCategories() {
+        const tbody = document.getElementById('categories-table-body');
+        const cats = window.baytakaStore.getCategories();
+        tbody.innerHTML = cats.map(c => `
+          <tr>
+            <td><strong>${c.name}</strong></td>
+            <td><code>${c.slug}</code></td>
+            <td>${c.shortDesc}</td>
+            <td>
+              <a href="categoria.html?cat=${c.slug}" target="_blank" class="admin-btn-action">Ver Página</a>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      // --- REPRESENTANTES ---
+      function renderReps() {
+        const tbody = document.getElementById('reps-table-body');
+        const reps = window.baytakaStore.getRepresentatives();
+        tbody.innerHTML = reps.map(r => `
+          <tr>
+            <td><strong>${r.name}</strong></td>
+            <td>${(r.states || []).join(', ')}</td>
+            <td>${r.regionName}</td>
+            <td>${r.phone}</td>
+            <td>
+              <button class="admin-btn-action admin-btn-delete" onclick="deleteRep('${r.id}')">Excluir</button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      window.deleteRep = (id) => {
+        if (confirm("Remover este representante?")) {
+          window.baytakaStore.deleteRepresentative(id);
+          renderReps();
+        }
+      };
+
+      document.getElementById('btn-add-rep')?.addEventListener('click', () => {
+        openAdminModal(`Cadastrar Novo Representante Comercial`, `
+          <form id="form-new-rep" class="by-form-flow">
+            <div class="by-field">
+              <label>Nome do Representante *</label>
+              <input type="text" id="nrep-name" required placeholder="Ex: João da Silva">
+            </div>
+            <div class="by-field">
+              <label>Estados Atendidos (separados por vírgula) *</label>
+              <input type="text" id="nrep-states" required placeholder="Ex: SP, MG">
+            </div>
+            <div class="by-field">
+              <label>Nome da Região / Cidades de Cobertura *</label>
+              <input type="text" id="nrep-region" required placeholder="Ex: Grande São Paulo e Vale do Paraíba">
+            </div>
+            <div class="by-field">
+              <label>WhatsApp (com DDD e DDI 55) *</label>
+              <input type="text" id="nrep-wa" required placeholder="Ex: 5511999998888">
+            </div>
+            <div class="by-field">
+              <label>Telefone Formatado</label>
+              <input type="text" id="nrep-phone" placeholder="Ex: (11) 99999-8888">
+            </div>
+            <button type="submit" class="by-btn by-btn-primary w-full" style="margin-top:14px;">Cadastrar Representante</button>
+          </form>
+        `);
+
+        document.getElementById('form-new-rep').onsubmit = (e) => {
+          e.preventDefault();
+          const statesArr = document.getElementById('nrep-states').value.split(',').map(s => s.trim().toUpperCase());
+          const newRep = {
+            name: document.getElementById('nrep-name').value,
+            states: statesArr,
+            regionName: document.getElementById('nrep-region').value,
+            whatsapp: document.getElementById('nrep-wa').value.replace(/\D/g, ''),
+            phone: document.getElementById('nrep-phone').value || document.getElementById('nrep-wa').value,
+            active: true
+          };
+          window.baytakaStore.saveRepresentative(newRep);
+          closeAdminModal();
+          renderReps();
+        };
+      });
+
+      // --- INSPIRAÇÕES ---
+      function renderInspirations() {
+        const tbody = document.getElementById('insp-table-body');
+        const items = window.baytakaStore.getInspirations();
+        tbody.innerHTML = items.map(i => `
+          <tr>
+            <td><img src="${i.image}" class="admin-prod-thumb" alt="${i.title}"></td>
+            <td><strong>${i.title}</strong></td>
+            <td>${i.category}</td>
+            <td>${i.decorator} (${i.location})</td>
+            <td>
+              <button class="admin-btn-action admin-btn-delete" onclick="deleteInsp('${i.id}')">Excluir</button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      window.deleteInsp = (id) => {
+        if (confirm("Remover este projeto?")) {
+          window.baytakaStore.deleteInspiration(id);
+          renderInspirations();
+        }
+      };
+
+      // --- BAYTAKA PELO BRASIL ---
+      function renderCases() {
+        const tbody = document.getElementById('cases-table-body');
+        const cases = window.baytakaStore.getBrazilCases();
+        tbody.innerHTML = cases.map(c => `
+          <tr>
+            <td><strong>${c.state}</strong></td>
+            <td>${c.city}</td>
+            <td>${c.client}</td>
+            <td>${c.productUsed}</td>
+            <td>
+              <button class="admin-btn-action admin-btn-delete" onclick="deleteCase('${c.id}')">Excluir</button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      window.deleteCase = (id) => {
+        if (confirm("Remover este case regional?")) {
+          window.baytakaStore.deleteBrazilCase(id);
+          renderCases();
+        }
+      };
+
+      // --- CONFIGURAÇÕES ---
+      function renderSettings() {
+        const cfg = window.baytakaStore.getSettings();
+        document.getElementById('cfg-wa-retail').value = cfg.whatsappRetail || '';
+        document.getElementById('cfg-wa-wholesale').value = cfg.whatsappWholesale || '';
+        document.getElementById('cfg-wa-general').value = cfg.whatsappGeneral || '';
+        document.getElementById('cfg-phone').value = cfg.phone || '';
+        document.getElementById('cfg-email').value = cfg.email || '';
+        document.getElementById('cfg-address').value = cfg.address || '';
+        document.getElementById('cfg-instagram').value = cfg.instagramUrl || '';
+      }
+
+      document.getElementById('settings-form')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const updated = {
+          whatsappRetail: document.getElementById('cfg-wa-retail').value.trim(),
+          whatsappWholesale: document.getElementById('cfg-wa-wholesale').value.trim(),
+          whatsappGeneral: document.getElementById('cfg-wa-general').value.trim(),
+          phone: document.getElementById('cfg-phone').value.trim(),
+          email: document.getElementById('cfg-email').value.trim(),
+          address: document.getElementById('cfg-address').value.trim(),
+          instagramUrl: document.getElementById('cfg-instagram').value.trim()
+        };
+        window.baytakaStore.saveSettings(updated);
+        alert("Configurações salvas com sucesso!");
+      });
+
+      document.getElementById('btn-reset-database')?.addEventListener('click', () => {
+        if (confirm("Atenção: Isso restaurará todos os produtos, representantes e configurações para o padrão original de fábrica. Deseja continuar?")) {
+          window.baytakaStore.resetToDefaults();
+          alert("Banco de dados restaurado com sucesso!");
+          location.reload();
+        }
+      });
+
+      // MODAL HELPER
+      const modal = document.getElementById('admin-modal');
+      const modalTitle = document.getElementById('admin-modal-title');
+      const modalBody = document.getElementById('admin-modal-body');
+      const modalClose = document.getElementById('admin-modal-close');
+
+      function openAdminModal(title, htmlContent) {
+        modalTitle.textContent = title;
+        modalBody.innerHTML = htmlContent;
+        modal.style.display = 'flex';
+      }
+
+      function closeAdminModal() {
+        modal.style.display = 'none';
+      }
+
+      modalClose?.addEventListener('click', closeAdminModal);
+      modal?.addEventListener('click', (e) => {
+        if (e.target === modal) closeAdminModal();
+      });
+
+      // Inicializa a dashboard
+      renderDashboard();
+    });
+  </script>
+</body>
+</html>

@@ -151,7 +151,9 @@ function deploy() {
     'http://baytaka.com.br/index.html',
     'http://baytaka.com.br/assets/images/baytaka-logo-raw.jpg',
     'http://www.baytaka.com.br/',
-    'http://baytaka.com.br/www/index.html'
+    'http://baytaka.com.br/www/index.html',
+    'http://baytaka.com.br/novo/',
+    'http://baytaka.com.br/novo/index.html'
   ];
   for (const testUrl of testEndpoints) {
     const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
@@ -161,4 +163,5 @@ function deploy() {
 }
 
 deploy();
+
 
