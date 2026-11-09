@@ -1,8 +1,11 @@
 <?php
 header('Content-Type: text/plain');
 
-$docRoot = __DIR__;
+$docRoot = '/home/baytaka/www';
+$subWww = '/home/baytaka/www/www';
+
 echo "DocRoot: $docRoot\n";
+echo "SubWww: $subWww\n";
 
 function copyDir($src, $dst) {
     if (!is_dir($src)) return;
@@ -24,7 +27,14 @@ function copyDir($src, $dst) {
     closedir($dir);
 }
 
-// Espelha imagens de produtos e categorias da raiz para /novo instantaneamente no servidor
+// 1. Copia tudo que foi enviado via FTP (/home/baytaka/www/www) para a raiz pública (/home/baytaka/www)
+if (is_dir($subWww)) {
+    echo "Copiando arquivos de $subWww para $docRoot...\n";
+    copyDir($subWww, $docRoot);
+    echo "Copia de /www para raiz concluida com sucesso!\n";
+}
+
+// 2. Espelha imagens de produtos e categorias da raiz para /novo instantaneamente no servidor
 $rootAssets = $docRoot . '/assets/images';
 $novoAssets = $docRoot . '/novo/assets/images';
 if (is_dir($rootAssets)) {

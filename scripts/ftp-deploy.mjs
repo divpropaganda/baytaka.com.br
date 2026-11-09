@@ -57,6 +57,22 @@ function uploadBatch(host, user, pass, dir, relFiles) {
   return { ok: res.status === 0, stderr: (res.stderr || '').trim() };
 }
 
+function triggerServerSync() {
+  console.log(`\n🔄 Disparando sincronizador nativo do servidor (www/sync.php)...`);
+  for (const syncUrl of [
+    'https://www.baytaka.com.br/www/sync.php',
+    'http://baytaka.com.br/www/sync.php',
+    'https://www.baytaka.com.br/sync.php'
+  ]) {
+    const syncRes = spawnSync('curl', ['-sL', '--connect-timeout', '30', syncUrl], { encoding: 'utf-8' });
+    if (syncRes.stdout && syncRes.stdout.trim()) {
+      console.log(`--- Saída de ${syncUrl} ---`);
+      console.log(syncRes.stdout.trim());
+      break;
+    }
+  }
+}
+
 function deploy() {
   const host = (process.env.FTP || process.env.FTP_SERVER || 'ftp.kinghost.net').replace(/^ftp:\/\//, '').replace(/\/$/, '').trim();
   const user = (process.env.USER || process.env.FTP_USERNAME || '').trim();
@@ -70,7 +86,6 @@ function deploy() {
   const rootDir = process.cwd();
   const files = getAllFiles(rootDir);
 
-  // Agrupa por diretório para envio em lote reutilizando a mesma conexão FTP (10x mais rápido)
   const byDir = new Map();
   for (const f of files) {
     const idx = f.lastIndexOf('/');
@@ -89,13 +104,24 @@ function deploy() {
   console.log(`====================================================`);
   console.log(`🚀 DEPLOY EM LOTE (KEEP-ALIVE) VIA FTP - KINGHOST`);
   console.log(`====================================================`);
-  console.log(`📦 Total de ${files.length} arquivos em ${sortedDirs.length} diretórios.`);
 
   const BATCH_SIZE = 35;
   let totalSent = 0;
   let totalFailed = 0;
 
   for (const dir of sortedDirs) {
+    // Se todas as 383 imagens de produtos já estão em /www/assets/images/produtos, pula reenvio desnecessário
+    if (dir === 'assets/images/produtos' && process.env.FORCE_IMAGES !== '1') {
+      const checkImg = spawnSync('curl', [
+        '-sI', '--connect-timeout', '10',
+        'https://www.baytaka.com.br/www/assets/images/produtos/cutout-p145-arcos-e-portais-portal-versailles-p145.jpg'
+      ], { encoding: 'utf-8' });
+      if ((checkImg.stdout || '').includes('200 OK')) {
+        console.log(`\n⚡ Diretório assets/images/produtos (383 fotos) já presente no servidor! Pulando reenvio FTP e sincronizando via sync.php...`);
+        continue;
+      }
+    }
+
     const dirFiles = byDir.get(dir);
     const label = dir || '(raiz /)';
     console.log(`\n📁 Diretório ${label} (${dirFiles.length} arquivos)...`);
@@ -122,15 +148,7 @@ function deploy() {
     }
   }
 
-  console.log(`\n🔄 Disparando sincronizador nativo do servidor (sync.php)...`);
-  for (const syncUrl of ['https://www.baytaka.com.br/sync.php', 'http://baytaka.com.br/sync.php']) {
-    const syncRes = spawnSync('curl', ['-sL', '--connect-timeout', '30', syncUrl], { encoding: 'utf-8' });
-    if (syncRes.stdout && syncRes.stdout.trim()) {
-      console.log(`--- Saída de ${syncUrl} ---`);
-      console.log(syncRes.stdout.trim());
-      break;
-    }
-  }
+  triggerServerSync();
 
   console.log(`\n====================================================`);
   console.log(`🎉 DEPLOY FINALIZADO: ${totalSent} arquivos enviados, ${totalFailed} falhas.`);
