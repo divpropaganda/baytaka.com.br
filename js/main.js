@@ -38,13 +38,26 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', closeDrawer);
   });
 
+  // Helper para nome formatado da categoria (curto para tags e botões)
+  function formatCategoryShortName(slug) {
+    if (!window.baytakaStore) return slug;
+    const cat = window.baytakaStore.getCategoryBySlug(slug);
+    return cat ? (cat.shortName || cat.name || cat.title) : slug;
+  }
+
+  function formatCategoryFullName(slug) {
+    if (!window.baytakaStore) return slug;
+    const cat = window.baytakaStore.getCategoryBySlug(slug);
+    return cat ? (cat.name || cat.title) : slug;
+  }
+
   // --- RENDERIZAR TODAS AS 14 CATEGORIAS NA HOME ---
   const categoriesContainer = document.getElementById('by-home-categories-grid');
   if (categoriesContainer && window.baytakaStore) {
     const categories = window.baytakaStore.getCategories();
     categoriesContainer.innerHTML = categories.map(cat => {
       const slug = cat.slug || cat.id;
-      const title = cat.name || cat.title;
+      const title = cat.shortName || cat.name || cat.title;
       const sub = cat.shortDesc || cat.subtitle || '';
       return `
       <a href="produtos.html?cat=${slug}" class="by-category-card" data-category-slug="${slug}">
@@ -66,12 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }).join('');
   }
 
-  // Helper global para renderizar card de produto padronizado (sem preços, com variações agrupadas)
+  // Helper global para renderizar card de produto padronizado (sem preços, sem número de página)
   window.renderBaytakaProductCard = function(prod, overrideCatName) {
-    const catLabel = overrideCatName || prod.categoryName || formatCategoryName(prod.category);
+    const catObj = window.baytakaStore ? window.baytakaStore.getCategoryBySlug(prod.category) : null;
+    const catLabel = overrideCatName || (catObj ? (catObj.shortName || catObj.name) : (prod.categoryName || prod.category));
     const vars = Array.isArray(prod.variations) ? prod.variations : [];
     const hasMultiVars = vars.length > 1;
-    const totalPhotos = Array.isArray(prod.images) ? prod.images.length : 1;
+    const totalPhotos = Array.isArray(prod.images) ? prod.images.length : (vars.length > 0 ? vars.length : 1);
+
+    // Evita badge duplicado se for apenas o mesmo código
+    const isDuplicateBadge = prod.badge && (
+      prod.badge.toLowerCase().includes('cód') ||
+      prod.badge.toLowerCase().includes('cod') ||
+      (prod.code && prod.badge.includes(prod.code))
+    );
 
     let specsHtml = '';
     if (hasMultiVars) {
@@ -89,13 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="by-prod-img-box by-open-prod-detail" data-prod-id="${prod.id}" style="cursor:pointer;">
           <img src="${prod.image}" alt="${prod.name}" loading="lazy">
           ${prod.code ? `<span class="by-prod-code-badge">CÓD. ${prod.code}</span>` : ''}
-          ${prod.badge ? `<span class="by-prod-badge by-prod-spec-tag">${prod.badge}</span>` : ''}
-          ${totalPhotos > 1 ? `<span class="by-prod-carousel-indicator" title="Clique para ver o carrossel com todas as medidas">📷 ${totalPhotos} fotos</span>` : ''}
+          ${prod.badge && !isDuplicateBadge ? `<span class="by-prod-badge by-prod-spec-tag">${prod.badge}</span>` : ''}
+          ${totalPhotos > 1 ? `<span class="by-prod-carousel-indicator" title="Clique para ver as fotos e medidas de cada variação">📷 ${totalPhotos} fotos</span>` : ''}
         </div>
         <div class="by-prod-body">
           <div class="by-prod-meta-row">
             <span class="by-prod-category">${catLabel}</span>
-            ${prod.catalogPage ? `<span class="by-prod-page-tag">Pág. ${prod.catalogPage}</span>` : ''}
           </div>
           <h3 class="by-prod-title">${prod.name}</h3>
           <p class="by-prod-desc">${prod.shortDesc || ''}</p>
@@ -209,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- MODAL DETALHE DO PRODUTO COM CARROSSEL DE MEDIDAS E VARIAÇÕES (SEM PREÇO) ---
+  // --- MODAL DETALHE DO PRODUTO COM CARROSSEL ROBUSTO DE MEDIDAS E FOTOS (SEM PREÇO, SEM PÁGINA) ---
   function openProductDetailModal(productId) {
     const product = window.baytakaStore.getProductById(productId);
     if (!product) return;
@@ -221,9 +241,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let modal = document.getElementById('by-prod-detail-modal');
     if (!modal) {
       const modalHtml = `
-        <div id="by-prod-detail-modal" class="by-modal-overlay" style="display:none;" role="dialog">
+        <div id="by-prod-detail-modal" class="by-modal-overlay" style="display:none;" role="dialog" aria-modal="true">
           <div class="by-modal-box by-product-modal-box">
-            <button type="button" class="by-modal-close" id="by-close-prod-modal">&times;</button>
+            <button type="button" class="by-modal-close" id="by-close-prod-modal" aria-label="Fechar janela">&times;</button>
             <div id="by-prod-detail-content"></div>
           </div>
         </div>
@@ -253,9 +273,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const hasCarousel = rawSlides.length > 1;
     let currentSlideIdx = 0;
 
+    // Remove qualquer menção de página da descrição
+    let cleanFullDesc = (product.fullDesc || product.shortDesc || '')
+      .replace(/\(Págs?\.\s*[\d,\s]+\)\.?\s*/gi, '')
+      .trim();
+
     const contentBox = document.getElementById('by-prod-detail-content');
     contentBox.innerHTML = `
       <div class="by-prod-detail-grid">
+        <!-- Coluna da Esquerda: Galeria e Carrossel Robusto -->
         <div class="by-prod-detail-gallery">
           <div class="by-carousel-stage">
             ${hasCarousel ? `
@@ -266,36 +292,36 @@ document.addEventListener('DOMContentLoaded', () => {
             <img id="by-carousel-main-img" src="${rawSlides[0].url}" alt="${product.name}">
           </div>
 
+          <!-- Legenda da Variação Selecionada -->
           <div class="by-carousel-caption-box" id="by-carousel-caption">
             <div class="by-carousel-cap-top">
-              <strong id="by-carousel-var-label">${rawSlides[0].label || product.name}</strong>
-              ${rawSlides[0].code ? `<span class="by-carousel-var-code" id="by-carousel-var-code">CÓD. ${rawSlides[0].code}</span>` : ''}
+              <span class="by-carousel-var-badge" id="by-carousel-var-label">${rawSlides[0].label || product.name}</span>
+              ${rawSlides[0].code ? `<span class="by-carousel-var-code" id="by-carousel-var-code">CÓD. ${rawSlides[0].code}</span>` : '<span class="by-carousel-var-code" id="by-carousel-var-code" style="display:none;"></span>'}
             </div>
             <div class="by-carousel-cap-dims" id="by-carousel-var-dims">${rawSlides[0].dimensions || product.dimensions || ''}</div>
           </div>
 
+          <!-- Miniaturas Clicáveis (se houver mais de uma foto) -->
           ${hasCarousel ? `
-            <div class="by-carousel-thumbs" id="by-carousel-thumbs">
+            <div class="by-carousel-thumbs-track" id="by-carousel-thumbs">
               ${rawSlides.map((sl, idx) => `
-                <button type="button" class="by-carousel-thumb-btn ${idx === 0 ? 'active' : ''}" data-slide-idx="${idx}">
+                <button type="button" class="by-carousel-thumb-btn ${idx === 0 ? 'active' : ''}" data-slide-idx="${idx}" title="${sl.label || `Opção ${idx + 1}`}">
                   <img src="${sl.url}" alt="${sl.label || ''}">
-                  <span>${sl.label || `Foto ${idx + 1}`}</span>
+                  <span class="by-thumb-label">Opção ${idx + 1}</span>
                 </button>
               `).join('')}
             </div>
           ` : ''}
         </div>
 
+        <!-- Coluna da Direita: Dados, Tabela de Medidas e Ações -->
         <div class="by-prod-detail-info">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; flex-wrap:wrap; gap:8px;">
-            <span class="by-prod-detail-category">${formatCategoryName(product.category)}</span>
-            <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-              ${product.code ? `<span class="by-badge-pill" style="background:#0F172A; color:#FFF; font-size:0.75rem; padding:3px 8px;">CÓD. ${product.code}</span>` : ''}
-              ${product.catalogPage ? `<span class="by-badge-pill" style="background:#F1F5F9; color:#475569; font-size:0.75rem; padding:3px 8px; border-color:#E2E8F0;">Catálogo Pág. ${product.catalogPage}</span>` : ''}
-            </div>
+          <div class="by-prod-detail-header">
+            <span class="by-prod-detail-category">${formatCategoryShortName(product.category)}</span>
+            ${product.code ? `<span class="by-badge-pill" style="background:#0F172A; color:#FFF; font-size:0.75rem; padding:3px 8px;">CÓD. ${product.code}</span>` : ''}
           </div>
           <h2>${product.name}</h2>
-          <p class="by-prod-detail-desc">${product.fullDesc}</p>
+          <p class="by-prod-detail-desc">${cleanFullDesc}</p>
 
           ${vars.length > 0 ? `
             <div class="by-variations-section">
@@ -314,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       const matchingSlide = rawSlides.findIndex(s => s.code === v.code && s.label === v.label);
                       const targetSlide = matchingSlide >= 0 ? matchingSlide : 0;
                       return `
-                        <tr class="by-var-row-clickable" data-slide-idx="${targetSlide}" title="Clique para ver a foto desta medida">
+                        <tr class="by-var-row-clickable ${targetSlide === 0 ? 'active' : ''}" data-slide-idx="${targetSlide}" title="Clique para ver a foto desta medida">
                           <td><strong>${v.label}</strong></td>
                           <td><span class="by-var-code-tag">CÓD. ${v.code}</span></td>
                           <td>${v.dimensions}</td>
@@ -352,12 +378,12 @@ document.addEventListener('DOMContentLoaded', () => {
             </tbody>
           </table>
 
-          <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
             <button type="button" class="by-btn by-btn-primary w-full" data-catalog-trigger data-product-id="${product.id}">
               Quero Este Produto no Meu Acervo
             </button>
-            <a href="produtos.html?cat=${product.category}" class="by-btn by-btn-secondary w-full" style="text-align:center;">
-              Ver Todos da Categoria ${formatCategoryName(product.category)}
+            <a href="produtos.html?cat=${product.category}" class="by-btn by-btn-secondary w-full by-btn-ver-categoria">
+              Ver todos os produtos da categoria
             </a>
           </div>
         </div>
@@ -376,7 +402,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mainImg) mainImg.src = sl.url;
       if (counterEl) counterEl.textContent = `${currentSlideIdx + 1} / ${rawSlides.length}`;
       if (labelEl) labelEl.textContent = sl.label || product.name;
-      if (codeEl) codeEl.textContent = sl.code ? `CÓD. ${sl.code}` : '';
+      if (codeEl) {
+        if (sl.code) {
+          codeEl.textContent = `CÓD. ${sl.code}`;
+          codeEl.style.display = 'inline-block';
+        } else {
+          codeEl.style.display = 'none';
+        }
+      }
       if (dimsEl) dimsEl.textContent = sl.dimensions || product.dimensions || '';
 
       contentBox.querySelectorAll('.by-carousel-thumb-btn').forEach((btn, bIdx) => {
@@ -415,10 +448,4 @@ document.addEventListener('DOMContentLoaded', () => {
       if (prodId) openProductDetailModal(prodId);
     }
   });
-
-  function formatCategoryName(slug) {
-    if (!window.baytakaStore) return slug;
-    const cat = window.baytakaStore.getCategoryBySlug(slug);
-    return cat ? (cat.name || cat.title) : slug;
-  }
 });

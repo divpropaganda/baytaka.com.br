@@ -58,7 +58,7 @@
 
 
 
-  <link rel="stylesheet" href="css/main.css?v=2026.4">
+  <link rel="stylesheet" href="css/main.css?v=2026.5">
 
 
 
@@ -735,61 +735,28 @@
 
 
       <div class="by-products-toolbar">
-
-
-
         <div class="by-search-box">
-
-
-
           <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-
-
-
           <input type="text" id="by-prod-search-input" placeholder="Buscar por nome, material ou acabamento...">
-
-
-
         </div>
-
-
-
-        <div class="by-counter-text" id="by-prod-counter">
-
-
-
-          Exibindo peças selecionadas
-
-
-
+        <div class="by-toolbar-controls">
+          <select id="by-cat-select" class="by-cat-select" aria-label="Filtrar por Categoria">
+            <option value="todos">Todas as Linhas (14 Categorias)</option>
+          </select>
+          <div class="by-counter-text" id="by-prod-counter">
+            Exibindo peças selecionadas
+          </div>
         </div>
-
-
-
       </div>
 
-
-
-
-
-
-
-      <!-- Filtro por Categorias -->
-
-
-
-      <div class="by-cat-pills-bar" id="by-cat-filter-pills">
-
-
-
-        <button type="button" class="by-cat-pill-btn active" data-cat="todos">Todas as Categorias</button>
-
-
-
-        <!-- Categorias injetadas via JS -->
-
-
-
+      <!-- Barra de Categorias Otimizada (1 Linha com Navegação por Setas e Scroll Suave) -->
+      <div class="by-cat-filter-wrapper">
+        <button type="button" class="by-cat-scroll-btn by-cat-scroll-prev" id="by-cat-scroll-prev" aria-label="Rolar categorias para esquerda">&#10094;</button>
+        <div class="by-cat-pills-bar" id="by-cat-filter-pills">
+          <button type="button" class="by-cat-pill-btn active" data-cat="todos">Todas as Peças</button>
+          <!-- Categorias injetadas via JS com títulos enxutos -->
+        </div>
+        <button type="button" class="by-cat-scroll-btn by-cat-scroll-next" id="by-cat-scroll-next" aria-label="Rolar categorias para direita">&#10095;</button>
       </div>
 
 
@@ -1220,11 +1187,11 @@
 
 
 
-  <script src="data/initial-data.js?v=2026.4"></script>
+  <script src="data/initial-data.js?v=2026.5"></script>
 
 
 
-  <script src="js/store.js?v=2026.4"></script>
+  <script src="js/store.js?v=2026.5"></script>
 
 
 
@@ -1232,7 +1199,7 @@
 
 
 
-  <script src="js/catalog-modal.js?v=2026.4"></script>
+  <script src="js/catalog-modal.js?v=2026.5"></script>
 
 
 
@@ -1240,7 +1207,7 @@
 
 
 
-  <script src="js/main.js?v=2026.4"></script>
+  <script src="js/main.js?v=2026.5"></script>
 
 
 
@@ -1249,136 +1216,76 @@
 
 
   <script>
-
-
-
     document.addEventListener('DOMContentLoaded', () => {
-
-
-
       const pillsContainer = document.getElementById('by-cat-filter-pills');
-
-
-
+      const catSelect = document.getElementById('by-cat-select');
+      const prevBtn = document.getElementById('by-cat-scroll-prev');
+      const nextBtn = document.getElementById('by-cat-scroll-next');
       const grid = document.getElementById('by-products-catalogue-grid');
-
-
-
       const searchInput = document.getElementById('by-prod-search-input');
-
-
-
       const counter = document.getElementById('by-prod-counter');
 
-
-
-
-
-
-
       const categories = window.baytakaStore.getCategories();
-
-
-
       let activeCategory = 'todos';
-
-
-
       let searchTerm = '';
 
-
-
-
-
-
-
       // Lê parâmetro ?cat= da URL se houver
-
-
-
       const urlParams = new URLSearchParams(window.location.search);
-
-
-
       const initialCat = urlParams.get('cat');
-
-
-
       if (initialCat) activeCategory = initialCat;
 
-
-
-
-
-
-
-      // Renderiza as pílulas de categorias
-
-
-
+      // Renderiza as pílulas com títulos enxutos e o select dropdown sincronizado
       categories.forEach(cat => {
+        const shortTitle = cat.shortName || cat.name;
 
-
-
+        // Pílula
         const btn = document.createElement('button');
-
-
-
         btn.type = 'button';
-
-
-
         btn.className = `by-cat-pill-btn ${activeCategory === cat.slug ? 'active' : ''}`;
-
-
-
         btn.setAttribute('data-cat', cat.slug);
-
-
-
-        btn.textContent = cat.name;
-
-
-
+        btn.textContent = shortTitle;
+        btn.title = cat.name;
         pillsContainer.appendChild(btn);
 
-
-
+        // Opção no Dropdown
+        if (catSelect) {
+          const opt = document.createElement('option');
+          opt.value = cat.slug;
+          opt.textContent = shortTitle;
+          if (activeCategory === cat.slug) opt.selected = true;
+          catSelect.appendChild(opt);
+        }
       });
 
+      // Navegação por setas na barra horizontal
+      if (prevBtn && nextBtn && pillsContainer) {
+        prevBtn.addEventListener('click', () => {
+          pillsContainer.scrollBy({ left: -240, behavior: 'smooth' });
+        });
+        nextBtn.addEventListener('click', () => {
+          pillsContainer.scrollBy({ left: 240, behavior: 'smooth' });
+        });
+      }
 
-
-
-
-
+      function selectCategory(catSlug) {
+        activeCategory = catSlug;
+        document.querySelectorAll('.by-cat-pill-btn').forEach(b => {
+          const isAct = b.getAttribute('data-cat') === catSlug;
+          b.classList.toggle('active', isAct);
+          if (isAct) {
+            b.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          }
+        });
+        if (catSelect) catSelect.value = catSlug;
+        renderProducts();
+      }
 
       function renderProducts() {
-
-
-
         let prods = window.baytakaStore.getProducts();
 
-
-
-
-
-
-
         if (activeCategory !== 'todos') {
-
-
-
           prods = prods.filter(p => p.category === activeCategory);
-
-
-
         }
-
-
-
-
-
-
 
         if (searchTerm.trim()) {
           const q = searchTerm.toLowerCase();
@@ -1397,7 +1304,7 @@
         }
 
         const totalVariations = prods.reduce((acc, p) => acc + (Array.isArray(p.variations) ? p.variations.length : 1), 0);
-        counter.textContent = `${prods.length} ${prods.length === 1 ? 'peça encontrada' : 'peças encontradas'} (${totalVariations} ${totalVariations === 1 ? 'medida/variação' : 'medidas/variações'})`;
+        counter.textContent = `${prods.length} ${prods.length === 1 ? 'peça encontrada' : 'peças encontradas'} (${totalVariations} ${totalVariations === 1 ? 'medida' : 'medidas/variações'})`;
 
         if (prods.length === 0) {
           grid.innerHTML = `
@@ -1413,116 +1320,33 @@
         grid.innerHTML = prods.map(prod => window.renderBaytakaProductCard ? window.renderBaytakaProductCard(prod) : '').join('');
       }
 
-
-
-
-
-
-
       window.resetFilters = () => {
-
-
-
-        activeCategory = 'todos';
-
-
-
         searchTerm = '';
-
-
-
         searchInput.value = '';
-
-
-
-        document.querySelectorAll('.by-cat-pill-btn').forEach(b => b.classList.remove('active'));
-
-
-
-        document.querySelector('.by-cat-pill-btn[data-cat="todos"]').classList.add('active');
-
-
-
-        renderProducts();
-
-
-
+        selectCategory('todos');
       };
 
-
-
-
-
-
-
       pillsContainer.addEventListener('click', (e) => {
-
-
-
         const btn = e.target.closest('.by-cat-pill-btn');
-
-
-
         if (btn) {
-
-
-
-          document.querySelectorAll('.by-cat-pill-btn').forEach(b => b.classList.remove('active'));
-
-
-
-          btn.classList.add('active');
-
-
-
-          activeCategory = btn.getAttribute('data-cat');
-
-
-
-          renderProducts();
-
-
-
+          const cat = btn.getAttribute('data-cat');
+          selectCategory(cat);
         }
-
-
-
       });
 
-
-
-
-
-
+      if (catSelect) {
+        catSelect.addEventListener('change', (e) => {
+          selectCategory(e.target.value);
+        });
+      }
 
       searchInput.addEventListener('input', (e) => {
-
-
-
         searchTerm = e.target.value;
-
-
-
         renderProducts();
-
-
-
       });
 
-
-
-
-
-
-
       renderProducts();
-
-
-
     });
-
-
-
   </script>
 
 
