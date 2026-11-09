@@ -34,24 +34,27 @@ document.addEventListener('DOMContentLoaded', () => {
   drawerCloseBtn?.addEventListener('click', closeDrawer);
   drawerOverlay?.addEventListener('click', closeDrawer);
 
-  // Fecha menu mobile ao clicar em um link interno
   document.querySelectorAll('.by-drawer-links a').forEach(link => {
     link.addEventListener('click', closeDrawer);
   });
 
-  // --- RENDERIZAR CATEGORIAS NA HOME ---
+  // --- RENDERIZAR TODAS AS 14 CATEGORIAS NA HOME ---
   const categoriesContainer = document.getElementById('by-home-categories-grid');
   if (categoriesContainer && window.baytakaStore) {
     const categories = window.baytakaStore.getCategories();
-    categoriesContainer.innerHTML = categories.map(cat => `
-      <a href="categoria.html?cat=${cat.slug}" class="by-category-card" data-category-slug="${cat.slug}">
+    categoriesContainer.innerHTML = categories.map(cat => {
+      const slug = cat.slug || cat.id;
+      const title = cat.name || cat.title;
+      const sub = cat.shortDesc || cat.subtitle || '';
+      return `
+      <a href="produtos.html?cat=${slug}" class="by-category-card" data-category-slug="${slug}">
         <div class="by-cat-img-wrap">
-          <img src="${cat.image}" alt="${cat.name} - Baytaka Interiores" loading="lazy">
+          <img src="${cat.image}" alt="${title} - Baytaka Interiores" loading="lazy">
         </div>
         <div class="by-cat-info">
           <div>
-            <h3 class="by-cat-title">${cat.name}</h3>
-            <p class="by-cat-sub">${cat.shortDesc}</p>
+            <h3 class="by-cat-title">${title}</h3>
+            <p class="by-cat-sub">${sub}</p>
           </div>
           <div class="by-cat-action">
             <span>Explorar Categoria</span>
@@ -59,32 +62,57 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       </a>
-    `).join('');
+    `;
+    }).join('');
   }
+
+  // Helper global para renderizar card de produto padronizado (sem preços, com variações agrupadas)
+  window.renderBaytakaProductCard = function(prod, overrideCatName) {
+    const catLabel = overrideCatName || prod.categoryName || formatCategoryName(prod.category);
+    const vars = Array.isArray(prod.variations) ? prod.variations : [];
+    const hasMultiVars = vars.length > 1;
+    const totalPhotos = Array.isArray(prod.images) ? prod.images.length : 1;
+
+    let specsHtml = '';
+    if (hasMultiVars) {
+      const previewVars = vars.slice(0, 3).map(v =>
+        `<div class="by-var-mini-row"><span class="by-var-mini-label">${v.label} (Cód. ${v.code}):</span> <span>${v.dimensions}</span></div>`
+      ).join('');
+      const moreCount = vars.length > 3 ? `<div class="by-var-mini-more">+ ${vars.length - 3} outra(s) medida(s) no carrossel</div>` : '';
+      specsHtml = `<div class="by-prod-specs-mini">${previewVars}${moreCount}</div>`;
+    } else if (prod.dimensions) {
+      specsHtml = `<div class="by-prod-specs-mini"><strong>Medidas:</strong> ${prod.dimensions}</div>`;
+    }
+
+    return `
+      <div class="by-product-card" id="prod-card-${prod.id}">
+        <div class="by-prod-img-box by-open-prod-detail" data-prod-id="${prod.id}" style="cursor:pointer;">
+          <img src="${prod.image}" alt="${prod.name}" loading="lazy">
+          ${prod.code ? `<span class="by-prod-code-badge">CÓD. ${prod.code}</span>` : ''}
+          ${prod.badge ? `<span class="by-prod-badge by-prod-spec-tag">${prod.badge}</span>` : ''}
+          ${totalPhotos > 1 ? `<span class="by-prod-carousel-indicator" title="Clique para ver o carrossel com todas as medidas">📷 ${totalPhotos} fotos</span>` : ''}
+        </div>
+        <div class="by-prod-body">
+          <div class="by-prod-meta-row">
+            <span class="by-prod-category">${catLabel}</span>
+            ${prod.catalogPage ? `<span class="by-prod-page-tag">Pág. ${prod.catalogPage}</span>` : ''}
+          </div>
+          <h3 class="by-prod-title">${prod.name}</h3>
+          <p class="by-prod-desc">${prod.shortDesc || ''}</p>
+          ${specsHtml}
+          <button type="button" class="by-btn by-btn-outline w-full by-open-prod-detail" data-prod-id="${prod.id}">
+            ${hasMultiVars ? `Ver Fotos e ${vars.length} Medidas` : 'Conhecer Peça'}
+          </button>
+        </div>
+      </div>
+    `;
+  };
 
   // --- RENDERIZAR PRODUTOS EM DESTAQUE NA HOME ---
   const featuredContainer = document.getElementById('by-home-featured-grid');
   if (featuredContainer && window.baytakaStore) {
     const featuredProds = window.baytakaStore.getFeaturedProducts().slice(0, 8);
-    featuredContainer.innerHTML = featuredProds.map(prod => `
-      <div class="by-product-card" id="prod-card-${prod.id}">
-        <div class="by-prod-img-box">
-          <img src="${prod.image}" alt="${prod.name}" loading="lazy">
-          ${prod.isNew ? '<span class="by-prod-badge new-badge">Lançamento</span>' : '<span class="by-prod-badge">Acervo Pro</span>'}
-        </div>
-        <div class="by-prod-body">
-          <span class="by-prod-category">${formatCategoryName(prod.category)}</span>
-          <h3 class="by-prod-title">${prod.name}</h3>
-          <p class="by-prod-desc">${prod.shortDesc}</p>
-          <div class="by-prod-specs-mini">
-            <strong>Dimensões:</strong> ${prod.dimensions.split('|')[0] || prod.dimensions}
-          </div>
-          <button type="button" class="by-btn by-btn-outline w-full by-open-prod-detail" data-prod-id="${prod.id}">
-            Conhecer Peça
-          </button>
-        </div>
-      </div>
-    `).join('');
+    featuredContainer.innerHTML = featuredProds.map(prod => window.renderBaytakaProductCard(prod)).join('');
   }
 
   // --- RENDERIZAR INSPIRAÇÕES COM FILTROS NA HOME ---
@@ -94,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let allInspirations = window.baytakaStore.getInspirations();
 
     function renderInspirations(filterCategory = 'Todos') {
-      const filtered = filterCategory === 'Todos' 
-        ? allInspirations 
+      const filtered = filterCategory === 'Todos'
+        ? allInspirations
         : allInspirations.filter(i => i.category.toLowerCase() === filterCategory.toLowerCase());
 
       inspContainer.innerHTML = filtered.map(item => `
@@ -109,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3 class="by-insp-title">${item.title}</h3>
             <p class="by-insp-decorator"><strong>Projeto por:</strong> ${item.decorator}</p>
             <p class="by-insp-desc">${item.description}</p>
-            
             ${item.productsUsed && item.productsUsed.length ? `
               <div class="by-insp-prods-box">
                 <span class="by-insp-prods-label">Produtos Baytaka neste projeto:</span>
@@ -146,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cases = window.baytakaStore.getBrazilCases();
 
     function renderCases(selectedState = null) {
-      const filtered = selectedState 
+      const filtered = selectedState
         ? cases.filter(c => c.state.toUpperCase() === selectedState.toUpperCase())
         : cases.slice(0, 4);
 
@@ -167,7 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCases();
 
-    // Interatividade com caminhos SVG do mapa do Brasil
     if (brazilSvgMap) {
       brazilSvgMap.addEventListener('click', (e) => {
         const path = e.target.closest('path');
@@ -183,12 +209,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- MODAL DETALHE DO PRODUTO (QUICK VIEW COM COMPRA CONSULTIVA) ---
+  // --- MODAL DETALHE DO PRODUTO COM CARROSSEL DE MEDIDAS E VARIAÇÕES (SEM PREÇO) ---
   function openProductDetailModal(productId) {
     const product = window.baytakaStore.getProductById(productId);
     if (!product) return;
 
-    window.baytakaTracker.trackProductView(product);
+    if (window.baytakaTracker && window.baytakaTracker.trackProductView) {
+      window.baytakaTracker.trackProductView(product);
+    }
 
     let modal = document.getElementById('by-prod-detail-modal');
     if (!modal) {
@@ -216,34 +244,102 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Monta os slides do carrossel (um slide para cada foto/medida)
+    const rawSlides = Array.isArray(product.images) && product.images.length > 0
+      ? product.images.map(s => typeof s === 'string' ? { url: s, label: product.name, code: product.code, dimensions: product.dimensions } : s)
+      : [{ url: product.image, label: product.name, code: product.code, dimensions: product.dimensions }];
+
+    const vars = Array.isArray(product.variations) ? product.variations : [];
+    const hasCarousel = rawSlides.length > 1;
+    let currentSlideIdx = 0;
+
     const contentBox = document.getElementById('by-prod-detail-content');
     contentBox.innerHTML = `
       <div class="by-prod-detail-grid">
         <div class="by-prod-detail-gallery">
-          <img src="${product.image}" alt="${product.name}">
+          <div class="by-carousel-stage">
+            ${hasCarousel ? `
+              <button type="button" class="by-carousel-nav by-carousel-prev" id="by-carousel-prev-btn" aria-label="Foto anterior">&#10094;</button>
+              <button type="button" class="by-carousel-nav by-carousel-next" id="by-carousel-next-btn" aria-label="Próxima foto">&#10095;</button>
+              <span class="by-carousel-counter" id="by-carousel-counter">1 / ${rawSlides.length}</span>
+            ` : ''}
+            <img id="by-carousel-main-img" src="${rawSlides[0].url}" alt="${product.name}">
+          </div>
+
+          <div class="by-carousel-caption-box" id="by-carousel-caption">
+            <div class="by-carousel-cap-top">
+              <strong id="by-carousel-var-label">${rawSlides[0].label || product.name}</strong>
+              ${rawSlides[0].code ? `<span class="by-carousel-var-code" id="by-carousel-var-code">CÓD. ${rawSlides[0].code}</span>` : ''}
+            </div>
+            <div class="by-carousel-cap-dims" id="by-carousel-var-dims">${rawSlides[0].dimensions || product.dimensions || ''}</div>
+          </div>
+
+          ${hasCarousel ? `
+            <div class="by-carousel-thumbs" id="by-carousel-thumbs">
+              ${rawSlides.map((sl, idx) => `
+                <button type="button" class="by-carousel-thumb-btn ${idx === 0 ? 'active' : ''}" data-slide-idx="${idx}">
+                  <img src="${sl.url}" alt="${sl.label || ''}">
+                  <span>${sl.label || `Foto ${idx + 1}`}</span>
+                </button>
+              `).join('')}
+            </div>
+          ` : ''}
         </div>
+
         <div class="by-prod-detail-info">
-          <span class="by-prod-detail-category">${formatCategoryName(product.category)}</span>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; flex-wrap:wrap; gap:8px;">
+            <span class="by-prod-detail-category">${formatCategoryName(product.category)}</span>
+            <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+              ${product.code ? `<span class="by-badge-pill" style="background:#0F172A; color:#FFF; font-size:0.75rem; padding:3px 8px;">CÓD. ${product.code}</span>` : ''}
+              ${product.catalogPage ? `<span class="by-badge-pill" style="background:#F1F5F9; color:#475569; font-size:0.75rem; padding:3px 8px; border-color:#E2E8F0;">Catálogo Pág. ${product.catalogPage}</span>` : ''}
+            </div>
+          </div>
           <h2>${product.name}</h2>
           <p class="by-prod-detail-desc">${product.fullDesc}</p>
-          
+
+          ${vars.length > 0 ? `
+            <div class="by-variations-section">
+              <h4 class="by-variations-heading">Medidas e Variações Disponíveis (${vars.length})</h4>
+              <div class="by-variations-table-wrap">
+                <table class="by-variations-table">
+                  <thead>
+                    <tr>
+                      <th>Variação / Medida</th>
+                      <th>Código</th>
+                      <th>Dimensões</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${vars.map((v, vIdx) => {
+                      const matchingSlide = rawSlides.findIndex(s => s.code === v.code && s.label === v.label);
+                      const targetSlide = matchingSlide >= 0 ? matchingSlide : 0;
+                      return `
+                        <tr class="by-var-row-clickable" data-slide-idx="${targetSlide}" title="Clique para ver a foto desta medida">
+                          <td><strong>${v.label}</strong></td>
+                          <td><span class="by-var-code-tag">CÓD. ${v.code}</span></td>
+                          <td>${v.dimensions}</td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ` : ''}
+
           <table class="by-prod-specs-table">
             <tbody>
               <tr>
-                <th>Dimensões:</th>
-                <td>${product.dimensions}</td>
-              </tr>
-              <tr>
-                <th>Capacidade:</th>
-                <td>${product.weightCapacity}</td>
-              </tr>
-              <tr>
                 <th>Materiais:</th>
-                <td>${product.materials}</td>
+                <td>${product.materials || 'Aço carbono com pintura eletrostática industrial'}</td>
+              </tr>
+              <tr>
+                <th>Estrutura:</th>
+                <td>${product.capacity || product.weightCapacity || 'Alta resistência e estabilidade'}</td>
               </tr>
               <tr>
                 <th>Aplicações:</th>
-                <td>${product.applications}</td>
+                <td>${product.applications || 'Decoração de eventos, festas e interiores'}</td>
               </tr>
               <tr>
                 <th>Acabamentos:</th>
@@ -260,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <button type="button" class="by-btn by-btn-primary w-full" data-catalog-trigger data-product-id="${product.id}">
               Quero Este Produto no Meu Acervo
             </button>
-            <a href="categoria.html?cat=${product.category}" class="by-btn by-btn-secondary w-full" style="text-align:center;">
+            <a href="produtos.html?cat=${product.category}" class="by-btn by-btn-secondary w-full" style="text-align:center;">
               Ver Todos da Categoria ${formatCategoryName(product.category)}
             </a>
           </div>
@@ -268,13 +364,45 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
+    function setSlide(idx) {
+      currentSlideIdx = (idx + rawSlides.length) % rawSlides.length;
+      const sl = rawSlides[currentSlideIdx];
+      const mainImg = document.getElementById('by-carousel-main-img');
+      const counterEl = document.getElementById('by-carousel-counter');
+      const labelEl = document.getElementById('by-carousel-var-label');
+      const codeEl = document.getElementById('by-carousel-var-code');
+      const dimsEl = document.getElementById('by-carousel-var-dims');
+
+      if (mainImg) mainImg.src = sl.url;
+      if (counterEl) counterEl.textContent = `${currentSlideIdx + 1} / ${rawSlides.length}`;
+      if (labelEl) labelEl.textContent = sl.label || product.name;
+      if (codeEl) codeEl.textContent = sl.code ? `CÓD. ${sl.code}` : '';
+      if (dimsEl) dimsEl.textContent = sl.dimensions || product.dimensions || '';
+
+      contentBox.querySelectorAll('.by-carousel-thumb-btn').forEach((btn, bIdx) => {
+        btn.classList.toggle('active', bIdx === currentSlideIdx);
+      });
+      contentBox.querySelectorAll('.by-var-row-clickable').forEach(row => {
+        const rIdx = parseInt(row.getAttribute('data-slide-idx') || '0', 10);
+        row.classList.toggle('active', rIdx === currentSlideIdx);
+      });
+    }
+
+    document.getElementById('by-carousel-prev-btn')?.addEventListener('click', () => setSlide(currentSlideIdx - 1));
+    document.getElementById('by-carousel-next-btn')?.addEventListener('click', () => setSlide(currentSlideIdx + 1));
+
+    contentBox.querySelectorAll('.by-carousel-thumb-btn, .by-var-row-clickable').forEach(el => {
+      el.addEventListener('click', () => {
+        const idx = parseInt(el.getAttribute('data-slide-idx') || '0', 10);
+        setSlide(idx);
+      });
+    });
+
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
   }
 
-  // Captura cliques para abrir o modal de detalhes do produto
   document.addEventListener('click', (e) => {
-    // Se clicou em solicitar catálogo de dentro do modal de produto, fecha o modal de produto
     const prodModal = document.getElementById('by-prod-detail-modal');
     if (prodModal && prodModal.style.display === 'flex' && e.target.closest('[data-catalog-trigger]')) {
       prodModal.style.display = 'none';
@@ -288,10 +416,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Helper de nome de categoria formatado
   function formatCategoryName(slug) {
     if (!window.baytakaStore) return slug;
     const cat = window.baytakaStore.getCategoryBySlug(slug);
-    return cat ? cat.name : slug;
+    return cat ? (cat.name || cat.title) : slug;
   }
 });
