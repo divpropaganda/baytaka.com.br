@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: deploy-ftp-production
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: 🚀 Deploy to Production FTP
@@ -20,10 +24,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 📡 Deploy via FTP (Script Inteligente)
+      - name: 📡 Deploy via FTP (Script Inteligente Paralelo)
         run: node scripts/ftp-deploy.mjs
         env:
           FTP: ${{ secrets.FTP }}
           USER: ${{ secrets.USER }}
           SENHA: ${{ secrets.SENHA }}
-  

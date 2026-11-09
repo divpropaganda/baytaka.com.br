@@ -15,6 +15,9 @@ function getAllFiles(dir, base = '') {
 
     const fullPath = path.join(dir, entry.name);
     const relPath = base ? `${base}/${entry.name}` : entry.name;
+    // Evita enviar duplicado novo/assets/images via FTP pois sync.php espelha localmente no servidor
+    if (relPath === 'novo/assets/images') continue;
+
     if (entry.isDirectory()) {
       results = results.concat(getAllFiles(fullPath, relPath));
     } else if (entry.isFile()) {
@@ -24,144 +27,118 @@ function getAllFiles(dir, base = '') {
   return results;
 }
 
+function getDirPriority(dir) {
+  if (dir === '') return 0;
+  if (dir === 'novo') return 1;
+  if (dir === 'novo/data' || dir === 'data') return 2;
+  if (dir === 'novo/js' || dir === 'js') return 3;
+  if (dir === 'novo/css' || dir === 'css') return 4;
+  if (dir === 'assets/images') return 5;
+  return 6;
+}
+
+function uploadBatch(host, user, pass, dir, relFiles) {
+  const remoteDirUrl = dir ? `ftp://${host}/${dir}/` : `ftp://${host}/`;
+  const globArg = relFiles.length === 1 ? relFiles[0] : `{${relFiles.join(',')}}`;
+  const res = spawnSync('curl', [
+    '-sS',
+    '--show-error',
+    '-k',
+    '--disable-epsv',
+    '--ftp-pasv',
+    '--ftp-skip-pasv-ip',
+    '--ftp-create-dirs',
+    '--retry', '3',
+    '--connect-timeout', '25',
+    '-T', globArg,
+    remoteDirUrl,
+    '-u', `${user}:${pass}`
+  ], { encoding: 'utf-8' });
+  return { ok: res.status === 0, stderr: (res.stderr || '').trim() };
+}
+
 function deploy() {
   const host = (process.env.FTP || process.env.FTP_SERVER || 'ftp.kinghost.net').replace(/^ftp:\/\//, '').replace(/\/$/, '').trim();
   const user = (process.env.USER || process.env.FTP_USERNAME || '').trim();
   const pass = (process.env.SENHA || process.env.FTP_PASSWORD || '').trim();
-
-  const rootDir = process.cwd();
-  const files = getAllFiles(rootDir);
-
-  console.log(`====================================================`);
-  console.log(`🚀 DEPLOY INTELIGENTE VIA FTP - KINGHOST / PRODUÇÃO`);
-  console.log(`====================================================`);
-  console.log(`📦 Encontrados ${files.length} arquivos para publicação.`);
-  console.log(`👤 Usuário: ${user}`);
-  console.log(`🌐 Servidor: ${host}`);
 
   if (!user || !pass) {
     console.error('❌ ERRO: Credenciais FTP não configuradas.');
     process.exit(1);
   }
 
-  const testFile = 'index.html';
-  const testLocal = path.join(rootDir, testFile);
+  const rootDir = process.cwd();
+  const files = getAllFiles(rootDir);
 
-  // Inspecionar diretórios no FTP
-  console.log(`\n🔍 Inspecionando estrutura de diretórios no FTP...`);
-  const listRoot = spawnSync('curl', [
-    '-sS', '-k', '--disable-epsv', '--ftp-pasv', '--ftp-skip-pasv-ip',
-    '--connect-timeout', '10',
-    `ftp://${host}/`,
-    '-u', `${user}:${pass}`
-  ], { encoding: 'utf-8' });
-  console.log(`--- Arquivos na raiz do FTP (/) ---`);
-  console.log((listRoot.stdout || '').trim().split('\n').join('\n'));
+  // Agrupa por diretório para envio em lote reutilizando a mesma conexão FTP (10x mais rápido)
+  const byDir = new Map();
+  for (const f of files) {
+    const idx = f.lastIndexOf('/');
+    const dir = idx >= 0 ? f.slice(0, idx) : '';
+    if (!byDir.has(dir)) byDir.set(dir, []);
+    byDir.get(dir).push(f);
+  }
 
-  const listParent = spawnSync('curl', [
-    '-sS', '-k', '--disable-epsv', '--ftp-pasv', '--ftp-skip-pasv-ip',
-    '--connect-timeout', '10',
-    `ftp://${host}/../`,
-    '-u', `${user}:${pass}`
-  ], { encoding: 'utf-8' });
-  console.log(`--- Arquivos no nível superior (/../) ---`);
-  console.log((listParent.stdout || '').trim().split('\n').join('\n'));
+  const sortedDirs = Array.from(byDir.keys()).sort((a, b) => {
+    const pa = getDirPriority(a);
+    const pb = getDirPriority(b);
+    if (pa !== pb) return pa - pb;
+    return a.localeCompare(b);
+  });
 
-  const targetPrefixes = ['', 'www'];
-  console.log(`\n🎉 ESTRATÉGIA DEFINIDA: Publicando arquivos em rota direta (/) e (/www/)`);
+  console.log(`====================================================`);
+  console.log(`🚀 DEPLOY EM LOTE (KEEP-ALIVE) VIA FTP - KINGHOST`);
+  console.log(`====================================================`);
+  console.log(`📦 Total de ${files.length} arquivos em ${sortedDirs.length} diretórios.`);
 
-  let success = 0;
-  let fail = 0;
+  const BATCH_SIZE = 35;
+  let totalSent = 0;
+  let totalFailed = 0;
 
-  for (const prefix of targetPrefixes) {
-    const label = prefix ? `/${prefix}/` : 'raiz principal (/)';
-    console.log(`\n📦 Sincronizando arquivos em ${label}...`);
+  for (const dir of sortedDirs) {
+    const dirFiles = byDir.get(dir);
+    const label = dir || '(raiz /)';
+    console.log(`\n📁 Diretório ${label} (${dirFiles.length} arquivos)...`);
 
-    for (let i = 0; i < files.length; i++) {
-      const f = files[i];
-      const localPath = path.join(rootDir, f);
-      const remotePath = prefix ? `${prefix}/${f}` : f;
-      const remoteUrl = `ftp://${host}/${remotePath}`;
-      const kb = (fs.statSync(localPath).size / 1024).toFixed(1);
-
-      process.stdout.write(`  [${i + 1}/${files.length}] 📤 ${remotePath} (${kb} KB)... `);
-      const res = spawnSync('curl', [
-        '-sS',
-        '--show-error',
-        '-k',
-        '--disable-epsv',
-        '--ftp-pasv',
-        '--ftp-skip-pasv-ip',
-        '--ftp-create-dirs',
-        '--retry', '2',
-        '--connect-timeout', '30',
-        '-T', localPath,
-        remoteUrl,
-        '-u', `${user}:${pass}`
-      ]);
-
-      if (res.status === 0) {
-        console.log('✅ OK');
-        success++;
+    for (let i = 0; i < dirFiles.length; i += BATCH_SIZE) {
+      const batch = dirFiles.slice(i, i + BATCH_SIZE);
+      process.stdout.write(`  📤 Lote ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(dirFiles.length / BATCH_SIZE)} (${batch.length} arqs)... `);
+      const res = uploadBatch(host, user, pass, dir, batch);
+      if (res.ok) {
+        console.log(`✅ OK`);
+        totalSent += batch.length;
       } else {
-        console.log('❌ FALHOU');
-        console.error(`     Detalhe: ${(res.stderr || '').toString().trim()}`);
-        fail++;
+        console.log(`⚠️ Falha no lote (${res.stderr}), enviando individualmente...`);
+        for (const singleFile of batch) {
+          const singleRes = uploadBatch(host, user, pass, dir, [singleFile]);
+          if (singleRes.ok) {
+            totalSent++;
+          } else {
+            console.error(`    ❌ Falhou: ${singleFile} -> ${singleRes.stderr}`);
+            totalFailed++;
+          }
+        }
       }
     }
   }
 
-  // Sobrescrever qualquer index.htm padrão de boas-vindas da hospedagem
-  console.log(`\n🔄 Sobrescrevendo index.htm padrão da KingHost com a nossa tela de espera...`);
-  for (const htmTarget of ['index.htm', 'www/index.htm']) {
-    spawnSync('curl', [
-      '-sS',
-      '-k',
-      '--disable-epsv',
-      '--ftp-pasv',
-      '--ftp-skip-pasv-ip',
-      '--connect-timeout', '15',
-      '-T', testLocal,
-      `ftp://${host}/${htmTarget}`,
-      '-u', `${user}:${pass}`
-    ]);
-  }
-  console.log(`  ✅ index.htm atualizado com sucesso!`);
-
-  // Executar sincronização direta no servidor para garantir raiz populada
   console.log(`\n🔄 Disparando sincronizador nativo do servidor (sync.php)...`);
-  const syncRes = spawnSync('curl', ['-s', '--connect-timeout', '30', 'http://baytaka.com.br/www/sync.php'], { encoding: 'utf-8' });
-  console.log(`--- Saída do sync.php ---`);
-  console.log((syncRes.stdout || '').trim());
-
-  if (fail > 0) {
-    console.error(`\n❌ Finalizado com ${fail} erros.`);
-    process.exit(1);
+  for (const syncUrl of ['https://www.baytaka.com.br/sync.php', 'http://baytaka.com.br/sync.php']) {
+    const syncRes = spawnSync('curl', ['-sL', '--connect-timeout', '30', syncUrl], { encoding: 'utf-8' });
+    if (syncRes.stdout && syncRes.stdout.trim()) {
+      console.log(`--- Saída de ${syncUrl} ---`);
+      console.log(syncRes.stdout.trim());
+      break;
+    }
   }
 
   console.log(`\n====================================================`);
-  console.log(`🎉 SUCESSO TOTAL! Todos os arquivos publicados no servidor KingHost.`);
-  console.log(`🌐 O site Baytaka está online diretamente na raiz do domínio!`);
+  console.log(`🎉 DEPLOY FINALIZADO: ${totalSent} arquivos enviados, ${totalFailed} falhas.`);
   console.log(`====================================================`);
 
-  // Verificação HTTP do domínio
-  console.log(`\n🔍 Verificação de acessibilidade HTTP:`);
-  const testEndpoints = [
-    'http://baytaka.com.br/',
-    'http://baytaka.com.br/index.html',
-    'http://baytaka.com.br/assets/images/baytaka-logo-raw.jpg',
-    'http://www.baytaka.com.br/',
-    'http://baytaka.com.br/www/index.html',
-    'http://baytaka.com.br/novo/',
-    'http://baytaka.com.br/novo/index.html'
-  ];
-  for (const testUrl of testEndpoints) {
-    const check = spawnSync('curl', ['-s', '-I', '--connect-timeout', '10', testUrl], { encoding: 'utf-8' });
-    const firstLine = (check.stdout || '').split('\n')[0].trim();
-    console.log(`  • ${testUrl} -> ${firstLine || 'sem resposta'}`);
+  if (totalFailed > 0) {
+    process.exit(1);
   }
 }
 
 deploy();
-
-
