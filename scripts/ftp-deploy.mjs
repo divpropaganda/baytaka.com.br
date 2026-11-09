@@ -16,7 +16,7 @@ function getAllFiles(dir, base = '') {
     const fullPath = path.join(dir, entry.name);
     const relPath = base ? `${base}/${entry.name}` : entry.name;
     // Evita enviar duplicado novo/assets/images via FTP pois sync.php espelha localmente no servidor
-    if (relPath === 'novo/assets/images') continue;
+    if (relPath.startsWith('novo/assets/images')) continue;
 
     if (entry.isDirectory()) {
       results = results.concat(getAllFiles(fullPath, relPath));

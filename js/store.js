@@ -6,7 +6,7 @@
 
 class BaytakaStore {
   constructor() {
-    this.STORAGE_KEY = 'baytaka_showroom_db_v2026_clean_v3';
+    this.STORAGE_KEY = 'baytaka_showroom_db_v2026_clean_v4';
     this.data = this.init();
   }
 

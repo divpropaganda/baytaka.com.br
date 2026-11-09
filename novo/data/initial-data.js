@@ -10532,6 +10532,88 @@ window.BAYTAKA_INITIAL_DATA = {
       ],
       "page": ""
     }
+  ],
+  "inspirations": [
+    {
+      "id": "insp-1",
+      "title": "Cerimônia Romântica ao Ar Livre sob Pergolado",
+      "category": "Casamentos",
+      "location": "Campinas, SP",
+      "decorator": "Ateliê Cenográfico & Festas",
+      "description": "Composição floral suspensa e tecidos leves integrados ao Pergolado de ferro Baytaka para celebração inesquecível ao pôr do sol.",
+      "image": "assets/images/insp_pergolado_casamento.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-2",
+      "title": "Cenário Instagramável com Banco Gota e Flores",
+      "category": "Festas",
+      "location": "Ribeirão Preto, SP",
+      "decorator": "Studio Renata Abreu Eventos",
+      "description": "O Banco Gota posicionado como ponto focal para fotos dos convidados com arranjos aéreos e iluminação cênica.",
+      "image": "assets/images/insp_banco_gota_festa.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-3",
+      "title": "Altar Monumental com Painéis e Arcos Orgânicos",
+      "category": "Casamentos",
+      "location": "São Paulo, SP",
+      "decorator": "Cenarium Produções & Cenografia",
+      "description": "Painéis e Arcos Baytaka revestidos com arranjos orgânicos de orquídeas e folhagens, criando profundidade visual e imponência.",
+      "image": "assets/images/insp_arcos_casamento.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-4",
+      "title": "Mesa Principal de Doces com Trios e Cilindros",
+      "category": "Festas",
+      "location": "Belo Horizonte, MG",
+      "decorator": "Luciana Mascarenhas Cenografia",
+      "description": "Composição harmoniosa de trios de mesas caneladas e doceiras de ferro com pintura dourada em festa de 15 anos.",
+      "image": "assets/images/insp_mesas_festa.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-5",
+      "title": "Espaço Kids Lúdico com Cadeiras Laço",
+      "category": "Festas",
+      "location": "Curitiba, PR",
+      "decorator": "Mundo Mágico Decorações",
+      "description": "Cadeiras Laço infantis e mesinhas moduladas ambientadas com tema delicado para aniversário infantil.",
+      "image": "assets/images/insp_kids_aniversario.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-6",
+      "title": "Capela de Ferro e Cerimônia Religiosa Clássica",
+      "category": "Cerimônias",
+      "location": "Goiânia, GO",
+      "decorator": "Celebrar Eventos & Cerimonial",
+      "description": "Estrutura de Capela decorada com velas e flores brancas, criando uma atmosfera sacra e acolhedora para celebrações solenes.",
+      "image": "assets/images/insp_capela_cerimonia.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-7",
+      "title": "Árvore Francesa Monumental na Pista de Gala",
+      "category": "Formaturas",
+      "location": "Porto Alegre, RS",
+      "decorator": "Grand Gala Formaturas",
+      "description": "Árvore estrutural com micro lâmpadas e lustre de ferro suspenso no centro da recepção de gala.",
+      "image": "assets/images/insp_arvore_gala.jpg",
+      "productsUsed": []
+    },
+    {
+      "id": "insp-8",
+      "title": "Lounge VIP e Estantes Modulares de Interiores",
+      "category": "Festas",
+      "location": "Rio de Janeiro, RJ",
+      "decorator": "Design Corporativo Brasil",
+      "description": "Estantes de ferro e prateleiras ambientadas com paisagismo e peças de design em convenção empresarial e evento de encerramento.",
+      "image": "assets/images/insp_prateleira_lounge.jpg",
+      "productsUsed": []
+    }
   ]
 };
 var BAYTAKA_INITIAL_DATA = window.BAYTAKA_INITIAL_DATA;

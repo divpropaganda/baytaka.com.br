@@ -4881,31 +4881,30 @@ button, input, select, textarea {
   display: flex !important;
 }
 
-/* Bloco Laranja da Home (Tudo para ampliar o seu acervo): Fotos com margem de respiro para NUNCA cortar */
+/* Bloco Laranja da Home (Tudo para ampliar o seu acervo): Fotos ambientadas de eventos reais */
 .by-cat-img-wrap {
   position: relative !important;
   width: 100% !important;
-  height: 230px !important;
-  background-color: #FFFFFF !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 20px !important;
-  box-sizing: border-box !important;
+  height: 220px !important;
+  padding: 0 !important;
+  background-color: #0F172A !important;
+  display: block !important;
   overflow: hidden !important;
+  border-top-left-radius: var(--by-radius-sm) !important;
+  border-top-right-radius: var(--by-radius-sm) !important;
+  box-sizing: border-box !important;
 }
 
 .by-cat-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 0 auto !important;
-  transition: transform 0.3s ease !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transition: transform 0.4s ease !important;
 }
 
 .by-category-card:hover .by-cat-img-wrap img {
-  transform: scale(1.04) !important;
+  transform: scale(1.06) !important;
 }
