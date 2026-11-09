@@ -45,20 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     return cat ? (cat.shortName || cat.name || cat.title) : slug;
   }
 
-  function formatCategoryFullName(slug) {
-    if (!window.baytakaStore) return slug;
-    const cat = window.baytakaStore.getCategoryBySlug(slug);
-    return cat ? (cat.name || cat.title) : slug;
-  }
-
-  // --- RENDERIZAR TODAS AS 14 CATEGORIAS NA HOME ---
+  // --- RENDERIZAR TODAS AS 14 CATEGORIAS NO BLOCO LARANJA DA HOME (APENAS NOME E IMAGEM GENÉRICA, SEM CITAR PÁGINAS) ---
   const categoriesContainer = document.getElementById('by-home-categories-grid');
   if (categoriesContainer && window.baytakaStore) {
     const categories = window.baytakaStore.getCategories();
     categoriesContainer.innerHTML = categories.map(cat => {
       const slug = cat.slug || cat.id;
       const title = cat.shortName || cat.name || cat.title;
-      const sub = cat.shortDesc || cat.subtitle || '';
       return `
       <a href="produtos.html?cat=${slug}" class="by-category-card" data-category-slug="${slug}">
         <div class="by-cat-img-wrap">
@@ -67,10 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="by-cat-info">
           <div>
             <h3 class="by-cat-title">${title}</h3>
-            <p class="by-cat-sub">${sub}</p>
           </div>
           <div class="by-cat-action">
-            <span>Explorar Categoria</span>
+            <span>Ver Produtos</span>
             <span>→</span>
           </div>
         </div>
@@ -79,30 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }).join('');
   }
 
-  // Helper global para renderizar card de produto padronizado (sem preços, sem número de página)
+  // Helper global para renderizar card de produto padronizado
+  // (SEM PREÇOS, SEM QUANTIDADE DE FOTOS, SEM QUANTIDADE DE MEDIDAS/MODELOS DISPONÍVEL)
   window.renderBaytakaProductCard = function(prod, overrideCatName) {
     const catObj = window.baytakaStore ? window.baytakaStore.getCategoryBySlug(prod.category) : null;
     const catLabel = overrideCatName || (catObj ? (catObj.shortName || catObj.name) : (prod.categoryName || prod.category));
     const vars = Array.isArray(prod.variations) ? prod.variations : [];
-    const hasMultiVars = vars.length > 1;
-    const totalPhotos = Array.isArray(prod.images) ? prod.images.length : (vars.length > 0 ? vars.length : 1);
-
-    // Evita badge duplicado se for apenas o mesmo código
-    const isDuplicateBadge = prod.badge && (
-      prod.badge.toLowerCase().includes('cód') ||
-      prod.badge.toLowerCase().includes('cod') ||
-      (prod.code && prod.badge.includes(prod.code))
-    );
 
     let specsHtml = '';
-    if (hasMultiVars) {
-      const previewVars = vars.slice(0, 3).map(v =>
-        `<div class="by-var-mini-row"><span class="by-var-mini-label">${v.label} (Cód. ${v.code}):</span> <span>${v.dimensions}</span></div>`
-      ).join('');
-      const moreCount = vars.length > 3 ? `<div class="by-var-mini-more">+ ${vars.length - 3} outra(s) medida(s) no carrossel</div>` : '';
-      specsHtml = `<div class="by-prod-specs-mini">${previewVars}${moreCount}</div>`;
-    } else if (prod.dimensions) {
-      specsHtml = `<div class="by-prod-specs-mini"><strong>Medidas:</strong> ${prod.dimensions}</div>`;
+    if (prod.dimensions) {
+      specsHtml = `<div class="by-prod-specs-mini"><strong>Medidas:</strong> ${prod.dimensions.split('|')[0] || prod.dimensions}</div>`;
     }
 
     return `
@@ -110,8 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="by-prod-img-box by-open-prod-detail" data-prod-id="${prod.id}" style="cursor:pointer;">
           <img src="${prod.image}" alt="${prod.name}" loading="lazy">
           ${prod.code ? `<span class="by-prod-code-badge">CÓD. ${prod.code}</span>` : ''}
-          ${prod.badge && !isDuplicateBadge ? `<span class="by-prod-badge by-prod-spec-tag">${prod.badge}</span>` : ''}
-          ${totalPhotos > 1 ? `<span class="by-prod-carousel-indicator" title="Clique para ver as fotos e medidas de cada variação">📷 ${totalPhotos} fotos</span>` : ''}
         </div>
         <div class="by-prod-body">
           <div class="by-prod-meta-row">
@@ -121,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="by-prod-desc">${prod.shortDesc || ''}</p>
           ${specsHtml}
           <button type="button" class="by-btn by-btn-outline w-full by-open-prod-detail" data-prod-id="${prod.id}">
-            ${hasMultiVars ? `Ver Fotos e ${vars.length} Medidas` : 'Conhecer Peça'}
+            Conhecer Peça
           </button>
         </div>
       </div>
@@ -229,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- MODAL DETALHE DO PRODUTO COM CARROSSEL ROBUSTO DE MEDIDAS E FOTOS (SEM PREÇO, SEM PÁGINA) ---
+  // --- MODAL DETALHE DO PRODUTO (SEM PREÇO, SEM NÚMERO DE PÁGINA) ---
   function openProductDetailModal(productId) {
     const product = window.baytakaStore.getProductById(productId);
     if (!product) return;
@@ -264,7 +240,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Monta os slides do carrossel (um slide para cada foto/medida)
     const rawSlides = Array.isArray(product.images) && product.images.length > 0
       ? product.images.map(s => typeof s === 'string' ? { url: s, label: product.name, code: product.code, dimensions: product.dimensions } : s)
       : [{ url: product.image, label: product.name, code: product.code, dimensions: product.dimensions }];
@@ -273,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hasCarousel = rawSlides.length > 1;
     let currentSlideIdx = 0;
 
-    // Remove qualquer menção de página da descrição
     let cleanFullDesc = (product.fullDesc || product.shortDesc || '')
       .replace(/\(Págs?\.\s*[\d,\s]+\)\.?\s*/gi, '')
       .trim();
@@ -287,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${hasCarousel ? `
               <button type="button" class="by-carousel-nav by-carousel-prev" id="by-carousel-prev-btn" aria-label="Foto anterior">&#10094;</button>
               <button type="button" class="by-carousel-nav by-carousel-next" id="by-carousel-next-btn" aria-label="Próxima foto">&#10095;</button>
-              <span class="by-carousel-counter" id="by-carousel-counter">1 / ${rawSlides.length}</span>
+              <span class="by-carousel-counter" id="by-carousel-counter" style="display:none !important;">1 / ${rawSlides.length}</span>
             ` : ''}
             <img id="by-carousel-main-img" src="${rawSlides[0].url}" alt="${product.name}">
           </div>
@@ -301,13 +275,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="by-carousel-cap-dims" id="by-carousel-var-dims">${rawSlides[0].dimensions || product.dimensions || ''}</div>
           </div>
 
-          <!-- Miniaturas Clicáveis (se houver mais de uma foto) -->
+          <!-- Miniaturas Clicáveis sem scrollbar -->
           ${hasCarousel ? `
             <div class="by-carousel-thumbs-track" id="by-carousel-thumbs">
               ${rawSlides.map((sl, idx) => `
                 <button type="button" class="by-carousel-thumb-btn ${idx === 0 ? 'active' : ''}" data-slide-idx="${idx}" title="${sl.label || `Opção ${idx + 1}`}">
                   <img src="${sl.url}" alt="${sl.label || ''}">
-                  <span class="by-thumb-label">Opção ${idx + 1}</span>
+                  
                 </button>
               `).join('')}
             </div>
@@ -325,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           ${vars.length > 0 ? `
             <div class="by-variations-section">
-              <h4 class="by-variations-heading">Medidas e Variações Disponíveis (${vars.length})</h4>
+              <h4 class="by-variations-heading">Medidas e Variações Disponíveis</h4>
               <div class="by-variations-table-wrap">
                 <table class="by-variations-table">
                   <thead>
@@ -382,9 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <button type="button" class="by-btn by-btn-primary w-full" data-catalog-trigger data-product-id="${product.id}">
               Quero Este Produto no Meu Acervo
             </button>
-            <a href="produtos.html?cat=${product.category}" class="by-btn by-btn-secondary w-full by-btn-ver-categoria">
-              Ver todos os produtos da categoria
-            </a>
+            <a href="produtos.html?cat=${product.category}" class="by-btn by-btn-secondary w-full by-btn-ver-categoria" style="text-align:center; white-space:normal; line-height:1.3; padding:12px 16px;">Ver Todos os Produtos Desta Categoria</a>
           </div>
         </div>
       </div>

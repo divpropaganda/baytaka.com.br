@@ -58,7 +58,7 @@
 
 
 
-  <link rel="stylesheet" href="css/main.css?v=2026.6">
+  <link rel="stylesheet" href="css/main.css?v=2026.8">
 
 
 
@@ -779,6 +779,14 @@
 
       </div>
 
+      <!-- Botão Carregar Mais Peças (Paginação de 16 em 16) -->
+      <div id="by-load-more-container" style="display:none; justify-content:center; align-items:center; margin: 45px 0 25px;">
+        <button type="button" class="by-btn by-btn-secondary by-btn-lg" id="by-load-more-btn" style="min-width: 260px; font-weight: 700; padding: 14px 28px; font-size: 1rem; border-radius: 8px;">
+          Carregar Mais Peças (+16)
+        </button>
+      </div>
+
+
 
 
 
@@ -1187,11 +1195,11 @@
 
 
 
-  <script src="data/initial-data.js?v=2026.6"></script>
+  <script src="data/initial-data.js?v=2026.8"></script>
 
 
 
-  <script src="js/store.js?v=2026.6"></script>
+  <script src="js/store.js?v=2026.8"></script>
 
 
 
@@ -1199,7 +1207,7 @@
 
 
 
-  <script src="js/catalog-modal.js?v=2026.6"></script>
+  <script src="js/catalog-modal.js?v=2026.8"></script>
 
 
 
@@ -1207,7 +1215,7 @@
 
 
 
-  <script src="js/main.js?v=2026.6"></script>
+  <script src="js/main.js?v=2026.8"></script>
 
 
 
@@ -1224,21 +1232,23 @@
       const grid = document.getElementById('by-products-catalogue-grid');
       const searchInput = document.getElementById('by-prod-search-input');
       const counter = document.getElementById('by-prod-counter');
+      const loadMoreContainer = document.getElementById('by-load-more-container');
+      const loadMoreBtn = document.getElementById('by-load-more-btn');
+
+      const PAGE_SIZE = 16;
+      let visibleCount = PAGE_SIZE;
 
       const categories = window.baytakaStore.getCategories();
       let activeCategory = 'todos';
       let searchTerm = '';
 
-      // Lê parâmetro ?cat= da URL se houver
       const urlParams = new URLSearchParams(window.location.search);
       const initialCat = urlParams.get('cat');
       if (initialCat) activeCategory = initialCat;
 
-      // Renderiza as pílulas com títulos enxutos e o select dropdown sincronizado
       categories.forEach(cat => {
         const shortTitle = cat.shortName || cat.name;
 
-        // Pílula
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = `by-cat-pill-btn ${activeCategory === cat.slug ? 'active' : ''}`;
@@ -1247,7 +1257,6 @@
         btn.title = cat.name;
         pillsContainer.appendChild(btn);
 
-        // Opção no Dropdown
         if (catSelect) {
           const opt = document.createElement('option');
           opt.value = cat.slug;
@@ -1257,7 +1266,6 @@
         }
       });
 
-      // Navegação por setas na barra horizontal
       if (prevBtn && nextBtn && pillsContainer) {
         prevBtn.addEventListener('click', () => {
           pillsContainer.scrollBy({ left: -240, behavior: 'smooth' });
@@ -1269,6 +1277,7 @@
 
       function selectCategory(catSlug) {
         activeCategory = catSlug;
+        visibleCount = PAGE_SIZE;
         document.querySelectorAll('.by-cat-pill-btn').forEach(b => {
           const isAct = b.getAttribute('data-cat') === catSlug;
           b.classList.toggle('active', isAct);
@@ -1303,10 +1312,10 @@
           );
         }
 
-        const totalVariations = prods.reduce((acc, p) => acc + (Array.isArray(p.variations) ? p.variations.length : 1), 0);
-        counter.textContent = `${prods.length} ${prods.length === 1 ? 'peça encontrada' : 'peças encontradas'} (${totalVariations} ${totalVariations === 1 ? 'medida' : 'medidas/variações'})`;
+        const totalMatching = prods.length;
+        const displayed = prods.slice(0, visibleCount);
 
-        if (prods.length === 0) {
+        if (totalMatching === 0) {
           grid.innerHTML = `
             <div style="grid-column: 1/-1; text-align:center; padding: 60px 20px;">
               <h3 style="font-size:1.4rem; color:var(--by-black); margin-bottom:10px;">Nenhuma peça encontrada com estes filtros.</h3>
@@ -1314,15 +1323,40 @@
               <button type="button" class="by-btn by-btn-secondary" onclick="resetFilters()">Limpar Filtros</button>
             </div>
           `;
+          counter.textContent = '0 peças encontradas';
+          if (loadMoreContainer) loadMoreContainer.style.display = 'none';
           return;
         }
 
-        grid.innerHTML = prods.map(prod => window.renderBaytakaProductCard ? window.renderBaytakaProductCard(prod) : '').join('');
+        if (displayed.length < totalMatching) {
+          counter.textContent = `Exibindo ${displayed.length} de ${totalMatching} peças encontradas`;
+        } else {
+          counter.textContent = `${totalMatching} ${totalMatching === 1 ? 'peça encontrada' : 'peças encontradas'}`;
+        }
+
+        grid.innerHTML = displayed.map(prod => window.renderBaytakaProductCard ? window.renderBaytakaProductCard(prod) : '').join('');
+
+        if (loadMoreContainer) {
+          if (visibleCount < totalMatching) {
+            loadMoreContainer.style.display = 'flex';
+            const remaining = totalMatching - visibleCount;
+            const nextBatch = Math.min(PAGE_SIZE, remaining);
+            loadMoreBtn.textContent = `Carregar Mais Peças (+${nextBatch})`;
+          } else {
+            loadMoreContainer.style.display = 'none';
+          }
+        }
       }
+
+      loadMoreBtn?.addEventListener('click', () => {
+        visibleCount += PAGE_SIZE;
+        renderProducts();
+      });
 
       window.resetFilters = () => {
         searchTerm = '';
         searchInput.value = '';
+        visibleCount = PAGE_SIZE;
         selectCategory('todos');
       };
 
@@ -1342,6 +1376,7 @@
 
       searchInput.addEventListener('input', (e) => {
         searchTerm = e.target.value;
+        visibleCount = PAGE_SIZE;
         renderProducts();
       });
 

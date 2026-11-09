@@ -20,7 +20,7 @@ class BaytakaCatalogModal {
     if (document.getElementById(this.modalId)) return;
 
     const modalHTML = `
-      <div id="${this.modalId}" class="by-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="by-modal-title">
+      <div id="${this.modalId}" class="by-modal-backdrop" style="display:none !important;" role="dialog" aria-modal="true" aria-labelledby="by-modal-title">
         <div class="by-modal-box">
           <button type="button" class="by-modal-close" id="by-modal-close-btn" aria-label="Fechar janela">&times;</button>
           
@@ -141,19 +141,17 @@ class BaytakaCatalogModal {
 
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
-    // Eventos de fechamento e submissão
     const backdrop = document.getElementById(this.modalId);
     const closeBtn = document.getElementById('by-modal-close-btn');
     const form = document.getElementById('by-catalog-lead-form');
 
-    closeBtn.addEventListener('click', () => this.close());
-    backdrop.addEventListener('click', (e) => {
+    closeBtn?.addEventListener('click', () => this.close());
+    backdrop?.addEventListener('click', (e) => {
       if (e.target === backdrop) this.close();
     });
 
-    // Máscara simples de telefone
     const phoneInput = document.getElementById('lead-whatsapp');
-    phoneInput.addEventListener('input', (e) => {
+    phoneInput?.addEventListener('input', (e) => {
       let v = e.target.value.replace(/\D/g, '');
       if (v.length > 11) v = v.slice(0, 11);
       if (v.length > 7) {
@@ -164,7 +162,7 @@ class BaytakaCatalogModal {
       e.target.value = v;
     });
 
-    form.addEventListener('submit', (e) => {
+    form?.addEventListener('submit', (e) => {
       e.preventDefault();
       this.handleSubmit(form);
     });
@@ -224,6 +222,7 @@ class BaytakaCatalogModal {
       }
     }
 
+    backdrop.style.setProperty('display', 'flex', 'important');
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
 
@@ -236,6 +235,7 @@ class BaytakaCatalogModal {
   close() {
     const backdrop = document.getElementById(this.modalId);
     if (backdrop) {
+      backdrop.style.setProperty('display', 'none', 'important');
       backdrop.classList.remove('active');
       document.body.style.overflow = '';
     }
@@ -255,10 +255,8 @@ class BaytakaCatalogModal {
       sourceType: this.contextProduct ? 'Interesse em Peça Específica' : 'Solicitação de Catálogo Geral'
     };
 
-    // Registra o lead e o evento no Tracker / Store
     window.baytakaTracker.registerCatalogLead(leadData);
 
-    // Constrói mensagem estruturada para WhatsApp (sem preços)
     let message = `Olá, equipe Baytaka! Meu nome é *${leadData.name}*, da empresa *${leadData.company}* (${leadData.segment}) de *${leadData.city}/${leadData.state}*.\n\n`;
 
     if (this.contextProduct) {
@@ -270,7 +268,6 @@ class BaytakaCatalogModal {
 
     const whatsappUrl = window.baytakaTracker.buildWhatsAppUrl(message);
 
-    // Fecha o modal, limpa e abre o WhatsApp
     this.close();
     form.reset();
     window.open(whatsappUrl, '_blank');

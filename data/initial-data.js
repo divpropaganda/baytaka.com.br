@@ -14,183 +14,183 @@ window.BAYTAKA_INITIAL_DATA = {
     {
       "id": "mesas-e-bases",
       "title": "Mesas - Base - Cavalete",
-      "subtitle": "Pág. 01 à 20 • Trios, Conjuntos, Mesas, Bases e Cavaletes",
+      "subtitle": "",
       "description": "Trios de cilindros e mesas, conjuntos decorativos, bistrôs, pés, bases de mesa e cavaletes em ferro e madeira.",
-      "pages": "01 à 20",
+      "pages": "",
       "slug": "mesas-e-bases",
       "name": "Mesas - Base - Cavalete",
-      "shortDesc": "Pág. 01 à 20 • Trios, Conjuntos, Mesas, Bases e Cavaletes",
-      "fullDesc": "Trios de cilindros e mesas, conjuntos decorativos, bistrôs, pés, bases de mesa e cavaletes em ferro e madeira.",
-      "image": "assets/images/produtos/cutout-p004-mesas-e-bases-trio-sophia-p4-x-range-300-420.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_mesas-e-bases.jpg",
       "shortName": "Mesas e Bases"
     },
     {
       "id": "arcos-e-portais",
       "title": "Painéis - Arcos - Portais",
-      "subtitle": "Pág. 21 à 37 (+ Extras) • Painéis, Arcos, Estruturas e Portais",
+      "subtitle": "",
       "description": "Coleção completa de arcos circulares, romanos, catedrais, corações, caracol, painéis modulares e portais cenográficos.",
-      "pages": "21 à 37",
+      "pages": "",
       "slug": "arcos-e-portais",
       "name": "Painéis - Arcos - Portais",
-      "shortDesc": "Pág. 21 à 37 (+ Extras) • Painéis, Arcos, Estruturas e Portais",
-      "fullDesc": "Coleção completa de arcos circulares, romanos, catedrais, corações, caracol, painéis modulares e portais cenográficos.",
-      "image": "assets/images/produtos/cutout-p025-arcos-e-portais-arco-romano-p25-x-range-300-42.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_arcos-e-portais.jpg",
       "shortName": "Painéis e Arcos"
     },
     {
       "id": "gazebos-e-estruturas",
       "title": "Pergolado - Balanço - Gazebo - Carruagem",
-      "subtitle": "Pág. 38 à 40 • Grandes Estruturas Cenográficas",
+      "subtitle": "",
       "description": "Pergolados, balanços cenográficos, gazebos realeza e carruagens imperiais para eventos.",
-      "pages": "38 à 40",
+      "pages": "",
       "slug": "gazebos-e-estruturas",
       "name": "Pergolado - Balanço - Gazebo - Carruagem",
-      "shortDesc": "Pág. 38 à 40 • Grandes Estruturas Cenográficas",
-      "fullDesc": "Pergolados, balanços cenográficos, gazebos realeza e carruagens imperiais para eventos.",
-      "image": "assets/images/produtos/cutout-p043-gazebos-e-estruturas-pergolado-com-balanco-p43-x-range-300-42.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_gazebos-e-estruturas.jpg",
       "shortName": "Pergolados e Gazebos"
     },
     {
       "id": "decoracao-de-mesa",
       "title": "Decoração de Mesa",
-      "subtitle": "Pág. 41 à 43 • Suportes e Mini Estruturas de Mesa",
+      "subtitle": "",
       "description": "Suportes reguláveis de mesa, suportes para balões, mini arcos e trios decorativos de mesa.",
-      "pages": "41 à 43",
+      "pages": "",
       "slug": "decoracao-de-mesa",
       "name": "Decoração de Mesa",
-      "shortDesc": "Pág. 41 à 43 • Suportes e Mini Estruturas de Mesa",
-      "fullDesc": "Suportes reguláveis de mesa, suportes para balões, mini arcos e trios decorativos de mesa.",
-      "image": "assets/images/produtos/cutout-p047-decoracao-de-mesa-suporte-de-mesa-regulavel-p47-x-range-300-42.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_decoracao-de-mesa.jpg",
       "shortName": "Decoração de Mesa"
     },
     {
       "id": "doceiras-e-suportes",
       "title": "Doceiras - Boleiras - Suportes",
-      "subtitle": "Pág. 44 à 61 • Doceiras, Torres, Boleiras e Suportes",
+      "subtitle": "",
       "description": "Linha completa de doceiras, torres gourmet, boleiras, suportes circulares, combos e carruagem para bolo.",
-      "pages": "44 à 61",
+      "pages": "",
       "slug": "doceiras-e-suportes",
       "name": "Doceiras - Boleiras - Suportes",
-      "shortDesc": "Pág. 44 à 61 • Doceiras, Torres, Boleiras e Suportes",
-      "fullDesc": "Linha completa de doceiras, torres gourmet, boleiras, suportes circulares, combos e carruagem para bolo.",
-      "image": "assets/images/produtos/cutout-p051-doceiras-e-suportes-doceira-francesa-p51-x-range-300-42.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_doceiras-e-suportes.jpg",
       "shortName": "Doceiras e Boleiras"
     },
     {
       "id": "carrinhos-e-especiais",
       "title": "Carrinho - Roda Gigante",
-      "subtitle": "Pág. 62 à 67 • Carrinhos Gourmet, Chá, Bar e Rodas Gigantes",
+      "subtitle": "",
       "description": "Carrinhos de chá, pipoqueiro, gourmet, versa bar, mini bar e rodas gigantes de chão e mesa.",
-      "pages": "62 à 67",
+      "pages": "",
       "slug": "carrinhos-e-especiais",
       "name": "Carrinho - Roda Gigante",
-      "shortDesc": "Pág. 62 à 67 • Carrinhos Gourmet, Chá, Bar e Rodas Gigantes",
-      "fullDesc": "Carrinhos de chá, pipoqueiro, gourmet, versa bar, mini bar e rodas gigantes de chão e mesa.",
-      "image": "assets/images/produtos/cutout-p071-carrinhos-e-especiais-carrinho-de-cha-p71-x-range-300-29.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_carrinhos-e-especiais.jpg",
       "shortName": "Carrinhos Gourmet"
     },
     {
       "id": "arvores-e-topos",
       "title": "Árvores - Topo",
-      "subtitle": "Pág. 68 à 77 • Coqueiros, Árvores Cenográficas e Topos",
+      "subtitle": "",
       "description": "Coqueiros, árvores francesas, Ariel, Mariel, Lótus, folhas cenográficas e topos de árvore.",
-      "pages": "68 à 77",
+      "pages": "",
       "slug": "arvores-e-topos",
       "name": "Árvores - Topo",
-      "shortDesc": "Pág. 68 à 77 • Coqueiros, Árvores Cenográficas e Topos",
-      "fullDesc": "Coqueiros, árvores francesas, Ariel, Mariel, Lótus, folhas cenográficas e topos de árvore.",
-      "image": "assets/images/produtos/cutout-p077-arvores-e-topos-coqueiro-chique-p77-x-range-300-42.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_arvores-e-topos.jpg",
       "shortName": "Árvores e Topos"
     },
     {
       "id": "casticais-e-suspensos",
       "title": "Castiçal - Suportes Suspensos",
-      "subtitle": "Pág. 78 à 80 • Castiçais Suspensos, Bolas de Teto e Stands",
+      "subtitle": "",
       "description": "Castiçais suspensos, suportes arabescos, bolas de teto e stands florais suspensos.",
-      "pages": "78 à 80",
+      "pages": "",
       "slug": "casticais-e-suspensos",
       "name": "Castiçal - Suportes Suspensos",
-      "shortDesc": "Pág. 78 à 80 • Castiçais Suspensos, Bolas de Teto e Stands",
-      "fullDesc": "Castiçais suspensos, suportes arabescos, bolas de teto e stands florais suspensos.",
-      "image": "assets/images/produtos/cutout-p088-casticais-e-suspensos-castical-suspenso-p88.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_casticais-e-suspensos.jpg",
       "shortName": "Castiçais e Suspensos"
     },
     {
       "id": "colunas-e-lanternas",
       "title": "Colunas - Gaiolas - Lanternas",
-      "subtitle": "Pág. 81 à 87 • Colunas, Stands, Lanternas e Gaiolas",
+      "subtitle": "",
       "description": "Colunas geométricas e clássicas, stands florais, lanternas decorativas e gaiolas de chão e teto.",
-      "pages": "81 à 87",
+      "pages": "",
       "slug": "colunas-e-lanternas",
       "name": "Colunas - Gaiolas - Lanternas",
-      "shortDesc": "Pág. 81 à 87 • Colunas, Stands, Lanternas e Gaiolas",
-      "fullDesc": "Colunas geométricas e clássicas, stands florais, lanternas decorativas e gaiolas de chão e teto.",
-      "image": "assets/images/produtos/cutout-p092-colunas-e-lanternas-coluna-geometrica-p92-x-range-300-42.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_colunas-e-lanternas.jpg",
       "shortName": "Colunas e Lanternas"
     },
     {
       "id": "espaco-kids",
       "title": "Espaços Kids",
-      "subtitle": "Pág. 88 à 94 • Cadeiras, Bancos e Mesas Infantis & Adulto",
+      "subtitle": "",
       "description": "Cadeiras temáticas (Borboleta, Laço, Coração, Folha, Tifany), cadeiras altas infantis, bancos e mesas kids.",
-      "pages": "88 à 94",
+      "pages": "",
       "slug": "espaco-kids",
       "name": "Espaços Kids",
-      "shortDesc": "Pág. 88 à 94 • Cadeiras, Bancos e Mesas Infantis & Adulto",
-      "fullDesc": "Cadeiras temáticas (Borboleta, Laço, Coração, Folha, Tifany), cadeiras altas infantis, bancos e mesas kids.",
-      "image": "assets/images/produtos/cutout-p100-espaco-kids-cadeira-borboleta-p100-x-range-300-4.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_espaco-kids.jpg",
       "shortName": "Espaço Kids"
     },
     {
       "id": "vasos-e-suportes",
       "title": "Vasos & Suportes para Arranjos e Velas",
-      "subtitle": "Pág. 95 à 104 • Vasos, Pedestais e Suportes para Arranjos",
+      "subtitle": "",
       "description": "Vasos aramados, vasos de chão, suportes para arranjos florais, velas, doces e bicicletas decorativas.",
-      "pages": "95 à 104",
+      "pages": "",
       "slug": "vasos-e-suportes",
       "name": "Vasos & Suportes para Arranjos e Velas",
-      "shortDesc": "Pág. 95 à 104 • Vasos, Pedestais e Suportes para Arranjos",
-      "fullDesc": "Vasos aramados, vasos de chão, suportes para arranjos florais, velas, doces e bicicletas decorativas.",
-      "image": "assets/images/produtos/cutout-p108-vasos-e-suportes-par-suporte-floral-p108-x-range-300-4.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_vasos-e-suportes.jpg",
       "shortName": "Vasos e Arranjos"
     },
     {
       "id": "cadeiras-e-mobiliarios",
       "title": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
-      "subtitle": "Pág. 105 à 112 • Bancos, Puffs, Cadeiras e Jogos de Bistrô",
+      "subtitle": "",
       "description": "Bancos Redondo, Gota, Coração e Meia Lua, Puff Garden, Banco Loft, Cadeiras Tifany e Jogos de Bistrô.",
-      "pages": "105 à 112",
+      "pages": "",
       "slug": "cadeiras-e-mobiliarios",
       "name": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
-      "shortDesc": "Pág. 105 à 112 • Bancos, Puffs, Cadeiras e Jogos de Bistrô",
-      "fullDesc": "Bancos Redondo, Gota, Coração e Meia Lua, Puff Garden, Banco Loft, Cadeiras Tifany e Jogos de Bistrô.",
-      "image": "assets/images/produtos/cutout-p119-cadeiras-e-mobiliarios-banco-redondo-p119-x-range-300-4.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_cadeiras-e-mobiliarios.jpg",
       "shortName": "Cadeiras e Bistrôs"
     },
     {
       "id": "moveis-interiores",
       "title": "Móveis para Decoração e Interiores",
-      "subtitle": "Pág. 113 à 121 • Aparadores, Estantes, Prateleiras, Tripés e Molduras",
+      "subtitle": "",
       "description": "Mesas e aparadores Veneza, prateleiras decorativas, estantes de ferro, tripés para quadro e molduras de espelho.",
-      "pages": "113 à 121",
+      "pages": "",
       "slug": "moveis-interiores",
       "name": "Móveis para Decoração e Interiores",
-      "shortDesc": "Pág. 113 à 121 • Aparadores, Estantes, Prateleiras, Tripés e Molduras",
-      "fullDesc": "Mesas e aparadores Veneza, prateleiras decorativas, estantes de ferro, tripés para quadro e molduras de espelho.",
-      "image": "assets/images/produtos/cutout-p128-moveis-interiores-mesa-veneza-p128-x-range-300-4.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_moveis-interiores.jpg",
       "shortName": "Móveis e Interiores"
     },
     {
       "id": "igreja-e-cerimonias",
       "title": "Igreja & Cerimônias",
-      "subtitle": "Pág. 122 à 123 • Genuflexórios, Púlpito e Porta Bíblia",
+      "subtitle": "",
       "description": "Genuflexórios dupla aliança unitários e desmontáveis, púlpito e porta bíblia para cerimônias.",
-      "pages": "122 à 123",
+      "pages": "",
       "slug": "igreja-e-cerimonias",
       "name": "Igreja & Cerimônias",
-      "shortDesc": "Pág. 122 à 123 • Genuflexórios, Púlpito e Porta Bíblia",
-      "fullDesc": "Genuflexórios dupla aliança unitários e desmontáveis, púlpito e porta bíblia para cerimônias.",
-      "image": "assets/images/produtos/cutout-p138-igreja-e-cerimonias-genuflexorio-p138.jpg",
+      "shortDesc": "",
+      "fullDesc": "",
+      "image": "assets/images/cat_igreja-e-cerimonias.jpg",
       "shortName": "Igreja e Cerimônias"
     }
   ],
@@ -203,8 +203,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57218 • P: 60cm x Ø 45cm | M: 70cm x Ø 45cm | G: 80cm x Ø 45cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57218.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 60cm x Ø 45cm | M: 70cm x Ø 45cm | G: 80cm x Ø 45cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -236,7 +236,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p004-mesas-e-bases-trio-sophia-p4-x-range-300-420.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-cilindro",
@@ -246,8 +247,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57153 • P: 47cm x Ø 38cm | M: 62cm x Ø 46cm | G: 76cm x Ø 52cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57153.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 47cm x Ø 38cm | M: 62cm x Ø 46cm | G: 76cm x Ø 52cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -279,7 +280,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p004-mesas-e-bases-trio-cilindro-p4-x-range-420-110.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-davi",
@@ -289,8 +291,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57553 • P: 60cm x Ø 46cm | M: 70cm x Ø 55cm | G: 80cm x Ø 55cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57553.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 60cm x Ø 46cm | M: 70cm x Ø 55cm | G: 80cm x Ø 55cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -322,7 +324,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p005-mesas-e-bases-trio-davi-p5-x-range-300-420.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-triunfo",
@@ -332,8 +335,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57612 • P: 54cm x Ø 30cm | M: 70cm x Ø 35cm | G: 80cm x Ø 45cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57612.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 54cm x Ø 30cm | M: 70cm x Ø 35cm | G: 80cm x Ø 45cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -365,7 +368,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p005-mesas-e-bases-trio-triunfo-p5-x-range-420-110.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-madrid",
@@ -375,8 +379,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57592 • P: 62cm x Ø 35cm | M: 72cm x Ø 41cm | G: 81cm x Ø 46cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57592.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 62cm x Ø 35cm | M: 72cm x Ø 41cm | G: 81cm x Ø 46cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -408,7 +412,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p006-mesas-e-bases-trio-madrid-p6-x-range-300-420.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-bistro-baixo-c-tampo",
@@ -418,8 +423,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57683 • 79cm x Ø 70cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57683.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "79cm x Ø 70cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -451,7 +456,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p006-mesas-e-bases-bistro-baixo-c-tampo-p6-x-range-420-110.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-imperial",
@@ -461,8 +467,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57410 • P: 55cm x Ø 35cm | M: 70cm x Ø 40cm | G: 84cm x Ø 46cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57410.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 55cm x Ø 35cm | M: 70cm x Ø 40cm | G: 84cm x Ø 46cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -494,7 +500,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p007-mesas-e-bases-trio-imperial-p7-x-range-300-420.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-vieira",
@@ -504,8 +511,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57323 • P: 53cm x Ø 35cm | M: 68cm x Ø 41cm | G: 82cm x Ø 46cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57323.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 53cm x Ø 35cm | M: 68cm x Ø 41cm | G: 82cm x Ø 46cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -537,7 +544,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p007-mesas-e-bases-trio-vieira-p7-x-range-420-110.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-faber",
@@ -547,8 +555,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57290 • P: 49cm x Ø 34cm | M: 62cm x Ø 40cm | G: 80cm x Ø 52cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57290.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 49cm x Ø 34cm | M: 62cm x Ø 40cm | G: 80cm x Ø 52cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -580,7 +588,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p008-mesas-e-bases-trio-faber-p8-x-range-300-420.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-gisele",
@@ -590,8 +599,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57171 • P: 49cm x Ø 44cm | M: 64cm x Ø 44cm | G: 80cm x Ø 44cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57171.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 49cm x Ø 44cm | M: 64cm x Ø 44cm | G: 80cm x Ø 44cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -623,7 +632,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p008-mesas-e-bases-trio-gisele-p8-x-range-420-110.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-chapa",
@@ -633,8 +643,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57292 • P: 42cm x Ø 35cm | M: 66cm x Ø 35cm | G: 80cm x Ø 35cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57292.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 42cm x Ø 35cm | M: 66cm x Ø 35cm | G: 80cm x Ø 35cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -666,7 +676,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p009-mesas-e-bases-trio-chapa-p9-x-range-300-420.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-maria-francisco",
@@ -676,8 +687,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57190 • P: 42cm x Ø 37cm | M: 63cm x Ø 37cm | G: 79cm x Ø 37cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57190.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 42cm x Ø 37cm | M: 63cm x Ø 37cm | G: 79cm x Ø 37cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -709,7 +720,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p009-mesas-e-bases-trio-maria-francisco-p9-x-range-420-110.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-xadrez",
@@ -718,9 +730,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "mesas-e-bases",
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56782 / Cód. 56781 / Cód. 57275)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56782 / Cód. 56781 / Cód. 57275). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Quadrado Medidas P (Trio): P: 50cm x 30cm x 30cm | M: 62cm x 35cm x 35cm | G: 73cm x 40cm x 40cm | Quadrado Medidas G (Trio): P: 40cm x 40cm x 40cm | M: 59cm x 45cm x 45cm | G: 79cm x 50cm x 50cm | Redondo (Trio P / M / G): P: 51cm x Ø 35cm | M: 66cm x Ø 40cm | G: 81cm x Ø 46cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -782,7 +794,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p016-mesas-e-bases-trio-xadrez-p16-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-mesas-x",
@@ -792,8 +805,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57289 • P: 60cm x 30cm x 34cm | M: 69cm x 35cm x 38cm | G: 79cm x 39cm x 80cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57289.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 60cm x 30cm x 34cm | M: 69cm x 35cm x 38cm | G: 79cm x 39cm x 80cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -825,7 +838,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p010-mesas-e-bases-trio-mesas-x-p10-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-veneza",
@@ -835,8 +849,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57412 • P: 59cm x 40cm x 30cm | M: 71cm x 50cm x 35cm | G: 82cm x 80cm x 39cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57412.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 59cm x 40cm x 30cm | M: 71cm x 50cm x 35cm | G: 82cm x 80cm x 39cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -868,7 +882,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p011-mesas-e-bases-trio-veneza-p11-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-retangular",
@@ -878,8 +893,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57427 • P: 71cm x 35cm x 40cm | M: 73cm x 35cm x 40cm | G: 84cm x 90cm x 40cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57427.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 71cm x 35cm x 40cm | M: 73cm x 35cm x 40cm | G: 84cm x 90cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -911,7 +926,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p011-mesas-e-bases-trio-retangular-p11-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-conjunto-vitoria",
@@ -921,8 +937,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57441 • P: 61cm x 35cm x 30cm (2 uni) | M: 71cm x 40cm x 35cm (2 uni) | G: 84cm x 80cm x 40cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57441.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 61cm x 35cm x 30cm (2 uni) | M: 71cm x 40cm x 35cm (2 uni) | G: 84cm x 80cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -954,7 +970,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p012-mesas-e-bases-conjunto-vitoria-p12-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-conjunto-farah",
@@ -964,8 +981,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56758 • P: 60cm x 34cm x 30cm (2 uni) | M: 70cm x 38cm x 35cm (2 uni) | G: 80cm x 80cm x 39cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56758.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 60cm x 34cm x 30cm (2 uni) | M: 70cm x 38cm x 35cm (2 uni) | G: 80cm x 80cm x 39cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -997,7 +1014,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p012-mesas-e-bases-conjunto-farah-p12-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-conjunto-romano",
@@ -1007,8 +1025,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57457 • P: 60cm x 34cm x 30cm (2 uni) | M: 70cm x 38cm x 36cm (2 uni) | G: 80cm x 80cm x 39cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57457.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 60cm x 34cm x 30cm (2 uni) | M: 70cm x 38cm x 36cm (2 uni) | G: 80cm x 80cm x 39cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1040,7 +1058,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p013-mesas-e-bases-conjunto-romano-p13-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-romano",
@@ -1050,8 +1069,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57525 • P: 60cm x 34cm x 30cm | M: 70cm x 38cm x 36cm | G: 80cm x 80cm x 39cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57525.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 60cm x 34cm x 30cm | M: 70cm x 38cm x 36cm | G: 80cm x 80cm x 39cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1083,7 +1102,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p013-mesas-e-bases-trio-romano-p13-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-cleusa",
@@ -1093,8 +1113,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57021 • P: 40cm x Ø 20cm | M: 50cm x Ø 29cm | G: 60cm x Ø 37cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57021.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 40cm x Ø 20cm | M: 50cm x Ø 29cm | G: 60cm x Ø 37cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1126,7 +1146,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p014-mesas-e-bases-trio-cleusa-p14-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-princesa",
@@ -1136,8 +1157,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57635 • P: 68cm x Ø 37cm | M: 70cm x Ø 37cm | G: 89cm x Ø 37cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57635.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 68cm x Ø 37cm | M: 70cm x Ø 37cm | G: 89cm x Ø 37cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1169,7 +1190,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p014-mesas-e-bases-trio-princesa-p14-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-par-de-oval",
@@ -1179,8 +1201,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57656 • P: 67cm x 37cm x 76cm | G: 82cm x 43cm x 83cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57656.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 67cm x 37cm x 76cm | G: 82cm x 43cm x 83cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1212,7 +1234,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p015-mesas-e-bases-par-de-oval-p15-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-geometrico",
@@ -1222,8 +1245,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57168 • P: 54cm x 30cm x 30cm | M: 68cm x 35cm x 35cm | G: 80cm x 45cm x 45cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57168.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 54cm x 30cm x 30cm | M: 68cm x 35cm x 35cm | G: 80cm x 45cm x 45cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1255,7 +1278,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p015-mesas-e-bases-trio-geometrico-p15-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-par-grecia",
@@ -1265,8 +1289,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57596 • M: 65cm x Ø 36cm | G: 80cm x Ø 46cm (Envernizado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57596.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "M: 65cm x Ø 36cm | G: 80cm x Ø 46cm (Envernizado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1298,7 +1322,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p016-mesas-e-bases-par-grecia-p16-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-mesa-de-centro-cilindro",
@@ -1307,9 +1332,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "mesas-e-bases",
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 56555 / Cód. 56699)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 56555 / Cód. 56699). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: G: 66cm x Ø 50cm (Não acompanha o espelho) | Medidas M: M: 56cm x Ø 42cm (Não acompanha o espelho)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1356,7 +1381,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p017-mesas-e-bases-mesa-de-centro-cilindro-p17-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-trio-berna",
@@ -1366,8 +1392,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56752 • P: 46cm x Ø 42cm | M: 68cm x Ø 54cm | G: 82cm x Ø 67cm (Não acompanha o espelho)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56752.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 46cm x Ø 42cm | M: 68cm x Ø 54cm | G: 82cm x Ø 67cm (Não acompanha o espelho)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1399,7 +1425,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p017-mesas-e-bases-trio-berna-p17-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-mesa-porta-rolhas",
@@ -1408,9 +1435,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "mesas-e-bases",
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 56996 / Cód. 57469)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 56996 / Cód. 57469). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 84cm x 41cm x Ø 35cm | Medidas P: 54cm x 38cm x Ø 24cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1457,7 +1484,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p018-mesas-e-bases-mesa-porta-rolhas-var-57469-p18-v-57469-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-bistro-helena",
@@ -1466,9 +1494,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "mesas-e-bases",
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57627 / Cód. 57629)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57627 / Cód. 57629). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Bistrô Baixo Helena: 80cm x Ø 72cm | Bistrô Alto Helena: 110cm x Ø 72cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1515,7 +1543,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p019-mesas-e-bases-bistro-helena-p19-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-pe-de-mesa-gg",
@@ -1525,8 +1554,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57497 • 95cm x 50cm | 40cm (Base) | 55cm (Boca) — Não acompanha o tampo",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57497.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "95cm x 50cm | 40cm (Base) | 55cm (Boca) — Não acompanha o tampo",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1558,7 +1587,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p020-mesas-e-bases-pe-de-mesa-gg-p20-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-base-de-mesa-italia",
@@ -1568,8 +1598,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57568 • 80cm x 80cm x 1,80m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57568.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "80cm x 80cm x 1,80m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1601,7 +1631,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p020-mesas-e-bases-base-de-mesa-italia-p20-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-mesa-de-canto-2-andares",
@@ -1611,8 +1642,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57606 • 80cm x Ø 62cm x Ø 45cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57606.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "80cm x Ø 62cm x Ø 45cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1644,7 +1675,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p021-mesas-e-bases-mesa-de-canto-2-andares-p21-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-cavalete",
@@ -1653,9 +1685,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "mesas-e-bases",
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 54471 / Cód. 54470 / Cód. 54468)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 54471 / Cód. 54470 / Cód. 54468). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas P: 78cm x 80cm | Medidas M: 78cm x 90cm | Medidas G: 78cm x 1,00m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1717,7 +1749,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p021-mesas-e-bases-cavalete-p21-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-mesas-e-bases-base-de-mesa-s",
@@ -1726,9 +1759,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "mesas-e-bases",
       "categoryName": "Mesas - Base - Cavalete",
       "catalogPage": "",
-      "badge": "4 MEDIDAS / MODELOS",
-      "shortDesc": "4 variações disponíveis (Cód. 57736 / Cód. 57737 / Cód. 57501 / Cód. 57503)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 4 variações de medidas/modelos (Cód. 57736 / Cód. 57737 / Cód. 57501 / Cód. 57503). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Com Argola - Medidas M: 78cm x 1,60m x Ø 80cm (Não acompanha o tampo) | Com Argola - Medidas G: 78cm x 2,32m x Ø 1,20cm (Não acompanha o tampo) | Simples - Medidas M: 78cm x 1,60m x Ø 80cm (Não acompanha o tampo) | Simples - Medidas G: 78cm x 2,32m x Ø 1,20cm (Não acompanha o tampo)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1805,7 +1838,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p023-mesas-e-bases-base-de-mesa-s-var-57503-p23-v-57503-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-romano",
@@ -1814,9 +1848,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57148 / Cód. 57225)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57148 / Cód. 57225). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Simples: 2,20m x 1,00m | Duplo (Com Passagem): 2,30m x 1,40m | 80cm (Passagem)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1863,7 +1897,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p036-arcos-e-portais-arco-romano-p36-x-range-550-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-meia-lua",
@@ -1873,8 +1908,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57149 • 2,20m x 1,00m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57149.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,20m x 1,00m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1906,7 +1941,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p025-arcos-e-portais-arco-meia-lua-p25-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-retangular",
@@ -1915,9 +1951,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57160 / Cód. 57175)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57160 / Cód. 57175). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Simples: 2,20m x 1,00m | Duplo: 2,10m x 1,20m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -1964,7 +2000,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p026-arcos-e-portais-arco-retangular-p26-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-redondo",
@@ -1973,9 +2010,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 56789 / Cód. 57273)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 56789 / Cód. 57273). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Simples: Ø 1,50m x 2,30m | Duplo (Até 2,50m altura): 205cm x 0,40cm x Ø 160cm (Chega até 2,50m de altura)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2022,7 +2059,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p027-arcos-e-portais-arco-redondo-p27-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-coracao",
@@ -2031,9 +2069,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57180 / Cód. 57080)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57180 / Cód. 57080). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Simples: 2,20m x 1,90m | Duplo: 2,00m x 2,10m x 40cm | Pés: 60cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2080,7 +2118,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p028-arcos-e-portais-arco-coracao-p28-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-desconstruido-para-tunel",
@@ -2090,8 +2129,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57634 • 2,44m x 2,44m (Partes: 210cm, 188cm, 75cm | Base: 49cm x 49cm)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57634.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,44m x 2,44m (Partes: 210cm, 188cm, 75cm | Base: 49cm x 49cm)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2123,7 +2162,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p029-arcos-e-portais-arco-desconstruido-para-tunel-p29-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-para-tunel",
@@ -2133,8 +2173,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57574 • 2,20m x 1,80m (Cada arco)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57574.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,20m x 1,80m (Cada arco)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2166,7 +2206,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p029-arcos-e-portais-arco-para-tunel-p29-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-catedral",
@@ -2175,9 +2216,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57563 / Cód. 57562 / Cód. 57734)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57563 / Cód. 57562 / Cód. 57734). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas M: 2,00m x 69cm x 19cm | Medidas G: 2,25m x 96cm x 19cm | Medidas GG: 2,50m x 160cm x 19cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2239,7 +2280,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p030-arcos-e-portais-arco-catedral-var-57734-p30-v-57734-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-estrutura-japonesa",
@@ -2248,9 +2290,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57567 / Cód. 57663)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57567 / Cód. 57663). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas 2,50m x 2,20m: 2,50m x 2,20m x 25cm | Medidas 2,70m x 3,00m: 2,70m x 3,00m x 25cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2297,7 +2339,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p030-arcos-e-portais-estrutura-japonesa-var-57663-p30-v-57663-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-painel-onda",
@@ -2306,9 +2349,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57616 / Cód. 57661 / Cód. 57671)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57616 / Cód. 57661 / Cód. 57671). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Painel Onda (Detalhes em Bambu): 2,10m x 80cm | Painel Onda Bambu: 2,50m x 80cm | Painel Onda Simples com Argola: 2,10m x 80cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2370,7 +2413,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p038-arcos-e-portais-painel-onda-p38-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-portal-romano",
@@ -2380,8 +2424,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57402 • 2,20m x 1,50m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57402.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,20m x 1,50m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2413,7 +2457,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p031-arcos-e-portais-portal-romano-p31-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-romeu-duplo",
@@ -2423,8 +2468,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57489 • P: 1,73m x 40cm x 56cm | G: 2,00m x 40cm x 58cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57489.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 1,73m x 40cm x 56cm | G: 2,00m x 40cm x 58cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2456,7 +2501,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p032-arcos-e-portais-arco-romeu-duplo-p32-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-portal-de-colunas",
@@ -2466,8 +2512,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57659 • 2,40m x 3,60m | 1,20m (3 uni) | 1,05m (2 uni sem base) | 1,05m (2 uni com base)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57659.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,40m x 3,60m | 1,20m (3 uni) | 1,05m (2 uni sem base) | 1,05m (2 uni com base)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2499,7 +2545,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p032-arcos-e-portais-portal-de-colunas-p32-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-painel-ruby",
@@ -2508,9 +2555,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57561 / Cód. 57575)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57561 / Cód. 57575). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 2,20m x 100cm | Medidas M: 2,00m x 100cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2557,7 +2604,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p033-arcos-e-portais-painel-ruby-p33-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-janela-catedral",
@@ -2566,9 +2614,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57388 / Cód. 57389)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57388 / Cód. 57389). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 2,10m x 90cm | Medidas P: 1,70m x 80cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2615,7 +2663,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p033-arcos-e-portais-janela-catedral-p33-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-painel-janela",
@@ -2624,9 +2673,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "4 MEDIDAS / MODELOS",
-      "shortDesc": "4 variações disponíveis (Cód. 57248 / Cód. 57249 / Cód. 57250 / Cód. 57251)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 4 variações de medidas/modelos (Cód. 57248 / Cód. 57249 / Cód. 57250 / Cód. 57251). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 2,20m x 1,00m | Medidas M: 2,00m x 70cm | Medidas P: 1,70m x 70cm | Medidas PP: 1,25m x 50cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2703,7 +2752,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p034-arcos-e-portais-painel-janela-var-57251-p34-v-57251-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-painel-folha",
@@ -2712,9 +2762,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "4 MEDIDAS / MODELOS",
-      "shortDesc": "4 variações disponíveis (Cód. 57589 / Cód. 57588 / Cód. 57587 / Cód. 57607)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 4 variações de medidas/modelos (Cód. 57589 / Cód. 57588 / Cód. 57587 / Cód. 57607). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Avulso P: 1,28m x 45cm | Avulso M: 1,76m x 55cm | Avulso G: 2,27m x 80cm | Duplo Completo: 2,30m x 40cm x 2,28m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2791,7 +2841,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p035-arcos-e-portais-painel-folha-p35-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-lua-sueli",
@@ -2801,8 +2852,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57237 • 2,30m x 1,70m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57237.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,30m x 1,70m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2834,7 +2885,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p036-arcos-e-portais-arco-lua-sueli-p36-x-range-300-29.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-hexagonal",
@@ -2844,8 +2896,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57103 • 2,50m x 2,50m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57103.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,50m x 2,50m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2877,7 +2929,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p036-arcos-e-portais-arco-hexagonal-p36-x-range-290-55.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-4-argolas",
@@ -2887,8 +2940,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57548 • 1,72m (Altura) | Argolas: Ø 27cm, Ø 35cm, Ø 42cm, Ø 52cm | Pés: Ø 50cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57548.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,72m (Altura) | Argolas: Ø 27cm, Ø 35cm, Ø 42cm, Ø 52cm | Pés: Ø 50cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2920,7 +2973,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p037-arcos-e-portais-arco-4-argolas-p37-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-portal-happy",
@@ -2930,8 +2984,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57214 • 2,40m x 2,30m x 35cm | 1,60m (Passagem)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57214.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,40m x 2,30m x 35cm | 1,60m (Passagem)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -2963,7 +3017,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p037-arcos-e-portais-portal-happy-p37-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-estrutura-para-tunel-3m-x-3m",
@@ -2973,8 +3028,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57723 • 3,00m x 3,00m (cada unidade)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57723.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "3,00m x 3,00m (cada unidade)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3006,7 +3061,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p039-arcos-e-portais-estrutura-para-tunel-3m-x-3m-var-57723-p39-v-57723-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-portal-luna",
@@ -3016,8 +3072,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57740 • 235cm (Altura) x 290cm (Largura) | Base: 50cm x 80cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57740.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "235cm (Altura) x 290cm (Largura) | Base: 50cm x 80cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3049,7 +3105,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p040-arcos-e-portais-portal-luna-p40.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-painel-s",
@@ -3059,8 +3116,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57748 • 180cm (Altura) x 200cm (Largura)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57748.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "180cm (Altura) x 200cm (Largura)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3092,7 +3149,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p041-arcos-e-portais-painel-s-p41.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-curvo",
@@ -3102,8 +3160,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57767 • Altura: 2,30m | Pé: 70cm x 40cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57767.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Altura: 2,30m | Pé: 70cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3135,7 +3193,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p141-arcos-e-portais-arco-curvo-p141.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-arco-caracol",
@@ -3144,9 +3203,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57768 / Cód. 57763)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57768 / Cód. 57763). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Vertical (Altura 2,43m): Altura: 2,43m x 1,00m | Pé: Ø 1,00m | Passarela Duplo (Comprimento 3,75m): Altura: Até 2,00m | Comprimento: 3,75m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3193,7 +3252,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p143-arcos-e-portais-arco-caracol-p143.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arcos-e-portais-portal-versailles",
@@ -3202,9 +3262,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arcos-e-portais",
       "categoryName": "Painéis - Arcos - Portais",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57766)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57766). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Modelo Curvo Imperial: Vão Livre: 2,28m x 2,30m | Total: 2,80m x 3,00m | Modelo Reto Imperial: Vão Livre: 2,28m x 2,30m | Total: 2,80m x 3,00m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3251,7 +3311,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p145-arcos-e-portais-portal-versailles-p145.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-gazebos-e-estruturas-pergolado-com-balanco",
@@ -3261,8 +3322,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Pergolado - Balanço - Gazebo - Carruagem",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57179 • 2,17m x 2,05m x 1,00m | Balanço: 1,16m x 40cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57179.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,17m x 2,05m x 1,00m | Balanço: 1,16m x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3294,7 +3355,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p043-gazebos-e-estruturas-pergolado-com-balanco-p43-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-gazebos-e-estruturas-balanco-chique",
@@ -3304,8 +3366,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Pergolado - Balanço - Gazebo - Carruagem",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57456 • 2,00m x 1,80m x 87cm | Balanço: 93cm x 40cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57456.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,00m x 1,80m x 87cm | Balanço: 93cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3337,7 +3399,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p043-gazebos-e-estruturas-balanco-chique-p43-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-gazebos-e-estruturas-gazebo-realeza",
@@ -3347,8 +3410,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Pergolado - Balanço - Gazebo - Carruagem",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57690 • 3,80m x 2,30m x Ø 2,80m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57690.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "3,80m x 2,30m x Ø 2,80m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3380,7 +3443,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p044-gazebos-e-estruturas-gazebo-realeza-p44.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-gazebos-e-estruturas-carruagem-gg",
@@ -3390,8 +3454,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Pergolado - Balanço - Gazebo - Carruagem",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57646 • Altura: 2,45m (com coroa) | Largura: 1,56m | Comprimento: 2,40m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57646.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Altura: 2,45m (com coroa) | Largura: 1,56m | Comprimento: 2,40m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3423,7 +3487,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p045-gazebos-e-estruturas-carruagem-gg-p45.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-decoracao-de-mesa-suporte-de-mesa-regulavel",
@@ -3433,8 +3498,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Decoração de Mesa",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57519 • Altura: 60cm regula até 1,00m | Largura: 1,50m regula até 2,00m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57519.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Altura: 60cm regula até 1,00m | Largura: 1,50m regula até 2,00m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3466,7 +3531,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p047-decoracao-de-mesa-suporte-de-mesa-regulavel-var-57519-p47-v-57519-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-decoracao-de-mesa-suporte-balao",
@@ -3476,8 +3542,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Decoração de Mesa",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56960 • 1,05m x 21cm x 21cm | Base: Ø 16cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56960.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,05m x 21cm x 21cm | Base: Ø 16cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3509,7 +3575,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p047-decoracao-de-mesa-suporte-balao-var-56960-p47-v-56960-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-decoracao-de-mesa-mini-arco-redondo",
@@ -3519,8 +3586,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Decoração de Mesa",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57033 • 53cm x 50cm x Ø 50cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57033.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "53cm x 50cm x Ø 50cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3552,7 +3619,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p048-decoracao-de-mesa-mini-arco-redondo-p48-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-decoracao-de-mesa-mini-arco-coracao",
@@ -3562,8 +3630,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Decoração de Mesa",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57738 • 55cm x 53cm x Ø 18cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57738.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "55cm x 53cm x Ø 18cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3595,7 +3663,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p048-decoracao-de-mesa-mini-arco-coracao-p48-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-decoracao-de-mesa-trio-mini-janela",
@@ -3605,8 +3674,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Decoração de Mesa",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57254 • P: 38cm x 23cm | M: 53cm x 29cm | G: 72cm x 41cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57254.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 38cm x 23cm | M: 53cm x 29cm | G: 72cm x 41cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3638,7 +3707,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p049-decoracao-de-mesa-trio-mini-janela-p49-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-decoracao-de-mesa-trio-mini-folhas",
@@ -3648,8 +3718,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Decoração de Mesa",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57597 • P: 33cm x 8,5cm | M: 43cm x 13cm | G: 54cm x 16,5cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57597.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 33cm x 8,5cm | M: 43cm x 13cm | G: 54cm x 16,5cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3681,7 +3751,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p049-decoracao-de-mesa-trio-mini-folhas-p49-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-francesa",
@@ -3690,9 +3761,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57580 / Cód. 57582)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57580 / Cód. 57582). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 39cm x 30cm x 25cm (Não acompanha os pratos) | Medidas M: 29cm x 22cm x 18cm (Não acompanha os pratos)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3739,7 +3810,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p051-doceiras-e-suportes-doceira-francesa-p51-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-trio-suporte-prato-de-jantar",
@@ -3749,8 +3821,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57394 • P: 11cm x 21cm x 21cm | M: 21cm x 21cm x 21cm | G: 31cm x 21cm x 21cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57394.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 11cm x 21cm x 21cm | M: 21cm x 21cm x 21cm | G: 31cm x 21cm x 21cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3782,7 +3854,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p051-doceiras-e-suportes-trio-suporte-prato-de-jantar-p51-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-torre-gourmet",
@@ -3791,9 +3864,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57309 / Cód. 57310 / Cód. 57466)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57309 / Cód. 57310 / Cód. 57466). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G (3 Andares): 67cm x 31cm x 22cm (Não acompanha os pratos) | Medidas P (3 Andares): 67cm x 25cm x 16,5cm (Não acompanha os pratos) | Com Tábuas Pinus: 67cm x 22cm x 31cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3855,7 +3928,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p065-doceiras-e-suportes-torre-gourmet-p65-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-gil",
@@ -3865,8 +3939,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57645 • 21cm x 31cm x Ø 20cm (Não acompanha os pratos)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57645.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "21cm x 31cm x Ø 20cm (Não acompanha os pratos)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3898,7 +3972,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p052-doceiras-e-suportes-suporte-gil-p52-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-para-favo-de-mel",
@@ -3907,9 +3982,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57621 / Cód. 57620)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57621 / Cód. 57620). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Modelo Curvado: 39cm x 46cm x 20cm | Modelo Retangular: 40cm x 46cm x 22cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -3956,7 +4031,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p053-doceiras-e-suportes-suporte-para-favo-de-mel-p53-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-mini-carrinho",
@@ -3965,9 +4041,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "4 MEDIDAS / MODELOS",
-      "shortDesc": "4 variações disponíveis (Cód. 57064 / Cód. 57067 / Cód. 57060 / Cód. 57059)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 4 variações de medidas/modelos (Cód. 57064 / Cód. 57067 / Cód. 57060 / Cód. 57059). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G (3 Partes): 56cm x 28cm x 66cm | Medidas G (2 Partes): 56cm x 28cm x 66cm | Medidas M: 51cm x 25cm x 60cm | Medidas P: 38cm x 22cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4044,7 +4120,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p054-doceiras-e-suportes-doceira-mini-carrinho-var-57059-p54-v-57059-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-circular",
@@ -4053,9 +4130,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57029 / Cód. 57065 / Cód. 57066)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57029 / Cód. 57065 / Cód. 57066). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 75cm x Ø 70cm x 21cm | Medidas M: 57cm x Ø 50cm x 22cm | Medidas P: 40cm x Ø 33cm x 21cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4117,7 +4194,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p055-doceiras-e-suportes-suporte-circular-var-57066-p55-v-57066-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-sextavado",
@@ -4127,8 +4205,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57034 • 54cm x 64cm x 30cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57034.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "54cm x 64cm x 30cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4160,7 +4238,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p056-doceiras-e-suportes-suporte-sextavado-var-57034-p56-v-57034-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-leomar",
@@ -4170,8 +4249,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57569 • 55cm x 20cm x 60cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57569.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "55cm x 20cm x 60cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4203,7 +4282,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p056-doceiras-e-suportes-suporte-leomar-var-57569-p56-v-57569-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-garden-decorativo-chapa",
@@ -4212,9 +4292,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56779 / Cód. 56778 / Cód. 56777)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56779 / Cód. 56778 / Cód. 56777). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas P: 40cm x Ø 20cm | Medidas M: 50cm x Ø 25cm | Medidas G: 60cm x Ø 25cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4276,7 +4356,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p056-doceiras-e-suportes-garden-decorativo-chapa-var-56777-p56-v-56777-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-gabriela",
@@ -4285,9 +4366,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57584 / Cód. 57583)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57584 / Cód. 57583). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas M (2 Andares): 40cm x 20cm | Medidas G (3 Andares): 56cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4334,7 +4415,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p057-doceiras-e-suportes-doceira-gabriela-p57-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-torcida",
@@ -4344,8 +4426,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57075 • P: 22cm x 20cm x 20cm | M: 32cm x 20cm x 20cm | G: 42cm x 20cm x 20cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57075.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 22cm x 20cm x 20cm | M: 32cm x 20cm x 20cm | G: 42cm x 20cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4377,7 +4459,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p057-doceiras-e-suportes-doceira-torcida-p57-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-gaiola",
@@ -4386,9 +4469,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57337 / Cód. 57636 / Cód. 57637)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57337 / Cód. 57636 / Cód. 57637). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G (3 Andares): 65cm x 19cm x 19cm | Medidas M (2 Andares): 52cm x 19cm x 19cm | Medidas P (2 Andares): 42cm x 19cm x 19cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4450,7 +4533,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p058-doceiras-e-suportes-doceira-gaiola-var-57637-p58-v-57637-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-lary",
@@ -4459,9 +4543,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57647 / Cód. 57648 / Cód. 57650)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57647 / Cód. 57648 / Cód. 57650). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 27cm x 35cm x (Ø 28cm Tampo) | Medidas M: 31cm x 28cm x (Ø 23cm Tampo) | Medidas PP: 22cm x 23cm x (Ø 20cm Tampo)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4523,7 +4607,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p058-doceiras-e-suportes-doceira-lary-var-57650-p58-v-57650-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-triangulo",
@@ -4532,9 +4617,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57127 / Cód. 57128 / Cód. 57129)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57127 / Cód. 57128 / Cód. 57129). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G (3 Andares): 76cm x 48cm x 19cm | Medidas M (2 Andares): 53cm x 44cm x 19cm | Medidas P (1 Andar): 32cm x 33cm x 19cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4596,7 +4681,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p059-doceiras-e-suportes-doceira-triangulo-var-57129-p59-v-57129-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-fazendinha",
@@ -4605,9 +4691,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57420 / Cód. 57421)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57420 / Cód. 57421). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 20cm x 25cm x 20cm | Medidas P: 15cm x 20cm x 15cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4654,7 +4740,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p059-doceiras-e-suportes-suporte-fazendinha-var-57421-p59-v-57421-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-dani",
@@ -4663,9 +4750,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57004 / Cód. 57638 / Cód. 57639)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57004 / Cód. 57638 / Cód. 57639). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 32cm x 27cm x 27cm | Medidas M: 27cm x 27cm x 27cm | Medidas P: 24cm x 27cm x 27cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4727,7 +4814,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p060-doceiras-e-suportes-doceira-dani-var-57639-p60-v-57639-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-trio-redondo-x",
@@ -4737,8 +4825,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57288 • P: 25cm x 17cm x 17cm | M: 33cm x 20cm x 20cm | G: 47cm x 25cm x 25cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57288.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 25cm x 17cm x 17cm | M: 33cm x 20cm x 20cm | G: 47cm x 25cm x 25cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4770,7 +4858,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p060-doceiras-e-suportes-trio-redondo-x-p60-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-quadrada",
@@ -4779,9 +4868,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57474 / Cód. 57058)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57474 / Cód. 57058). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Baixa (Trio P / M / G): P: 12cm x 19cm x 19cm | M: 17cm x 19cm x 19cm | G: 22cm x 19cm x 19cm | Alta (Trio P / M / G): P: 22cm x 20cm x 20cm | M: 32cm x 20cm x 20cm | G: 42cm x 20cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4828,7 +4917,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p061-doceiras-e-suportes-doceira-quadrada-p61-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-bandeja-carrinho",
@@ -4838,8 +4928,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57504 • 21cm x 21cm x 41cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57504.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "21cm x 21cm x 41cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4871,7 +4961,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p062-doceiras-e-suportes-bandeja-carrinho-var-57504-p62-v-57504-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-theo",
@@ -4881,8 +4972,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57581 • 40cm x 20cm x 30cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57581.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "40cm x 20cm x 30cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4914,7 +5005,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p062-doceiras-e-suportes-doceira-theo-var-57581-p62-v-57581-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-farah",
@@ -4924,8 +5016,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57293 • P: 26cm x 19cm x 19cm | M: 43cm x 21cm x 21cm | G: 64cm x 23cm x 23cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57293.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 26cm x 19cm x 19cm | M: 43cm x 21cm x 21cm | G: 64cm x 23cm x 23cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -4957,7 +5049,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p062-doceiras-e-suportes-doceira-farah-var-57293-p62-v-57293-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-de-frios",
@@ -4967,8 +5060,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57318 • 30cm x 22cm x 35cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57318.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "30cm x 22cm x 35cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5000,7 +5093,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p063-doceiras-e-suportes-suporte-de-frios-p63-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-combo-doceira-redondo",
@@ -5010,8 +5104,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57419 • 22cm x Ø 26cm (1 uni) | 22cm x Ø 20cm (2 uni) | 14cm x Ø 17,5cm (2 uni)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57419.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "22cm x Ø 26cm (1 uni) | 22cm x Ø 20cm (2 uni) | 14cm x Ø 17,5cm (2 uni)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5043,7 +5137,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p063-doceiras-e-suportes-combo-doceira-redondo-p63-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-escada-para-doces",
@@ -5052,9 +5147,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57506 / Cód. 57507)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57506 / Cód. 57507). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "3 Andares: 49cm x 20cm x 60cm | 4 Andares: 70cm x 20cm x 60cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5101,7 +5196,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p064-doceiras-e-suportes-suporte-escada-para-doces-p64-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-doceira-imperial",
@@ -5111,8 +5207,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57543 • P: 12cm x Ø 17,5cm | M: 22cm x Ø 17,5cm | G: 32cm x Ø 17,5cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57543.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 12cm x Ø 17,5cm | M: 22cm x Ø 17,5cm | G: 32cm x Ø 17,5cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5144,7 +5240,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p065-doceiras-e-suportes-doceira-imperial-p65-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-combo-doceira",
@@ -5154,8 +5251,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57105 • 1: 39x33x20cm | 2: 30x25x25cm | 3: 25x25x25cm | 4 e 5: 20x20x9cm | 6: 28x20x9cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57105.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1: 39x33x20cm | 2: 30x25x25cm | 3: 25x25x25cm | 4 e 5: 20x20x9cm | 6: 28x20x9cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5187,7 +5284,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p066-doceiras-e-suportes-combo-doceira-p66-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suporte-circular-marisa",
@@ -5196,9 +5294,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57657 / Cód. 57658)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57657 / Cód. 57658). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 78cm x Ø 70cm x 21,5cm | Medidas P: 58cm x Ø 50cm x 21,5cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5245,7 +5343,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p066-doceiras-e-suportes-suporte-circular-marisa-var-57658-p66-v-57658-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-suportes-doceiras-rusticos",
@@ -5254,9 +5353,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "doceiras-e-suportes",
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
-      "badge": "8 MEDIDAS / MODELOS",
-      "shortDesc": "8 variações disponíveis (Cód. 57728 / Cód. 57727 / Cód. 57725 / Cód. 57726 / Cód. 57730 / Cód. 57729 / Cód. 57731 / Cód. 57724)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 8 variações de medidas/modelos (Cód. 57728 / Cód. 57727 / Cód. 57725 / Cód. 57726 / Cód. 57730 / Cód. 57729 / Cód. 57731 / Cód. 57724). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Quadrado Baixo 19x19cm: 19cm x 19cm x 9cm | Redondo 22xØ22cm: 22cm x Ø 22cm | Redondo 22xØ30cm: 22cm x Ø 30cm | Redondo 14xØ22cm: 14cm x Ø 22cm | Quadrado Médio 22x19cm: 22cm x 19cm x 19cm | Retangular Baixo 9x28cm: 9cm x 28cm x 22cm | Quadrado Alto 30x19cm: 30cm x 19cm x 19cm | Duplo 2 Andares 37,5x36cm: 37,5cm x 36cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5393,7 +5492,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p067-doceiras-e-suportes-suportes-doceiras-rusticos-var-57724-p67-v-57724-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-doceiras-e-suportes-carruagem-para-bolo",
@@ -5403,8 +5503,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Doceiras - Boleiras - Suportes",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57347 • 82cm x 1,14m x 74cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57347.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "82cm x 1,14m x 74cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5436,7 +5536,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p068-doceiras-e-suportes-carruagem-para-bolo-p68.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-carrinho-de-cha",
@@ -5445,9 +5546,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "carrinhos-e-especiais",
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56790 / Cód. 57005 / Cód. 56792)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56790 / Cód. 57005 / Cód. 56792). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Decorativo: 77cm x 97cm x 67cm | Tábua: 60cm x 40cm | Desmontável: 77cm x 97cm x 67cm | Tábua: 60cm x 40cm | Decorativo com Arco: 77cm x 97cm x 67cm | Tábua: 60cm x 40cm | Arco: Ø 50cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5509,7 +5610,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p071-carrinhos-e-especiais-carrinho-de-cha-var-56792-p71-v-56792-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-carrinho-pipoqueiro",
@@ -5519,8 +5621,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57035 • 95cm x 80cm x 39cm | Arco: Ø 50cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57035.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "95cm x 80cm x 39cm | Arco: Ø 50cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5552,7 +5654,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p071-carrinhos-e-especiais-carrinho-pipoqueiro-var-57035-p71-v-57035-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-carrinho-gourmet",
@@ -5562,8 +5665,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57185 • 2,30m x 1,00m x 50cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57185.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,30m x 1,00m x 50cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5595,7 +5698,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p071-carrinhos-e-especiais-carrinho-gourmet-var-57185-p71-v-57185-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-carrinho-roda-gigante",
@@ -5605,8 +5709,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57048 • 93cm x 1,29m x 66cm | Tábua: 80cm x 60cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57048.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "93cm x 1,29m x 66cm | Tábua: 80cm x 60cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5638,7 +5742,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p072-carrinhos-e-especiais-carrinho-roda-gigante-p72.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-carrinho-wanderlei",
@@ -5648,8 +5753,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57495 • 80cm x 59cm x 1,18m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57495.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "80cm x 59cm x 1,18m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5681,7 +5786,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p073-carrinhos-e-especiais-carrinho-wanderlei-var-57495-p73-v-57495-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-carrinho-versa-bar",
@@ -5691,8 +5797,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57713 • 97cm x 39cm x 89cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57713.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "97cm x 39cm x 89cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5724,7 +5830,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p074-carrinhos-e-especiais-carrinho-versa-bar-p74-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-mini-bar-bandeja",
@@ -5734,8 +5841,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56776 • 85cm x 105cm x 44cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56776.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "85cm x 105cm x 44cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5767,7 +5874,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p074-carrinhos-e-especiais-mini-bar-bandeja-p74-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-carrinhos-e-especiais-roda-gigante",
@@ -5776,9 +5884,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "carrinhos-e-especiais",
       "categoryName": "Carrinho - Roda Gigante",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57682 / Cód. 57670)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57682 / Cód. 57670). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "De Mesa: 85cm x 74cm x 32cm | De Chão Grande (1,79m): 1,79m x 1,36m x 53cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5825,7 +5933,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p075-carrinhos-e-especiais-roda-gigante-p75-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-coqueiro-chique",
@@ -5835,8 +5944,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57668 • 96cm x 1,10m (Topo) | Chapinha c/ alça Cód. 57693",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57668.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "96cm x 1,10m (Topo) | Chapinha c/ alça Cód. 57693",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5868,7 +5977,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p077-arvores-e-topos-coqueiro-chique-p77-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-coqueiro-de-mesa",
@@ -5877,9 +5987,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arvores-e-topos",
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57479 / Cód. 57478 / Cód. 57674)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57479 / Cód. 57478 / Cód. 57674). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas P: 43cm (Altura) | 58cm (Galhada) | 16cm (Base) | Medidas M: 67cm (Altura) | 98cm (Galhada) | 30cm (Base) | Medidas G: 96cm (Altura) | 1,07m (Galhada) | 35cm (Base)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -5941,7 +6051,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p077-arvores-e-topos-coqueiro-de-mesa-var-57674-p77-v-57674-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-arvore-cenografica",
@@ -5950,9 +6061,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arvores-e-topos",
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
-      "badge": "4 MEDIDAS / MODELOS",
-      "shortDesc": "4 variações disponíveis (Cód. 57608 / Cód. 57377 / Cód. 57418 / Cód. 57376)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 4 variações de medidas/modelos (Cód. 57608 / Cód. 57377 / Cód. 57418 / Cód. 57376). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Árvore PP (1,20m): 1,20m (Altura) | 1,73m (Topo) | 86cm (Tronco) | Ø 53cm (Base) | 20 Ferros / 12 Galhos | Árvore P (1,50m): 1,50m (Altura) | 2,10m (Topo) | 1,10m (Tronco) | Ø 50cm (Base) | Árvore Média (2,38m): 2,38m (Altura) | 2,50m (Topo) | 1,93m (Tronco) | Ø 75cm (Base) | 36 Ferros / 12 Galhos | Árvore Grande (3,80m): 3,80m (Altura) | 4,00m (Topo) | 2,70m (Tronco) | Ø 1,20m (Base) | 80 Ferros / 24 Galhos",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6029,7 +6140,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p080-arvores-e-topos-arvore-cenografica-p80.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-arvore-ariel",
@@ -6039,8 +6151,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57518 • 2,92m (Altura) | 2,58m (Topo) | 2,46m (Tronco) | Ø 67cm (Base)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57518.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,92m (Altura) | 2,58m (Topo) | 2,46m (Tronco) | Ø 67cm (Base)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6072,7 +6184,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p081-arvores-e-topos-arvore-ariel-p81.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-arvore-francesa-estilizada",
@@ -6082,8 +6195,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57514 • 3,20m (Altura) | 3,20m (Topo) | 2,50m (Tronco) | Ø 80cm (Base)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57514.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "3,20m (Altura) | 3,20m (Topo) | 2,50m (Tronco) | Ø 80cm (Base)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6115,7 +6228,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p082-arvores-e-topos-arvore-francesa-estilizada-p82.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-arvore-mariel",
@@ -6125,8 +6239,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57720 • 3,35m (Altura Total) | 2,62m (Tronco) | Ø 82cm (Base)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57720.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "3,35m (Altura Total) | 2,62m (Tronco) | Ø 82cm (Base)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6158,7 +6272,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p083-arvores-e-topos-arvore-mariel-p83.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-arvore-lotus",
@@ -6168,8 +6283,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57745 • 3,20m (Altura) | Ø 2,00m (Topo)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57745.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "3,20m (Altura) | Ø 2,00m (Topo)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6201,7 +6316,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p084-arvores-e-topos-arvore-lotus-p84.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-suporte-folha-fabio",
@@ -6211,8 +6327,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57673 • 2,58m x 1,49m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57673.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,58m x 1,49m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6244,7 +6360,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p085-arvores-e-topos-suporte-folha-fabio-p85.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-arvores-e-topos-topo-de-arvore",
@@ -6253,9 +6370,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "arvores-e-topos",
       "categoryName": "Árvores - Topo",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57685 / Cód. 57744)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57685 / Cód. 57744). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Padrão (Altura 34cm): 34cm (Altura) x 40cm (Largura) | Ø 13cm (Boca) | Ø 5cm e 3cm (Tubos) | GG (Altura 60cm): 60cm (Altura) x 40cm (Largura) | Ø 13cm (Boca) | Ø 5cm e 3cm (Tubos)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6302,7 +6419,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p086-arvores-e-topos-topo-de-arvore-p86-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-casticais-e-suspensos-castical-suspenso",
@@ -6312,8 +6430,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Castiçal - Suportes Suspensos",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57509 • 1,10m x 94cm x 94cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57509.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,10m x 94cm x 94cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6345,7 +6463,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p088-casticais-e-suspensos-castical-suspenso-p88.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-casticais-e-suspensos-suporte-arabesco-suspenso",
@@ -6355,8 +6474,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Castiçal - Suportes Suspensos",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57675 • 55cm x 20cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57675.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "55cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6388,7 +6507,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p089-casticais-e-suspensos-suporte-arabesco-suspenso-var-57675-p89-v-57675-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-casticais-e-suspensos-bola-de-teto",
@@ -6398,8 +6518,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Castiçal - Suportes Suspensos",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56271 • 41cm x Ø 39cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56271.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "41cm x Ø 39cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6431,7 +6551,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p089-casticais-e-suspensos-bola-de-teto-var-56271-p89-v-56271-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-casticais-e-suspensos-stand-floral-suspenso",
@@ -6440,9 +6561,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "casticais-e-suspensos",
       "categoryName": "Castiçal - Suportes Suspensos",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57687 / Cód. 57688 / Cód. 57689)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57687 / Cód. 57688 / Cód. 57689). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Redondo G (Ø 81cm): Ø 81cm x 95cm (Hastes) | Redondo M (Ø 62cm): Ø 62cm x 80cm (Hastes) | Retangular (90cm x 40cm): 90cm x 40cm x 98cm (Hastes)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6504,7 +6625,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p090-casticais-e-suspensos-stand-floral-suspenso-var-57689-p90-v-57689-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-coluna-geometrica",
@@ -6513,9 +6635,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57550 / Cód. 57559)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57550 / Cód. 57559). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G (2,00m): 2,00m x 50cm x 50cm (Desmontável) | Medidas P (1,50m): 1,50m x 50cm x 50cm (Desmontável)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6562,7 +6684,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p092-colunas-e-lanternas-coluna-geometrica-p92-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-coluna",
@@ -6571,9 +6694,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "4 MEDIDAS / MODELOS",
-      "shortDesc": "4 variações disponíveis (Cód. 174 / Cód. 175 / Cód. 57326 / Cód. 57327)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 4 variações de medidas/modelos (Cód. 174 / Cód. 175 / Cód. 57326 / Cód. 57327). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Aramada P (49cm): 49cm x 27cm x 27cm | Aramada G (90cm): 90cm x 25cm x 25cm | Clássica P (60cm): 60cm x 20cm x 20cm | Clássica G (90cm): 90cm x 25cm x 25cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6650,7 +6773,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p093-colunas-e-lanternas-coluna-var-57327-p93-v-57327-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-stand-floral",
@@ -6659,9 +6783,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57283 / Cód. 57660)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57283 / Cód. 57660). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas P (61cm): 61cm x 18cm x 18cm | Medidas G (1,00m): 1,00m x 25cm x 15cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6708,7 +6832,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p093-colunas-e-lanternas-stand-floral-var-57660-p93-v-57660-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-trio-suporte-alana",
@@ -6718,8 +6843,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57348 • P: 20cm x 20cm x 20cm | M: 40cm x 20cm x 20cm | G: 60cm x 20cm x 20cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57348.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 20cm x 20cm x 20cm | M: 40cm x 20cm x 20cm | G: 60cm x 20cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6751,7 +6876,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p094-colunas-e-lanternas-trio-suporte-alana-p94.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-lanterna-nova",
@@ -6761,8 +6887,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57468 • P: 41cm x Ø 16cm | M: 61cm x Ø 16cm | G: 76cm x Ø 16cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57468.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 41cm x Ø 16cm | M: 61cm x Ø 16cm | G: 76cm x Ø 16cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6794,7 +6920,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p095-colunas-e-lanternas-lanterna-nova-p95-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-lanterna-de-mesa",
@@ -6804,8 +6931,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57187 • P: 25cm x Ø 14cm | M: 35cm x Ø 14cm | G: 45cm x Ø 14cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57187.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 25cm x Ø 14cm | M: 35cm x Ø 14cm | G: 45cm x Ø 14cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6837,7 +6964,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p095-colunas-e-lanternas-lanterna-de-mesa-p95-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-lanterna-quadrada",
@@ -6847,8 +6975,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57263 • P: 42cm x 12cm x 12cm | M: 59cm x 16cm x 16cm | G: 79cm x 20cm x 20cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57263.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 42cm x 12cm x 12cm | M: 59cm x 16cm x 16cm | G: 79cm x 20cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6880,7 +7008,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p096-colunas-e-lanternas-lanterna-quadrada-p96-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-gaiola-de-teto",
@@ -6889,9 +7018,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56994 / Cód. 56264 / Cód. 57069)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56994 / Cód. 56264 / Cód. 57069). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 54cm x Ø 23cm | Medidas M: 36cm x Ø 23cm | Medidas P: 35cm x Ø 15cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -6953,7 +7082,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p096-colunas-e-lanternas-gaiola-de-teto-var-57069-p96-v-57069-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-gaiola-de-chao",
@@ -6962,9 +7092,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 56755 / Cód. 57136)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 56755 / Cód. 57136). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Padrão (1,10m): 1,10m x Ø 30cm | Medidas GG (1,53m): 1,53m x Ø 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7011,7 +7141,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p097-colunas-e-lanternas-gaiola-de-chao-var-57136-p97-v-57136-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-gaiola-redonda",
@@ -7020,9 +7151,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57338 / Cód. 57339 / Cód. 57340)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57338 / Cód. 57339 / Cód. 57340). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G (1,10m): 1,10m x Ø 26cm | Medidas M (83cm): 83cm x Ø 26cm | Medidas P (65cm): 65cm x Ø 26cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7084,7 +7215,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p097-colunas-e-lanternas-gaiola-redonda-var-57340-p97-v-57340-.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-gaiola-quadrada",
@@ -7093,9 +7225,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57144 / Cód. 57145 / Cód. 57146)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57144 / Cód. 57145 / Cód. 57146). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 85cm x 20cm x 20cm | Medidas M: 65cm x 20cm x 20cm | Medidas P: 48cm x 20cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7157,7 +7289,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p098-colunas-e-lanternas-gaiola-quadrada-p98-x-range-300-42.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-colunas-e-lanternas-gaiola-chapa",
@@ -7166,9 +7299,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "colunas-e-lanternas",
       "categoryName": "Colunas - Gaiolas - Lanternas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57267 / Cód. 57268 / Cód. 57269)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57267 / Cód. 57268 / Cód. 57269). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 72cm x Ø 27cm | Medidas M: 52cm x Ø 27cm | Medidas P: 32cm x Ø 27cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7230,7 +7363,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p098-colunas-e-lanternas-gaiola-chapa-p98-x-range-420-11.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-borboleta",
@@ -7239,9 +7373,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "espaco-kids",
       "categoryName": "Espaços Kids",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57617 / Cód. 57614)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57617 / Cód. 57614). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Kids: 71cm x 47cm | Assento: Ø 33cm (33cm do chão ao assento) | Adulto: 98cm x 51cm | Assento: Ø 37cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7288,7 +7422,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p100-espaco-kids-cadeira-borboleta-var-57614-p100-v-57614.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-laco",
@@ -7297,9 +7432,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "espaco-kids",
       "categoryName": "Espaços Kids",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57551 / Cód. 57586)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57551 / Cód. 57586). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Kids: 70cm x 51cm | Assento: Ø 33cm (33cm do chão ao assento) | Adulto: 98cm x 51cm | Assento: Ø 37cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7346,7 +7481,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p100-espaco-kids-cadeira-laco-var-57586-p100-v-57586.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-coracao-kids",
@@ -7356,8 +7492,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56798 • 68cm x 38cm | Assento: Ø 33cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56798.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "68cm x 38cm | Assento: Ø 33cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7389,7 +7525,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p101-espaco-kids-cadeira-coracao-kids-var-56798-p101-v-56798.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-coracao-duplo",
@@ -7398,9 +7535,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "espaco-kids",
       "categoryName": "Espaços Kids",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57623 / Cód. 57718)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57623 / Cód. 57718). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Kids: 64cm x 39cm | Assento: Ø 33cm | Adulto: 92cm x 51cm | Assento: Ø 37cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7447,7 +7584,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p101-espaco-kids-cadeira-coracao-duplo-var-57718-p101-v-57718.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-alta-infantil",
@@ -7456,9 +7594,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "espaco-kids",
       "categoryName": "Espaços Kids",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57741 / Cód. 57742 / Cód. 57719)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57741 / Cód. 57742 / Cód. 57719). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Modelo Borboleta: 86cm (Altura) | Assento: Ø 30cm (50cm do chão) | Pés: 33cm x 33cm | Modelo Coração Duplo: 86cm (Altura) | Assento: Ø 30cm (50cm do chão) | Pés: 33cm x 33cm | Modelo Laço: 86cm (Altura) | Assento: Ø 30cm (50cm do chão) | Pés: 33cm x 33cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7520,7 +7658,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p102-espaco-kids-cadeira-alta-infantil-var-57719-p102-v-57719.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-quadrada-kids",
@@ -7530,8 +7669,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 52635 • 58cm x 32cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 52635.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "58cm x 32cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7563,7 +7702,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p103-espaco-kids-cadeira-quadrada-kids-p103-x-range-300-4.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-folha-kids",
@@ -7573,8 +7713,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57252 • 60cm x 60cm x 33cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57252.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "60cm x 60cm x 33cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7606,7 +7746,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p103-espaco-kids-cadeira-folha-kids-p103-x-range-420-1.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeira-tifany-kids",
@@ -7616,8 +7757,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56298 • 60cm x 33cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56298.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "60cm x 33cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7649,7 +7790,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p104-espaco-kids-cadeira-tifany-kids-var-56298-p104-v-56298.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-banco-duplo-kids",
@@ -7659,8 +7801,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57390 • 80cm x 72cm x 30cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57390.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "80cm x 72cm x 30cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7692,7 +7834,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p104-espaco-kids-banco-duplo-kids-var-57390-p104-v-57390.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-cadeirao-infantil",
@@ -7702,8 +7845,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57743 • 85cm (Altura) | Assento: 35cm x 35cm (55cm do chão ao assento)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57743.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "85cm (Altura) | Assento: 35cm x 35cm (55cm do chão ao assento)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7735,7 +7878,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p104-espaco-kids-cadeirao-infantil-var-57743-p104-v-57743.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-banco-coracao-kids",
@@ -7745,8 +7889,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57303 • 1,60m x 1,45m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57303.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,60m x 1,45m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7778,7 +7922,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p105-espaco-kids-banco-coracao-kids-p105-x-range-300-4.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-mesa-juju-kids",
@@ -7788,8 +7933,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57281 • 57cm x Ø 53cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57281.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "57cm x Ø 53cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7821,7 +7966,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p105-espaco-kids-mesa-juju-kids-p105-x-range-420-1.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-mesa-coracao-kids",
@@ -7831,8 +7977,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57013 • 50cm x Ø 70cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57013.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "50cm x Ø 70cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7864,7 +8010,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p106-espaco-kids-mesa-coracao-kids-p106-x-range-300-4.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-espaco-kids-mesa-infantil-classica",
@@ -7874,8 +8021,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Espaços Kids",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 52639 • 48cm x Ø 70cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 52639.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "48cm x Ø 70cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7907,7 +8054,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p106-espaco-kids-mesa-infantil-classica-p106-x-range-420-1.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-par-suporte-floral",
@@ -7917,8 +8065,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57463 • M: 40cm x Ø 22,5cm | G: 60cm x Ø 22,5cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57463.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "M: 40cm x Ø 22,5cm | G: 60cm x Ø 22,5cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7950,7 +8098,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p108-vasos-e-suportes-par-suporte-floral-var-57463-p108-v-57463.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-par-suporte-bela",
@@ -7960,8 +8109,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57285 • M: 48cm x 14cm x 32cm | G: 62cm x 14cm x 34cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57285.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "M: 48cm x 14cm x 32cm | G: 62cm x 14cm x 34cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -7993,7 +8142,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p108-vasos-e-suportes-par-suporte-bela-var-57285-p108-v-57285.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-par-suporte-isa",
@@ -8003,8 +8153,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57284 • M: 45cm x 24cm x 24cm | G: 62cm x 32cm x 32cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57284.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "M: 45cm x 24cm x 24cm | G: 62cm x 32cm x 32cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8036,7 +8186,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p109-vasos-e-suportes-par-suporte-isa-var-57284-p109-v-57284.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-arranjo-chapa",
@@ -8046,8 +8197,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57475 • M: 59cm x 28cm x 14cm | G: 1,00m x 38cm x 14cm (Chapa)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57475.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "M: 59cm x 28cm x 14cm | G: 1,00m x 38cm x 14cm (Chapa)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8079,7 +8230,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p109-vasos-e-suportes-suporte-arranjo-chapa-var-57475-p109-v-57475.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-florista",
@@ -8088,9 +8240,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57484 / Cód. 57483)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57484 / Cód. 57483). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas M: 60cm x 34cm x 34cm | Medidas G: 1,01m x 34cm x 34cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8137,7 +8289,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p109-vasos-e-suportes-suporte-florista-var-57483-p109-v-57483.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-para-arranjo",
@@ -8146,9 +8299,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57378 / Cód. 57386)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57378 / Cód. 57386). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Retangular (7 Hastes): Base: 1,00m x 20cm | Hastes: 80cm (2), 50cm (2), 40cm (2), 20cm (1) | Redondo (6 Hastes): Base: Ø 37cm | Hastes: 1,00m (1), 80cm (1), 70cm (2), 60cm (1), 50cm (1)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8195,7 +8348,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p110-vasos-e-suportes-suporte-para-arranjo-var-57386-p110-v-57386.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-para-velas-retangular",
@@ -8205,8 +8359,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57684 • Base: 1,00m x 20cm | Hastes: 80cm (2), 50cm (2), 40cm (2), 20cm (1)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57684.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Base: 1,00m x 20cm | Hastes: 80cm (2), 50cm (2), 40cm (2), 20cm (1)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8238,7 +8392,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p111-vasos-e-suportes-suporte-para-velas-retangular-p111.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-trio-suporte-redondo-para-arranjo",
@@ -8248,8 +8403,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57482 • P: 24cm x 11cm x 22cm | M: 33cm x 11cm x 30cm | G: 39cm x 11cm x 37cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57482.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "P: 24cm x 11cm x 22cm | M: 33cm x 11cm x 30cm | G: 39cm x 11cm x 37cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8281,7 +8436,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p112-vasos-e-suportes-trio-suporte-redondo-para-arranjo-var-57482-p112-v-57482.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-bicicleta-decorativa",
@@ -8291,8 +8447,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57286 • 61cm x 39cm x 1,04m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57286.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "61cm x 39cm x 1,04m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8324,7 +8480,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p112-vasos-e-suportes-bicicleta-decorativa-var-57286-p112-v-57286.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-vaso-cleusa",
@@ -8333,9 +8490,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "5 MEDIDAS / MODELOS",
-      "shortDesc": "5 variações disponíveis (Cód. 57211 / Cód. 57212 / Cód. 57213 / Cód. 57162 / Cód. 57163)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 5 variações de medidas/modelos (Cód. 57211 / Cód. 57212 / Cód. 57213 / Cód. 57162 / Cód. 57163). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Modelo P (35cm): 35cm x 16cm | Modelo M (42cm): 42cm x 20cm | Modelo G (59cm): 59cm x 22cm | Taça G (59x19cm): 59cm x 19cm | Taça M (50x19cm): 50cm x 19cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8427,7 +8584,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p117-vasos-e-suportes-vaso-cleusa-var-57163-p117-v-57163.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-vaso-bojudo-aramado",
@@ -8436,9 +8594,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56197 / Cód. 56194 / Cód. 56193)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56197 / Cód. 56194 / Cód. 56193). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas P: 45cm x 22cm | Medidas M: 53cm x 27cm | Medidas G: 64cm x 29cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8500,7 +8658,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p113-vasos-e-suportes-vaso-bojudo-aramado-p113-x-range-420-1.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-vaso-de-chao",
@@ -8510,8 +8669,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57229 • 92cm x 32cm x (29cm Pé)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57229.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "92cm x 32cm x (29cm Pé)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8543,7 +8702,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p114-vasos-e-suportes-vaso-de-chao-var-57229-p114-v-57229.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-vaso-manoela",
@@ -8552,9 +8712,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57352 / Cód. 57351 / Cód. 57350)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57352 / Cód. 57351 / Cód. 57350). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas P: 46cm x 21cm | Medidas M: 56cm x 25cm | Medidas G: 62cm x 29cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8616,7 +8776,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p114-vasos-e-suportes-vaso-manoela-var-57350-p114-v-57350.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-vaso-caroline",
@@ -8625,9 +8786,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56083 / Cód. 56081 / Cód. 56082)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56083 / Cód. 56081 / Cód. 56082). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 74cm x 31cm | Medidas P: 47cm x 21cm | Medidas M: 57cm x 25cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8689,7 +8850,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p115-vasos-e-suportes-vaso-caroline-var-56082-p115-v-56082.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-para-doces-aramado",
@@ -8698,9 +8860,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 54525 / Cód. 54526 / Cód. 54527)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 54525 / Cód. 54526 / Cód. 54527). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas G: 6,5cm x 25cm x 40cm | Medidas M: 6,5cm x 25cm x 31cm | Medidas P: 6,5cm x 20cm x 20cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8762,7 +8924,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p115-vasos-e-suportes-suporte-para-doces-aramado-var-54527-p115-v-54527.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-liana",
@@ -8771,9 +8934,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "vasos-e-suportes",
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
-      "badge": "6 MEDIDAS / MODELOS",
-      "shortDesc": "6 variações disponíveis (Cód. 56189 / Cód. 56190 / Cód. 56191 / Cód. 56070 / Cód. 56071 / Cód. 56072)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 6 variações de medidas/modelos (Cód. 56189 / Cód. 56190 / Cód. 56191 / Cód. 56070 / Cód. 56071 / Cód. 56072). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Aramado G (52cm): 52cm x 19cm | Aramado M (31cm): 31cm x 14cm | Aramado P (15cm): 15cm x 15cm | Com Pedraria G (42cm): 42cm x 16cm | Com Pedraria M (31cm): 31cm x 15cm | Com Pedraria P (13cm): 13cm x 15cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8880,7 +9043,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p116-vasos-e-suportes-suporte-liana-var-56072-p116-v-56072.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-vasos-e-suportes-suporte-amanda",
@@ -8890,8 +9054,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Vasos & Suportes para Arranjos e Velas",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57678 • 2,24m x 78cm | Bases: Ø 30cm e Ø 25cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57678.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,24m x 78cm | Bases: Ø 30cm e Ø 25cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8923,7 +9087,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p117-vasos-e-suportes-suporte-amanda-var-57678-p117-v-57678.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-banco-redondo",
@@ -8933,8 +9098,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57590 • 1,64m x Ø 1,30m (Plastificado)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57590.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,64m x Ø 1,30m (Plastificado)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -8966,7 +9131,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p119-cadeiras-e-mobiliarios-banco-redondo-p119-x-range-300-4.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-banco-gota",
@@ -8975,9 +9141,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "cadeiras-e-mobiliarios",
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57591 / Cód. 57488)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57591 / Cód. 57488). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Redondo Capitonê (1,95m x Ø 1,19m): 1,95m x Ø 1,19m (Plastificado c/ assento capitonê) | Com Assento Retangular (2,00m): 2,00m x 46cm x 1,22m | Assento: 80cm x 45cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9024,7 +9190,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p120-cadeiras-e-mobiliarios-banco-gota-p120.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-banco-coracao-adulto",
@@ -9034,8 +9201,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57181 • 2,50m x 2,10m | Banco: 48cm x 80cm x 48cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57181.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,50m x 2,10m | Banco: 48cm x 80cm x 48cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9067,7 +9234,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p121-cadeiras-e-mobiliarios-banco-coracao-adulto-p121-x-range-300-4.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-banco-meia-lua",
@@ -9077,8 +9245,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57300 • 2,30m x 1,80m x 45cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57300.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,30m x 1,80m x 45cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9110,7 +9278,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p121-cadeiras-e-mobiliarios-banco-meia-lua-p121-x-range-420-1.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-puff-garden",
@@ -9120,8 +9289,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 120 • 51cm x 45cm x 45cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 120.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "51cm x 45cm x 45cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9153,7 +9322,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p122-cadeiras-e-mobiliarios-puff-garden-var-120-p122-v-120-r.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-banco-loft",
@@ -9163,8 +9333,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57746 • 78cm x 33cm x 33cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57746.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "78cm x 33cm x 33cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9196,7 +9366,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p122-cadeiras-e-mobiliarios-banco-loft-var-57746-p122-v-57746.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-cadeira-tifany-quadrada",
@@ -9205,9 +9376,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "cadeiras-e-mobiliarios",
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 56176 / Cód. 54469)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 56176 / Cód. 54469). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Cadeira Tifany Adulto: 98cm x 42cm x 40cm | Cadeira Quadrada Adulto: 98cm x 49cm x 43cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9254,7 +9425,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p123-cadeiras-e-mobiliarios-cadeira-tifany-quadrada-var-54469-p123-v-54469.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-jogo-bistro-argola",
@@ -9263,9 +9435,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "cadeiras-e-mobiliarios",
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56677 / Cód. 168 / Cód. 144)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56677 / Cód. 168 / Cód. 144). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Banco Baixo Redondo Argola: 83cm x 41cm | Mesa Bistrô Argola: 1,10m x 70cm (Não acompanha o tampo) | Banqueta Redonda Argola Alta: 1,06m x 38cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9327,7 +9499,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p124-cadeiras-e-mobiliarios-jogo-bistro-argola-var-144-p124-v-144-r.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-jogo-bistro-quadrado",
@@ -9336,9 +9509,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "cadeiras-e-mobiliarios",
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56679 / Cód. 167 / 56695 / Cód. 142)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56679 / Cód. 167 / 56695 / Cód. 142). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Banqueta Quadrada Baixa: 80cm x 42cm | Mesa Bistrô (Cód.167) + Tampo Preto (Cód.56695): Bistrô: 1,06m x 62cm | Tampo Preto Revestido: Ø 80cm | Banqueta Quadrada Alta: 1,00m x 42cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9400,7 +9573,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p125-cadeiras-e-mobiliarios-jogo-bistro-quadrado-var-142-p125-v-142-r.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-cadeiras-e-mobiliarios-jogo-de-mesa-luna-helena",
@@ -9409,9 +9583,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "cadeiras-e-mobiliarios",
       "categoryName": "Cadeiras - Bancos - Poltrona - Banqueta - Jogo de Bistrô",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57628 / Cód. 57627)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57628 / Cód. 57627). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Cadeira Luna: 86cm x Ø 80cm | Mesa Bistrô Helena: 70cm x Ø 80cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9458,7 +9632,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p126-cadeiras-e-mobiliarios-jogo-de-mesa-luna-helena-p126.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-mesa-veneza",
@@ -9468,8 +9643,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57681 • 82cm x 80cm x 39cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57681.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "82cm x 80cm x 39cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9501,7 +9676,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p128-moveis-interiores-mesa-veneza-p128-x-range-300-4.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-aparador-veneza",
@@ -9511,8 +9687,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57677 • 2,10m x 2,35m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57677.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,10m x 2,35m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9544,7 +9720,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p128-moveis-interiores-aparador-veneza-p128-x-range-420-1.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-cleusa-gg",
@@ -9554,8 +9731,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57680 • 1,70m x 31cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57680.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,70m x 31cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9587,7 +9764,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p129-moveis-interiores-prateleira-cleusa-gg-var-57680-p129-v-57680.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-mesa-cris",
@@ -9597,8 +9775,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57679 • 70cm x 50cm x 35cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57679.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "70cm x 50cm x 35cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9630,7 +9808,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p129-moveis-interiores-mesa-cris-var-57679-p129-v-57679.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-tripe-para-quadro",
@@ -9639,9 +9818,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "moveis-interiores",
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57481 / Cód. 57459)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57481 / Cód. 57459). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Modelo 1,52m: 1,52m x 55cm (Pés) x 30cm (Topo) | Modelo 1,90m com Arabesco: 1,90m x 60cm (Pés) x 50cm (Detalhe)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9688,7 +9867,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p130-moveis-interiores-tripe-para-quadro-var-57459-p130-v-57459.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-suporte-trelica",
@@ -9697,9 +9877,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "moveis-interiores",
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 56696 / Cód. 56636)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 56696 / Cód. 56636). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Painel Treliça de Parede: 74cm x 74cm | Treliça Jardineira: 75cm x 74cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9746,7 +9926,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p131-moveis-interiores-suporte-trelica-var-56636-p131-v-56636.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-estante-de-ferro",
@@ -9756,8 +9937,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56724 • 1,89m x 80cm x 40cm (5 Prateleiras)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56724.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,89m x 80cm x 40cm (5 Prateleiras)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9789,7 +9970,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p132-moveis-interiores-estante-de-ferro-var-56724-p132-v-56724.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-suporte-com-arabesco",
@@ -9799,8 +9981,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56745 • 90cm x 49,5cm x 27,5cm (3 Andares)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56745.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "90cm x 49,5cm x 27,5cm (3 Andares)",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9832,7 +10014,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p132-moveis-interiores-suporte-com-arabesco-var-56745-p132-v-56745.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-transversal",
@@ -9842,8 +10025,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57032 • 1,89m x 80cm x 40cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57032.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,89m x 80cm x 40cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9875,7 +10058,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p133-moveis-interiores-prateleira-transversal-p133.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-lu",
@@ -9885,8 +10069,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57655 • 1,76m x 31,5cm x 81,5cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57655.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,76m x 31,5cm x 81,5cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9918,7 +10102,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p134-moveis-interiores-prateleira-lu-var-57655-p134-v-57655.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-provencal",
@@ -9927,9 +10112,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "moveis-interiores",
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 57062 / Cód. 57061 / Cód. 57122)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 57062 / Cód. 57061 / Cód. 57122). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Medidas M (3 Andares): 80cm x 29cm x 22cm | Medidas G (4 Andares): 93cm x 29cm x 22cm | Medidas P (2 Andares): 45cm x 29cm x 22cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -9991,7 +10176,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p134-moveis-interiores-prateleira-provencal-var-57122-p134-v-57122.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-alta",
@@ -10001,8 +10187,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57622 • 1,91m x 43cm x 47cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57622.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,91m x 43cm x 47cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10034,7 +10220,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p135-moveis-interiores-prateleira-alta-var-57622-p135-v-57622.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-bernadete",
@@ -10044,8 +10231,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57531 • 1,70m x 35cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57531.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,70m x 35cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10077,7 +10264,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p135-moveis-interiores-prateleira-bernadete-var-57531-p135-v-57531.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-prateleira-sil",
@@ -10087,8 +10275,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 57428 • 2,04m x 49cm x 1,65m",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 57428.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "2,04m x 49cm x 1,65m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10120,7 +10308,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p135-moveis-interiores-prateleira-sil-var-57428-p135-v-57428.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-moveis-interiores-moldura-espelho-laco",
@@ -10129,9 +10318,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "moveis-interiores",
       "categoryName": "Móveis para Decoração e Interiores",
       "catalogPage": "",
-      "badge": "2 MEDIDAS / MODELOS",
-      "shortDesc": "2 variações disponíveis (Cód. 57721 / Cód. 57714)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 2 variações de medidas/modelos (Cód. 57721 / Cód. 57714). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Modelo Romano: 85cm x 60cm x 5cm | Modelo Redondo: 90cm x 60cm x Ø 57cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10178,7 +10367,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p136-moveis-interiores-moldura-espelho-laco-var-57714-p136-v-57714.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-igreja-e-cerimonias-genuflexorio",
@@ -10187,9 +10377,9 @@ window.BAYTAKA_INITIAL_DATA = {
       "category": "igreja-e-cerimonias",
       "categoryName": "Igreja & Cerimônias",
       "catalogPage": "",
-      "badge": "3 MEDIDAS / MODELOS",
-      "shortDesc": "3 variações disponíveis (Cód. 56651 / Cód. 56694 / Cód. 56543)",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Disponível em 3 variações de medidas/modelos (Cód. 56651 / Cód. 56694 / Cód. 56543). Navegue pelo carrossel de fotos para visualizar cada medida.",
+      "badge": "",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "Dupla Aliança Unitário (50cm): 82cm x 23cm x 50cm | Dupla Aliança Unitário Branco (1,00m): 82cm x 44cm x 1,00m | Dupla Aliança Desmontável Dourado (1,00m): 82cm x 44cm x 1,00m",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10251,7 +10441,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p138-igreja-e-cerimonias-genuflexorio-var-56543-p138-v-56543.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-igreja-e-cerimonias-pulpito",
@@ -10261,8 +10452,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Igreja & Cerimônias",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 50169 • 1,00m (Altura frontal) | 1,10m (Altura traseira) | Base: 39cm x 35cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 50169.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "1,00m (Altura frontal) | 1,10m (Altura traseira) | Base: 39cm x 35cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10294,7 +10485,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p139-igreja-e-cerimonias-pulpito-var-50169-p139-v-50169.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     },
     {
       "id": "prod-igreja-e-cerimonias-porta-biblia",
@@ -10304,8 +10496,8 @@ window.BAYTAKA_INITIAL_DATA = {
       "categoryName": "Igreja & Cerimônias",
       "catalogPage": "",
       "badge": "",
-      "shortDesc": "Cód. 56118 • 26cm x 36cm x 18cm",
-      "fullDesc": "Peça oficial do Catálogo Baytaka 2026 Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Referência oficial: Cód. 56118.",
+      "shortDesc": "",
+      "fullDesc": "Produzida em estrutura metálica de alta resistência com pintura eletrostática industrial. Ideal para enriquecer composições cenográficas e acervos de decoração profissional.",
       "dimensions": "26cm x 36cm x 18cm",
       "capacity": "Estrutura reforçada de alta estabilidade",
       "weightCapacity": "Estrutura reforçada de alta estabilidade",
@@ -10337,7 +10529,8 @@ window.BAYTAKA_INITIAL_DATA = {
           "image": "assets/images/produtos/cutout-p139-igreja-e-cerimonias-porta-biblia-var-56118-p139-v-56118.jpg",
           "page": ""
         }
-      ]
+      ],
+      "page": ""
     }
   ]
 };

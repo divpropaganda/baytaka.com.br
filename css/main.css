@@ -4740,19 +4740,16 @@ button, input, select, textarea {
 
 .by-carousel-thumb-btn {
   flex-shrink: 0 !important;
-  width: 72px !important;
-  height: auto !important;
-  min-height: 68px !important;
-  padding: 6px !important;
+  width: 56px !important;
+  height: 56px !important;
+  padding: 4px !important;
   border: 2px solid var(--by-border) !important;
   border-radius: 8px !important;
   background: #FFFFFF !important;
   cursor: pointer !important;
   display: flex !important;
-  flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 4px !important;
   box-sizing: border-box !important;
   transition: all 0.2s ease !important;
 }
@@ -4858,4 +4855,57 @@ button, input, select, textarea {
   padding: 12px 20px !important;
   font-weight: 700 !important;
   display: block !important;
+}
+
+
+/* Modal Backdrop Fix: NEVER visible in footer, always fixed overlay */
+.by-modal-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(15, 17, 21, 0.8) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 9999 !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  overflow-y: auto !important;
+}
+
+.by-modal-backdrop.active {
+  display: flex !important;
+}
+
+/* Bloco Laranja da Home (Tudo para ampliar o seu acervo): Fotos com margem de respiro para NUNCA cortar */
+.by-cat-img-wrap {
+  position: relative !important;
+  width: 100% !important;
+  height: 230px !important;
+  background-color: #FFFFFF !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.by-cat-img-wrap img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+  transition: transform 0.3s ease !important;
+}
+
+.by-category-card:hover .by-cat-img-wrap img {
+  transform: scale(1.04) !important;
 }
