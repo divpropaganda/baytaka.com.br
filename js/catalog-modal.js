@@ -226,10 +226,12 @@ class BaytakaCatalogModal {
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    window.baytakaTracker.trackEvent('modal_catalog_opened', {
-      productName: this.contextProduct ? this.contextProduct.name : null,
-      categoryName: this.contextCategory
-    });
+    if (window.baytakaTracker && typeof window.baytakaTracker.trackEvent === 'function') {
+      window.baytakaTracker.trackEvent('modal_catalog_opened', {
+        productName: this.contextProduct ? this.contextProduct.name : null,
+        categoryName: this.contextCategory
+      });
+    }
   }
 
   close() {
@@ -255,7 +257,9 @@ class BaytakaCatalogModal {
       sourceType: this.contextProduct ? 'Interesse em Peça Específica' : 'Solicitação de Catálogo Geral'
     };
 
-    window.baytakaTracker.registerCatalogLead(leadData);
+    if (window.baytakaTracker && typeof window.baytakaTracker.registerCatalogLead === 'function') {
+      window.baytakaTracker.registerCatalogLead(leadData);
+    }
 
     let message = `Olá, equipe Baytaka! Meu nome é *${leadData.name}*, da empresa *${leadData.company}* (${leadData.segment}) de *${leadData.city}/${leadData.state}*.\n\n`;
 
@@ -266,7 +270,10 @@ class BaytakaCatalogModal {
       message += `Gostaria de receber o *Catálogo Baytaka 2026* e conhecer as condições comerciais para *${leadData.interestCategory}*.`;
     }
 
-    const whatsappUrl = window.baytakaTracker.buildWhatsAppUrl(message);
+    let whatsappUrl = 'https://wa.me/5519998044269?text=' + encodeURIComponent(message);
+    if (window.baytakaTracker && typeof window.baytakaTracker.buildWhatsAppUrl === 'function') {
+      whatsappUrl = window.baytakaTracker.buildWhatsAppUrl(message);
+    }
 
     this.close();
     form.reset();

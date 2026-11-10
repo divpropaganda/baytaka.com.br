@@ -129,6 +129,22 @@
       });
     },
 
+trackEvent(eventName, customData = {}) {
+      this.track(eventName, customData);
+    },
+
+    registerCatalogLead(leadData) {
+      this.track('catalog_request', leadData);
+      if (window.baytakaStore && typeof window.baytakaStore.addLead === 'function') {
+        window.baytakaStore.addLead(leadData);
+      }
+    },
+
+    buildWhatsAppUrl(message, targetNumber = null) {
+      const phone = targetNumber || (window.baytakaStore && window.baytakaStore.data && window.baytakaStore.data.settings && window.baytakaStore.data.settings.whatsapp) || '5519998044269';
+      return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    },
+
     trackContactForm(formData) {
       this.track('contact_form', {
         interest: formData.interest,

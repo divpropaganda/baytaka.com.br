@@ -6,7 +6,7 @@
 
 class BaytakaStore {
   constructor() {
-    this.STORAGE_KEY = 'baytaka_showroom_db_v2026_clean_v4';
+    this.STORAGE_KEY = 'baytaka_showroom_db_v2026_clean_v5';
     this.data = this.init();
   }
 
@@ -138,13 +138,102 @@ class BaytakaStore {
     return this.data.testimonials || [];
   }
 
-  // --- ESTADOS / PRESENÇA NACIONAL ---
+// --- ESTADOS / PRESENÇA NACIONAL ---
   getStatesPresence() {
     return this.data.statesPresence || [];
   }
 
   getStateByUF(uf) {
     return (this.data.statesPresence || []).find(s => s.uf.toUpperCase() === uf.toUpperCase());
+  }
+
+  // --- BAYTAKA PELO BRASIL / CASOS ---
+  getBrazilCases() {
+    if (this.data.brazilCases && this.data.brazilCases.length > 0) {
+      return this.data.brazilCases;
+    }
+    return [
+      {
+        id: "case-sp",
+        state: "SP",
+        stateName: "São Paulo",
+        city: "São Paulo / Campinas / Ribeirão Preto",
+        client: "Festas & Acervos Prime",
+        quote: "Compramos mais de 40 estruturas da Baytaka nos últimos 5 anos. O acabamento da pintura eletrostática suporta montagens semanais sem descascar. É investimento com retorno garantido.",
+        productUsed: "Arcos Romeu, Trios Canelados e Gazebos",
+        image: "assets/images/insp_arcos_casamento.jpg"
+      },
+      {
+        id: "case-rj",
+        state: "RJ",
+        stateName: "Rio de Janeiro",
+        city: "Rio de Janeiro / Petrópolis",
+        client: "Lumière Locadora de Mobiliário",
+        quote: "Em casamentos serranos em Petrópolis, a robustez das estruturas Baytaka nos dá tranquilidade até contra rajadas de vento em áreas abertas.",
+        productUsed: "Gazebos Imperiais e Árvores Cerejeiras",
+        image: "assets/images/insp_pergolado_casamento.jpg"
+      },
+      {
+        id: "case-mg",
+        state: "MG",
+        stateName: "Minas Gerais",
+        city: "Belo Horizonte / Uberlândia",
+        client: "Minas Cenografia & Design",
+        quote: "As doceiras e arcos são os itens mais solicitados no nosso catálogo. A resistência para transporte diário em caminhão é incomparável.",
+        productUsed: "Doceiras Finas e Painéis Modulares",
+        image: "assets/images/insp_mesas_festa.jpg"
+      },
+      {
+        id: "case-pr",
+        state: "PR",
+        stateName: "Paraná",
+        city: "Curitiba / Londrina / Maringá",
+        client: "Ateliê Sul Eventos",
+        quote: "O suporte pós-venda da fábrica e a padronização das peças facilitam muito quando precisamos repor ou ampliar o acervo para grandes formaturas.",
+        productUsed: "Cadeiras Laço e Estantes de Cenografia",
+        image: "assets/images/insp_kids_aniversario.jpg"
+      },
+      {
+        id: "case-go",
+        state: "GO",
+        stateName: "Goiás",
+        city: "Goiânia / Anápolis",
+        client: "Celebrar Eventos & Cerimonial",
+        quote: "Estruturas com pintura eletrostática perfeita e encaixes precisos. Os altares e capelas elevam o ticket médio das decorações de casamento.",
+        productUsed: "Capela de Ferro e Arcos Catedrais",
+        image: "assets/images/insp_capela_cerimonia.jpg"
+      },
+      {
+        id: "case-rs",
+        state: "RS",
+        stateName: "Rio Grande do Sul",
+        city: "Porto Alegre / Caxias do Sul",
+        client: "Grand Gala Formaturas",
+        quote: "Peças monumentais de alta estabilidade e acabamento premium. A Baytaka é nossa parceira estratégica há mais de 8 anos.",
+        productUsed: "Árvores Francesas e Lustres de Ferro",
+        image: "assets/images/insp_arvore_gala.jpg"
+      },
+      {
+        id: "case-ba",
+        state: "BA",
+        stateName: "Bahia",
+        city: "Salvador / Feira de Santana",
+        client: "Bahia Decorações & Cenografia",
+        quote: "Mobiliário impecável e atendimento rápido de fábrica. Nossas montagens de casamentos na praia ganharam outro nível com os arcos e gazebos.",
+        productUsed: "Arcos Orgânicos e Gazebos para Praia",
+        image: "assets/images/insp_arcos_casamento.jpg"
+      },
+      {
+        id: "case-sc",
+        state: "SC",
+        stateName: "Santa Catarina",
+        city: "Florianópolis / Balneário Camboriú / Joinville",
+        client: "Litoral Sul Eventos",
+        quote: "Estruturas resistentes com acabamento sofisticado. Perfeitas para eventos de alto padrão no litoral catarinense.",
+        productUsed: "Gazebos, Pergolados e Mesas Orgânicas",
+        image: "assets/images/insp_pergolado_casamento.jpg"
+      }
+    ];
   }
 
   // --- LEADS & EVENTOS DE RASTREAMENTO ---

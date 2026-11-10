@@ -10546,11 +10546,11 @@ window.BAYTAKA_INITIAL_DATA = {
     },
     {
       "id": "insp-2",
-      "title": "Cenário Instagramável com Banco Gota e Flores",
+      "title": "Lounge VIP e Mobiliário em Recepção de Gala",
       "category": "Festas",
       "location": "Ribeirão Preto, SP",
       "decorator": "Studio Renata Abreu Eventos",
-      "description": "O Banco Gota posicionado como ponto focal para fotos dos convidados com arranjos aéreos e iluminação cênica.",
+      "description": "Composição de mobiliário refinado, bistrôs e arranjos florais exuberantes com iluminação cênica para recepção de gala.",
       "image": "assets/images/insp_banco_gota_festa.jpg",
       "productsUsed": []
     },

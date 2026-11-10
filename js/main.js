@@ -163,46 +163,54 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- BAYTAKA PELO BRASIL: MAPA SVG & CASOS ---
-  const brazilCasesContainer = document.getElementById('by-brasil-cases-list');
-  const brazilSvgMap = document.getElementById('by-brazil-svg-map');
-  if (brazilCasesContainer && window.baytakaStore) {
-    const cases = window.baytakaStore.getBrazilCases();
+  try {
+    const brazilCasesContainer = document.getElementById('by-brasil-cases-list');
+    const brazilSvgMap = document.getElementById('by-brazil-svg-map');
+    if (brazilCasesContainer && window.baytakaStore && typeof window.baytakaStore.getBrazilCases === 'function') {
+      const cases = window.baytakaStore.getBrazilCases();
 
-    function renderCases(selectedState = null) {
-      const filtered = selectedState
-        ? cases.filter(c => c.state.toUpperCase() === selectedState.toUpperCase())
-        : cases.slice(0, 4);
-
-      brazilCasesContainer.innerHTML = filtered.map(c => `
-        <div class="by-case-card">
-          <img src="${c.image}" alt="Projeto ${c.city} - ${c.state}" class="by-case-img" loading="lazy">
-          <div>
-            <div class="by-case-meta">
-              <span>📍 ${c.city} • ${c.state}</span>
-            </div>
-            <h4 class="by-case-client">${c.client}</h4>
-            <p class="by-case-quote">"${c.quote}"</p>
-            <p class="by-case-prod"><strong>Peças no Acervo:</strong> ${c.productUsed}</p>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    renderCases();
-
-    if (brazilSvgMap) {
-      brazilSvgMap.addEventListener('click', (e) => {
-        const path = e.target.closest('path');
-        if (path) {
-          const stateUf = path.getAttribute('id') || path.getAttribute('data-state');
-          if (stateUf) {
-            brazilSvgMap.querySelectorAll('path').forEach(p => p.classList.remove('selected'));
-            path.classList.add('selected');
-            renderCases(stateUf);
-          }
+      function renderCases(selectedState = null) {
+        let filtered = cases;
+        if (selectedState) {
+          const matched = cases.filter(c => c.state && c.state.toUpperCase() === selectedState.toUpperCase());
+          filtered = matched.length > 0 ? matched : cases.slice(0, 4);
+        } else {
+          filtered = cases.slice(0, 4);
         }
-      });
+
+        brazilCasesContainer.innerHTML = filtered.map(c => `
+          <div class="by-case-card">
+            <img src="${c.image}" alt="Projeto ${c.city} - ${c.state}" class="by-case-img" loading="lazy">
+            <div>
+              <div class="by-case-meta">
+                <span>📍 ${c.city} • ${c.state}</span>
+              </div>
+              <h4 class="by-case-client">${c.client}</h4>
+              <p class="by-case-quote">"${c.quote}"</p>
+              <p class="by-case-prod"><strong>Peças no Acervo:</strong> ${c.productUsed}</p>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      renderCases('SP');
+
+      if (brazilSvgMap) {
+        brazilSvgMap.addEventListener('click', (e) => {
+          const path = e.target.closest('path');
+          if (path) {
+            const stateUf = path.getAttribute('id') || path.getAttribute('data-state');
+            if (stateUf) {
+              brazilSvgMap.querySelectorAll('path').forEach(p => p.classList.remove('selected'));
+              path.classList.add('selected');
+              renderCases(stateUf);
+            }
+          }
+        });
+      }
     }
+  } catch (err) {
+    console.warn('Aviso: falha na inicialização do mapa do Brasil:', err);
   }
 
   // --- MODAL DETALHE DO PRODUTO (SEM PREÇO, SEM NÚMERO DE PÁGINA) ---
