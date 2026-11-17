@@ -107,7 +107,10 @@ class BaytakaCatalogModal {
             <div class="by-field">
               <label for="lead-interest">Linha de Maior Interesse</label>
               <select id="lead-interest" name="interestCategory">
-                <option value="Catálogo Completo Baytaka 2026">Catálogo Completo Baytaka 2026 (Todas as 14 Linhas)</option>
+                <option value="Catálogo Completo Baytaka 2026">Catálogo Geral Baytaka 2026 (Todas as 14 Linhas)</option>
+                  <option value="Catálogo Alta Cenografia & Grandes Estruturas">Catálogo Alta Cenografia & Grandes Estruturas</option>
+                  <option value="Catálogo Mobiliário, Mesas & Lounges">Catálogo Mobiliário, Mesas & Lounges</option>
+                  <option value="Paleta de Cores & Acabamentos Eletrostáticos">Paleta de Cores & Acabamentos Eletrostáticos</option>
                 <option value="Mesas - Base - Cavalete">01. Mesas, Bases e Cavaletes</option>
                 <option value="Painéis - Arcos - Portais">02. Painéis, Arcos e Portais</option>
                 <option value="Pergolado - Balanço - Gazebo - Carruagem">03. Pergolados, Balanços, Gazebos e Carruagens</option>
@@ -177,8 +180,9 @@ class BaytakaCatalogModal {
       const prodId = trigger.getAttribute('data-product-id');
       const catSlug = trigger.getAttribute('data-category-slug');
       const customTitle = trigger.getAttribute('data-modal-title');
+      const directInterest = trigger.getAttribute('data-interest');
 
-      this.open({ productId: prodId, categorySlug: catSlug, customTitle });
+      this.open({ productId: prodId, categorySlug: catSlug, customTitle, directInterest });
     });
   }
 
@@ -214,7 +218,19 @@ class BaytakaCatalogModal {
       prodContextBox.style.display = 'none';
     }
 
-    if (options.categorySlug && !this.contextProduct) {
+    if (options.directInterest) {
+      this.contextCategory = options.directInterest;
+      if (interestSelect) {
+        let optExists = Array.from(interestSelect.options).some(o => o.value === options.directInterest);
+        if (!optExists) {
+          const newOpt = document.createElement('option');
+          newOpt.value = options.directInterest;
+          newOpt.textContent = options.directInterest;
+          interestSelect.appendChild(newOpt);
+        }
+        interestSelect.value = options.directInterest;
+      }
+    } else if (options.categorySlug && !this.contextProduct) {
       const cat = window.baytakaStore.getCategoryBySlug(options.categorySlug);
       if (cat) {
         this.contextCategory = cat.name;

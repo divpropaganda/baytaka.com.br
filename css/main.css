@@ -4908,3 +4908,164 @@ button, input, select, textarea {
 .by-category-card:hover .by-cat-img-wrap img {
   transform: scale(1.06) !important;
 }
+
+/* ==========================================================================
+   SHOWCASE DE CATÁLOGOS OFICIAIS — ESTILO STAR BELLA (2026)
+   Mockups elegantes para solicitação direta de catálogo e condições de fábrica
+   ========================================================================== */
+.by-catalogs-section {
+  padding: 60px 0 100px;
+  background-color: var(--by-bg-white);
+  position: relative;
+}
+
+.by-catalogs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 45px;
+}
+
+@media (min-width: 640px) {
+  .by-catalogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .by-catalogs-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+}
+
+.by-catalog-card {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  text-align: left;
+}
+
+.by-catalog-cover-btn {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #F8F9FA;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 34px -10px rgba(15, 23, 42, 0.12), 0 3px 10px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+  display: block;
+  outline: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.by-catalog-cover-btn:hover,
+.by-catalog-cover-btn:focus-visible {
+  transform: translateY(-6px) scale(1.015);
+  border-color: rgba(232, 93, 4, 0.35);
+  box-shadow: 0 26px 50px -15px rgba(232, 93, 4, 0.22), 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.by-catalog-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.by-catalog-cover-btn:hover .by-catalog-cover-img {
+  transform: scale(1.025);
+}
+
+.by-catalog-pill-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--by-orange);
+  background: var(--by-orange-light);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.by-catalog-card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--by-black);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.by-catalog-card-desc {
+  font-size: 0.925rem;
+  color: var(--by-gray-text);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+.by-catalog-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--by-orange);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.by-catalog-card-action:hover {
+  color: var(--by-orange-hover);
+  transform: translateX(4px);
+}
+
+.by-catalog-card-action svg {
+  transition: transform 0.2s ease;
+}
+
+.by-catalog-card-action:hover svg {
+  transform: translateX(4px);
+}
+
+.by-catalog-banner-box {
+  margin-top: 70px;
+  padding: 45px 30px;
+  background: linear-gradient(135deg, #FFF9F5 0%, #FFF2E8 100%);
+  border: 1px solid rgba(232, 93, 4, 0.18);
+  border-radius: var(--by-radius-md);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.by-catalog-banner-title {
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--by-black);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.by-catalog-banner-desc {
+  color: var(--by-gray-text);
+  max-width: 680px;
+  margin: 0 auto 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

@@ -104,9 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   };
 
-  // --- RENDERIZAR PRODUTOS EM DESTAQUE NA HOME ---
+  // --- MODO PRODUTOS AVULSOS EM DESTAQUE NA HOME: DESATIVADO TEMPORARIAMENTE ---
+  // Para reativar os cards de produtos individuais na home, altere para true:
+  const SHOW_INDIVIDUAL_PRODUCTS_FEATURED = false;
   const featuredContainer = document.getElementById('by-home-featured-grid');
-  if (featuredContainer && window.baytakaStore) {
+  if (SHOW_INDIVIDUAL_PRODUCTS_FEATURED && featuredContainer && window.baytakaStore) {
     const featuredProds = window.baytakaStore.getFeaturedProducts().slice(0, 8);
     featuredContainer.innerHTML = featuredProds.map(prod => window.renderBaytakaProductCard(prod)).join('');
   }
